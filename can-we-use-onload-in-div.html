@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Apa Yang Harus Kita Ketahui Tentang Onload Di Div?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Can We Use Onload In Div",
+    "datePublished": "2023-12-16T23:07:51Z",
+    "image": "https://tse1.mm.bing.net/th?q=can%20we%20use%20onload%20in%20div",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=can%20we%20use%20onload%20in%20div&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=can%20we%20use%20onload%20in%20div" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=can%20we%20use%20onload%20in%20div" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Apa Yang Harus Kita Ketahui Tentang Onload Di Div?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=can%20we%20use%20onload%20in%20div" alt="The Benefits Of UI Policies In Salesforce Yuri Shwedoff" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=can%20we%20use%20onload%20in%20div" alt="The Benefits Of UI Policies In Salesforce Yuri Shwedoff" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>The Benefits Of UI Policies In Salesforce Yuri Shwedoff from www.yurishwedoff.com</figcaption></figure><p>Tahun 2023, web design semakin berkembang pesat. Dengan munculnya desain web berbasis HTML5, banyak fitur baru yang dapat digunakan untuk membuat website yang lebih menarik. Salah satunya adalah onload. Onload merupakan sebuah event yang memungkinkan kita untuk mengeksekusi sesuatu ketika halaman web dimuat. Event ini sering digunakan untuk memuat kembali konten di sebuah website atau aplikasi. Dengan onload, kita bisa memuat konten tanpa harus memuat halaman ulang. Dalam artikel ini, kita akan membahas lebih lanjut tentang onload di div dan bagaimana kita bisa menggunakannya.</p><h2>Apa itu Onload?</h2><p>Onload adalah event yang berjalan ketika halaman web dimuat. Event ini memungkinkan kita untuk mengeksekusi sesuatu setelah halaman dimuat. Event ini biasanya digunakan untuk menampilkan konten di sebuah halaman tanpa harus memuat halaman ulang. Event ini juga bisa digunakan untuk melakukan berbagai tugas seperti menampilkan pop-up, membuat animasi, dan lain-lain.</p><h2>Bagaimana Cara Menggunakan Onload di Div?</h2><p>Menggunakan onload di div sangat mudah. Kita hanya perlu menambahkan atribut onload pada tag div. Contoh kode berikut akan mengeksekusi fungsi setelah halaman dimuat:</p><p><div onload="myFunction()"></div></p><p>Selain itu, kita juga bisa menggunakan event listener untuk mengeksekusi fungsi setelah halaman dimuat. Event listener dapat digunakan untuk mengeksekusi berbagai fungsi yang berbeda. Contoh kode berikut akan mengeksekusi fungsi saat halaman dimuat:</p><p><div id="myDiv"></div></p><p><script> document.getElementById("myDiv").addEventListener("load", myFunction); function myFunction() { } </script></p><h2>Apa Keuntungan Menggunakan Onload di Div?</h2><p>Keuntungan utama dari menggunakan onload di div adalah bahwa kita bisa memuat konten tanpa harus memuat halaman ulang. Dengan event ini, kita bisa dengan mudah membuat animasi, menampilkan pop-up, dan melakukan berbagai tugas lainnya. Ini juga memungkinkan kita untuk membuat website yang lebih responsif dan interaktif.</p><h2>Apa Saja Fitur Onload di Div?</h2><p>Onload di div memungkinkan kita untuk mengeksekusi berbagai tugas setelah halaman dimuat. Kita bisa menggunakan onload untuk menampilkan konten, membuat animasi, menampilkan pop-up, dan melakukan berbagai tugas lainnya. Selain itu, kita juga bisa menggunakan onload untuk mengubah warna latar, mengubah ukuran font, dan melakukan berbagai tugas lainnya.</p><h2>Apa Saja Kekurangan Menggunakan Onload di Div?</h2><p>Kekurangan utama dari menggunakan onload di div adalah bahwa event ini hanya bisa dipicu saat halaman dimuat. Ini berarti bahwa kita tidak dapat memicu event ini ketika konten diubah atau dimuat kembali. Selain itu, onload juga tidak dapat dipicu jika halaman dimuat melalui AJAX atau API.</p><h2>Kesimpulan</h2><p>Onload adalah event yang memungkinkan kita untuk mengeksekusi sesuatu setelah halaman web dimuat. Event ini sering digunakan untuk memuat kembali konten di sebuah website tanpa harus memuat halaman ulang. Event ini bisa digunakan untuk menampilkan konten, membuat animasi, menampilkan pop-up, dan melakukan berbagai tugas lainnya. Meskipun ada kekurangan, onload masih merupakan fitur yang sangat berguna bagi para web designer.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-reddit-php.html">
+                cara menggunakan reddit php 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-reddit-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20reddit%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan reddit php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menyimpan-video-dari-videoscribe-android.html">
+                cara menyimpan video dari videoscribe android 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menyimpan-video-dari-videoscribe-android.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menyimpan%20video%20dari%20videoscribe%20android&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menyimpan video dari videoscribe android">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jika-saklar-s-ditutup-kemanakah-arah-arus-induksi-pada-penghantar-ab-di-kumparan-kedua.html">
+                jika saklar s ditutup kemanakah arah arus induksi pada penghantar ab di kumparan kedua 
+                </a>
+                <div class="image-parent">
+                    <a href="jika-saklar-s-ditutup-kemanakah-arah-arus-induksi-pada-penghantar-ab-di-kumparan-kedua.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jika%20saklar%20s%20ditutup%20kemanakah%20arah%20arus%20induksi%20pada%20penghantar%20ab%20di%20kumparan%20kedua&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jika saklar s ditutup kemanakah arah arus induksi pada penghantar ab di kumparan kedua">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-langkah-langkah-membuat-website-menggunakan-html.html">
+                bagaimana langkah langkah membuat website menggunakan html 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-langkah-langkah-membuat-website-menggunakan-html.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20langkah%20langkah%20membuat%20website%20menggunakan%20html&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana langkah langkah membuat website menggunakan html">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="mengapa-biaya-semivariabel-perlu-dipisahkan-menjadi-biaya-tetap-dan-biaya-variabel.html">
+                mengapa biaya semivariabel perlu dipisahkan menjadi biaya tetap dan biaya variabel 
+                </a>
+                <div class="image-parent">
+                    <a href="mengapa-biaya-semivariabel-perlu-dipisahkan-menjadi-biaya-tetap-dan-biaya-variabel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20biaya%20semivariabel%20perlu%20dipisahkan%20menjadi%20biaya%20tetap%20dan%20biaya%20variabel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="mengapa biaya semivariabel perlu dipisahkan menjadi biaya tetap dan biaya variabel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jawaban-saat-ditanya-kelebihan-saat-interview.html">
+                jawaban saat ditanya kelebihan saat interview 
+                </a>
+                <div class="image-parent">
+                    <a href="jawaban-saat-ditanya-kelebihan-saat-interview.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jawaban%20saat%20ditanya%20kelebihan%20saat%20interview&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jawaban saat ditanya kelebihan saat interview">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mengobati-merpati-sakit-dengan-bahan-alami.html">
+                cara mengobati merpati sakit dengan bahan alami 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mengobati-merpati-sakit-dengan-bahan-alami.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mengobati%20merpati%20sakit%20dengan%20bahan%20alami&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mengobati merpati sakit dengan bahan alami">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mengatasi-mata-pegal-dan-pusing.html">
+                cara mengatasi mata pegal dan pusing 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mengatasi-mata-pegal-dan-pusing.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mengatasi%20mata%20pegal%20dan%20pusing&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mengatasi mata pegal dan pusing">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="negara-manakah-yang-memiliki-sumber-daya-mineral-yang-sangat-terbatas-dan-sangat-tergantung-pada-bahan-mentah-dan-bahan-bakar-hasil-impor-dari-negara-lain.html">
+                negara manakah yang memiliki sumber daya mineral yang sangat terbatas dan sangat tergantung pada bahan mentah dan bahan bakar hasil impor dari negara lain 
+                </a>
+                <div class="image-parent">
+                    <a href="negara-manakah-yang-memiliki-sumber-daya-mineral-yang-sangat-terbatas-dan-sangat-tergantung-pada-bahan-mentah-dan-bahan-bakar-hasil-impor-dari-negara-lain.html">
+                    <img src="https://tse1.mm.bing.net/th?q=negara%20manakah%20yang%20memiliki%20sumber%20daya%20mineral%20yang%20sangat%20terbatas%20dan%20sangat%20tergantung%20pada%20bahan%20mentah%20dan%20bahan%20bakar%20hasil%20impor%20dari%20negara%20lain&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="negara manakah yang memiliki sumber daya mineral yang sangat terbatas dan sangat tergantung pada bahan mentah dan bahan bakar hasil impor dari negara lain">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-inurladmin-dashboard-php-welcome.html">
+                cara menggunakan inurladmin dashboard php welcome 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-inurladmin-dashboard-php-welcome.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20inurladmin%20dashboard%20php%20welcome&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan inurladmin dashboard php welcome">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

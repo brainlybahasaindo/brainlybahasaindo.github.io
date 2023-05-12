@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Kenalan Dengan Fungsi Json Serializable Pada Php
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Penggunaan Fungsi Json Serializable Pada Php",
+    "datePublished": "2023-07-10T17:15:47Z",
+    "image": "https://tse1.mm.bing.net/th?q=penggunaan%20fungsi%20json%20serializable%20pada%20php",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=penggunaan%20fungsi%20json%20serializable%20pada%20php&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=penggunaan%20fungsi%20json%20serializable%20pada%20php" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=penggunaan%20fungsi%20json%20serializable%20pada%20php" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Kenalan Dengan Fungsi Json Serializable Pada Php
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=penggunaan%20fungsi%20json%20serializable%20pada%20php" alt="Fungsi json_decode dan Json encode Serta Penerapan nya di Php KodeKreasi" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=penggunaan%20fungsi%20json%20serializable%20pada%20php" alt="Fungsi json_decode dan Json encode Serta Penerapan nya di Php KodeKreasi" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Fungsi json_decode dan Json encode Serta Penerapan nya di Php KodeKreasi from kodekreasi.com</figcaption></figure><p>JSON (JavaScript Object Notation) adalah salah satu format paling populer yang digunakan untuk mentransfer data melalui web. JSON menyediakan struktur data yang mudah dipahami oleh manusia dan mesin, sehingga dapat digunakan untuk berbagai keperluan, termasuk pengembangan aplikasi web. Pada PHP, JSON dapat diterjemahkan ke dalam bentuk objek, array, dan string, sehingga membuatnya lebih mudah untuk diproses. Namun, untuk memudahkan pemrosesan data JSON, PHP telah menyediakan sebuah fungsi bernama JSON Serializable. </p><p>JSON Serializable merupakan sebuah fungsi yang dapat digunakan untuk mentransformasikan data JSON menjadi bentuk yang lebih mudah dipahami. Fungsi ini memungkinkan data JSON dikonversi ke dalam bentuk array, objek, atau string, sehingga dapat dengan mudah diproses oleh aplikasi web. Dengan menggunakan fungsi ini, data JSON dapat dikonversi dengan cepat dan mudah tanpa harus melakukan banyak pekerjaan. </p><h2>Bagaimana Fungsi JSON Serializable Bekerja?</h2><p>Fungsi JSON Serializable bekerja dengan mengambil data JSON, melakukan pemrosesan, dan mengubahnya menjadi bentuk yang lebih mudah dipahami. Namun, fungsi ini tidak hanya mengubah data JSON ke bentuk yang lebih mudah dipahami, tetapi juga menyediakan fitur-fitur tambahan yang dapat membantu proses pemrosesan data JSON. Misalnya, fungsi ini dapat digunakan untuk mengubah data JSON ke dalam bentuk array, objek, dan string, memungkinkan data JSON dapat dengan mudah diproses oleh aplikasi web. </p><h2>Keuntungan Menggunakan Fungsi JSON Serializable </h2><p>Fungsi JSON Serializable memiliki beberapa keuntungan yang dapat membantu dalam pengembangan aplikasi web. Pertama, fungsi ini dapat membantu mempersingkat waktu pemrosesan data JSON. Dengan menggunakan fungsi ini, waktu yang dibutuhkan untuk mentransformasikan data JSON menjadi bentuk yang lebih mudah dipahami akan berkurang. Selain itu, fungsi ini juga dapat membantu meningkatkan kecepatan aplikasi web, karena data JSON dapat dengan cepat diterjemahkan ke dalam bentuk yang lebih mudah dipahami. </p><p>Kedua, fungsi ini juga dapat membantu dalam meningkatkan kualitas aplikasi web. Dengan menggunakan fungsi ini, data JSON akan diterjemahkan dengan benar, sehingga aplikasi web akan berjalan dengan baik. Selain itu, fungsi ini juga dapat membantu meningkatkan keamanan aplikasi web, karena data JSON dapat dikonversi dengan benar dan aman. </p><p>Ketiga, fungsi ini juga dapat membantu dalam meningkatkan produktivitas pengembangan aplikasi web. Dengan menggunakan fungsi ini, data JSON dapat dengan cepat diterjemahkan ke dalam bentuk yang lebih mudah dipahami, sehingga memungkinkan pengembangan aplikasi web menjadi lebih cepat dan efisien. </p><h2>Cara Menggunakan Fungsi JSON Serializable</h2><p>Menggunakan fungsi JSON Serializable cukup mudah. Pertama, Anda harus mendefinisikan data JSON yang akan dikonversi. Setelah itu, Anda dapat menggunakan fungsi JSON Serializable untuk mentransformasikan data JSON ke dalam bentuk yang lebih mudah dipahami. Namun, sebelum menggunakan fungsi ini, pastikan bahwa data JSON yang akan Anda konversi telah diformat dengan benar dan benar dapat diterjemahkan oleh fungsi ini. </p><p>Ketika menggunakan fungsi ini, Anda juga harus memastikan bahwa data yang dikonversi tidak mengandung kesalahan atau kejanggalan. Untuk memastikan hal ini, Anda harus melakukan pengujian secara menyeluruh pada data yang telah dikonversi dengan fungsi ini. Dengan melakukan pengujian, Anda dapat memastikan bahwa data yang dikonversi telah diformat dengan benar dan aman. </p><h2>Kesimpulan</h2><p>Fungsi JSON Serializable merupakan sebuah fungsi yang dapat membantu dalam pengembangan aplikasi web. Dengan menggunakan fungsi ini, data JSON dapat dengan cepat dikonversi ke dalam bentuk yang lebih mudah dipahami, sehingga memungkinkan pengembangan aplikasi web menjadi lebih cepat dan efisien. Selain itu, fungsi ini juga dapat membantu meningkatkan kualitas aplikasi web, karena data JSON dapat dikonversi dengan benar dan aman. </p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-mengimpor-file-sql-ke-mysql.html">
+                bagaimana cara mengimpor file sql ke mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-mengimpor-file-sql-ke-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20mengimpor%20file%20sql%20ke%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara mengimpor file sql ke mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-membuat-file-cfg-di-windows.html">
+                bagaimana cara membuat file cfg di windows 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-membuat-file-cfg-di-windows.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20membuat%20file%20cfg%20di%20windows&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara membuat file cfg di windows">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="kinerja-mysql-1-juta-baris.html">
+                kinerja mysql 1 juta baris 
+                </a>
+                <div class="image-parent">
+                    <a href="kinerja-mysql-1-juta-baris.html">
+                    <img src="https://tse1.mm.bing.net/th?q=kinerja%20mysql%201%20juta%20baris&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="kinerja mysql 1 juta baris">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bisa-buat-daftar-di-google-sheets.html">
+                bisa buat daftar di google sheets 
+                </a>
+                <div class="image-parent">
+                    <a href="bisa-buat-daftar-di-google-sheets.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bisa%20buat%20daftar%20di%20google%20sheets&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bisa buat daftar di google sheets">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="formulir-php-kirim-ke-database.html">
+                formulir php kirim ke database 
+                </a>
+                <div class="image-parent">
+                    <a href="formulir-php-kirim-ke-database.html">
+                    <img src="https://tse1.mm.bing.net/th?q=formulir%20php%20kirim%20ke%20database&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="formulir php kirim ke database">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="hiasan-vas-bunga-dari-botol-bekas.html">
+                hiasan vas bunga dari botol bekas 
+                </a>
+                <div class="image-parent">
+                    <a href="hiasan-vas-bunga-dari-botol-bekas.html">
+                    <img src="https://tse1.mm.bing.net/th?q=hiasan%20vas%20bunga%20dari%20botol%20bekas&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="hiasan vas bunga dari botol bekas">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="meledakkan-string-dengan-tanda-kutip-php.html">
+                meledakkan string dengan tanda kutip php 
+                </a>
+                <div class="image-parent">
+                    <a href="meledakkan-string-dengan-tanda-kutip-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=meledakkan%20string%20dengan%20tanda%20kutip%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="meledakkan string dengan tanda kutip php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mengatasi-jerawat-yang-muncul-di-tempat-yang-sama.html">
+                cara mengatasi jerawat yang muncul di tempat yang sama 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mengatasi-jerawat-yang-muncul-di-tempat-yang-sama.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mengatasi%20jerawat%20yang%20muncul%20di%20tempat%20yang%20sama&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mengatasi jerawat yang muncul di tempat yang sama">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="tempat-mengedit-php-di-wordpress.html">
+                tempat mengedit php di wordpress 
+                </a>
+                <div class="image-parent">
+                    <a href="tempat-mengedit-php-di-wordpress.html">
+                    <img src="https://tse1.mm.bing.net/th?q=tempat%20mengedit%20php%20di%20wordpress&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="tempat mengedit php di wordpress">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="which-option-is-used-for-creating-rules-in-conditional-formatting-on-excel.html">
+                which option is used for creating rules in conditional formatting on excel 
+                </a>
+                <div class="image-parent">
+                    <a href="which-option-is-used-for-creating-rules-in-conditional-formatting-on-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=which%20option%20is%20used%20for%20creating%20rules%20in%20conditional%20formatting%20on%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="which option is used for creating rules in conditional formatting on excel">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bagaimana Cara Kerja Replikasi Master-Master Di Mysql?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Bagaimana Cara Kerja Replikasi Master Master Di Mysql",
+    "datePublished": "2023-09-25T07:21:06Z",
+    "image": "https://tse1.mm.bing.net/th?q=bagaimana%20cara%20kerja%20replikasi%20master%20master%20di%20mysql",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=bagaimana%20cara%20kerja%20replikasi%20master%20master%20di%20mysql&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20kerja%20replikasi%20master%20master%20di%20mysql" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20kerja%20replikasi%20master%20master%20di%20mysql" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bagaimana Cara Kerja Replikasi Master-Master Di Mysql?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20kerja%20replikasi%20master%20master%20di%20mysql" alt="konfigurasi mysql database masterslave untuk replikasi searah" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20kerja%20replikasi%20master%20master%20di%20mysql" alt="konfigurasi mysql database masterslave untuk replikasi searah" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>konfigurasi mysql database masterslave untuk replikasi searah from mandrivaputri.info</figcaption></figure><p>Replikasi master-master di MySQL adalah salah satu metode yang digunakan untuk menyinkronkan data di dua server secara real-time. Dengan sistem replikasi master-master, setiap server dapat berfungsi sebagai master, dan keduanya dapat menerima dan mengirim perubahan data. Ini berarti bahwa setiap server dapat berperan sebagai backup untuk yang lain. Sistem replikasi master-master di MySQL juga dapat digunakan untuk meningkatkan kinerja aplikasi, dengan membagi data ke beberapa server. Dengan demikian, beban kerja dapat dibagi di antara server yang berbeda.</p><h2>Apa yang Diperlukan untuk Mengimplementasikan Master-Master Replikasi MySQL?</h2><p>Untuk mengimplementasikan replikasi master-master di MySQL, Anda harus memastikan bahwa Anda memiliki dua atau lebih server MySQL yang terhubung ke jaringan. Anda juga harus memastikan bahwa versi MySQL yang digunakan pada server adalah sama. Selain itu, Anda juga harus memastikan bahwa Anda telah mengaktifkan log binari di setiap server. Log binari adalah data yang merekam perubahan data yang dibuat di server. Ini berfungsi sebagai catatan perubahan yang akan digunakan untuk menyinkronkan data di antara server.</p><h2>Bagaimana Cara Menyiapkan Server untuk Masater-Mater Replikasi MySQL?</h2><p>Setelah Anda memastikan bahwa kedua server telah terhubung ke jaringan dan memiliki versi MySQL yang sama, maka Anda dapat melanjutkan untuk menyiapkan server. Salah satu hal yang harus Anda lakukan adalah membuat user untuk replikasi. User ini akan digunakan oleh server untuk mengakses data yang berada di server lain. Setelah itu, Anda harus mengatur parameter replikasi di server. Ini berfungsi untuk mengatur waktu replikasi, serta mengatur server mana yang akan berperan sebagai master dan server mana yang akan berperan sebagai slave. Setelah itu, Anda harus mengkonfigurasi log binari di setiap server.</p><h2>Bagaimana Cara Memulai Replikasi Master-Master di MySQL?</h2><p>Ketika semua siap, Anda dapat memulai replikasi master-master di MySQL. Untuk melakukannya, Anda harus mengirimkan perintah CHANGE MASTER TO dari salah satu server ke server lainnya. Perintah ini akan memastikan bahwa server tujuan dapat menerima perubahan data dari server sumber. Setelah itu, Anda harus mengirimkan perintah START SLAVE di server tujuan untuk memulai replikasi. Ketika replikasi berjalan, Anda dapat memeriksa status replikasi dengan menggunakan perintah SHOW SLAVE STATUS.</p><h2> Apa yang Harus Dilakukan Jika Replikasi Berhenti?</h2><p>Jika replikasi master-master di MySQL berhenti, maka Anda harus melakukan trouble shooting untuk mencari tahu penyebabnya. Salah satu cara yang dapat Anda lakukan adalah dengan memeriksa log eror pada server. Log eror ini dapat memberikan informasi tentang kesalahan yang terjadi saat proses replikasi berlangsung. Anda juga dapat memeriksa status replikasi dengan menggunakan perintah SHOW SLAVE STATUS. Status ini akan memberikan informasi tentang posisi log binari yang sedang digunakan oleh server. Jika Anda menemukan masalah, maka Anda dapat mengatur parameter replikasi untuk memecahkan masalah tersebut.</p><h2>Apa yang Harus Dilakukan untuk Mengakhiri Replikasi Master-Master di MySQL?</h2><p>Jika Anda ingin mengakhiri replikasi master-master di MySQL, maka Anda harus mengirimkan perintah STOP SLAVE ke server tujuan. Perintah ini akan memastikan bahwa server tujuan akan berhenti menerima perubahan data dari server sumber. Setelah itu, Anda harus menonaktifkan log binari di setiap server dengan menggunakan perintah RESET MASTER. Ini akan memastikan bahwa log binari tidak akan disimpan lagi. Setelah itu, Anda dapat mengakhiri replikasi dengan menggunakan perintah RESET SLAVE.</p><h2>Kesimpulan</h2><p>Replikasi master-master di MySQL adalah metode yang digunakan untuk menyinkronkan data di dua server secara real-time. Dengan menggunakan metode ini, Anda dapat dengan mudah membuat salinan cadangan data, meningkatkan kinerja aplikasi, dan membagi beban kerja di antara server yang berbeda. Untuk mengimplementasikan replikasi master-master di MySQL, Anda harus memastikan bahwa Anda memiliki dua server MySQL yang terhubung ke jaringan dan memiliki versi MySQL yang sama. Anda juga harus memastikan bahwa Anda telah mengaktifkan log binari di setiap server. Setelah itu, Anda dapat memulai replikasi dengan menggunakan perintah CHANGE MASTER TO dan START SLAVE. Jika Anda ingin mengakhiri replikasi, Anda harus menggunakan perintah STOP SLAVE, RESET MASTER, dan RESET SLAVE. Dengan demikian, Anda dapat dengan mudah mengimplementasikan dan mengakhiri replikasi master-master di MySQL.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bisakah-kita-menggunakan-php-dan-mongodb-bersama.html">
+                bisakah kita menggunakan php dan mongodb bersama 
+                </a>
+                <div class="image-parent">
+                    <a href="bisakah-kita-menggunakan-php-dan-mongodb-bersama.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bisakah%20kita%20menggunakan%20php%20dan%20mongodb%20bersama&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bisakah kita menggunakan php dan mongodb bersama">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-koneksi-postgresql-dengan-laravel.html">
+                cara koneksi postgresql dengan laravel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-koneksi-postgresql-dengan-laravel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20koneksi%20postgresql%20dengan%20laravel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara koneksi postgresql dengan laravel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-membuka-child-lock-pada-mesin-cuci-lg.html">
+                cara membuka child lock pada mesin cuci lg 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-membuka-child-lock-pada-mesin-cuci-lg.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20membuka%20child%20lock%20pada%20mesin%20cuci%20lg&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara membuka child lock pada mesin cuci lg">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-contoh-soal-array-php.html">
+                cara menggunakan contoh soal array php 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-contoh-soal-array-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20contoh%20soal%20array%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan contoh soal array php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-isi-ulang-andromax-m3z.html">
+                cara isi ulang andromax m3z 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-isi-ulang-andromax-m3z.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20isi%20ulang%20andromax%20m3z&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara isi ulang andromax m3z">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-python-sql-insert.html">
+                cara menggunakan python sql insert 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-python-sql-insert.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20sql%20insert&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan python sql insert">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="berikut-bukan-hal-terpenting-yang-perlu-dipersiapkan-dalam-mendirikan-suatu-usaha-makanan-yakni.html">
+                berikut bukan hal terpenting yang perlu dipersiapkan dalam mendirikan suatu usaha makanan yakni 
+                </a>
+                <div class="image-parent">
+                    <a href="berikut-bukan-hal-terpenting-yang-perlu-dipersiapkan-dalam-mendirikan-suatu-usaha-makanan-yakni.html">
+                    <img src="https://tse1.mm.bing.net/th?q=berikut%20bukan%20hal%20terpenting%20yang%20perlu%20dipersiapkan%20dalam%20mendirikan%20suatu%20usaha%20makanan%20yakni&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="berikut bukan hal terpenting yang perlu dipersiapkan dalam mendirikan suatu usaha makanan yakni">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="wajah-menggunakan-javascript-penyimpanan-lokal-w3schools.html">
+                wajah menggunakan javascript penyimpanan lokal w3schools 
+                </a>
+                <div class="image-parent">
+                    <a href="wajah-menggunakan-javascript-penyimpanan-lokal-w3schools.html">
+                    <img src="https://tse1.mm.bing.net/th?q=wajah%20menggunakan%20javascript%20penyimpanan%20lokal%20w3schools&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="wajah menggunakan javascript penyimpanan lokal w3schools">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="manfaat-bagi-produsen-memahami-gaya-hidup-konsumen.html">
+                manfaat bagi produsen memahami gaya hidup konsumen 
+                </a>
+                <div class="image-parent">
+                    <a href="manfaat-bagi-produsen-memahami-gaya-hidup-konsumen.html">
+                    <img src="https://tse1.mm.bing.net/th?q=manfaat%20bagi%20produsen%20memahami%20gaya%20hidup%20konsumen&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="manfaat bagi produsen memahami gaya hidup konsumen">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="tidak-bisa-export-database-phpmyadmin.html">
+                tidak bisa export database phpmyadmin 
+                </a>
+                <div class="image-parent">
+                    <a href="tidak-bisa-export-database-phpmyadmin.html">
+                    <img src="https://tse1.mm.bing.net/th?q=tidak%20bisa%20export%20database%20phpmyadmin&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="tidak bisa export database phpmyadmin">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

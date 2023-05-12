@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menggunakan Datatables Ajax Php
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Datatables Ajax Php",
+    "datePublished": "2023-06-25T13:52:47Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20datatables%20ajax%20php",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20datatables%20ajax%20php&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20datatables%20ajax%20php" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20datatables%20ajax%20php" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menggunakan Datatables Ajax Php
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20datatables%20ajax%20php" alt="(DOC) Cara Menggunakan Datatables dengan PHP Nur Cholis Academia.edu" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20datatables%20ajax%20php" alt="(DOC) Cara Menggunakan Datatables dengan PHP Nur Cholis Academia.edu" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>(DOC) Cara Menggunakan Datatables dengan PHP Nur Cholis Academia.edu from www.academia.edu</figcaption></figure><h2>Apa Itu Datatables?</h2><p>Datatables adalah plugin JavaScript yang menawarkan cara intuitif untuk menampilkan dan mengelola informasi dalam tabel HTML dengan mudah. Ini dirancang untuk membuat pengalaman pengguna yang cepat, intuitif dan aman. Dengan Datatables, Anda dapat mengelola data dengan cara yang efisien, membuat pencarian, melakukan sorting, menghitung jumlah dan melakukan banyak hal lainnya. Dengan Datatables, Anda dapat membuat tabel yang interaktif, responsif, dan responsif di berbagai perangkat. </p><h2>Apa Itu AJAX?</h2><p>AJAX adalah singkatan dari Asynchronous JavaScript and XML. Ini adalah teknologi yang memungkinkan pengguna untuk memuat halaman web tanpa memuat halaman web secara keseluruhan. Ini memungkinkan pengguna untuk mengirim permintaan ke server dan menerima respons tanpa menyegarkan halaman web. Ini mengurangi waktu tunggu pengguna dan meningkatkan kecepatan halaman web. </p><h2>Apa Itu PHP?</h2><p>PHP adalah bahasa pemrograman yang digunakan untuk membangun situs web. PHP digunakan untuk memanipulasi data dan menampilkan informasi di halaman web. Ini juga dapat digunakan untuk mengambil data dari basis data dan memproses informasi yang diterima dari formulir web. PHP juga digunakan untuk mengirim dan menerima cookie, mengirim dan menerima header, dan melakukan banyak tugas lainnya. </p><h2>Bagaimana Cara Menggunakan Datatables AJAX PHP?</h2><p>Untuk menggunakan Datatables AJAX PHP, Anda harus memiliki beberapa pengalaman dengan PHP dan AJAX. Anda juga perlu menentukan jenis data yang akan ditampilkan di tabel. Tergantung pada jenis data, Anda dapat membuat tabel dengan struktur yang berbeda. Setelah Anda membuat struktur tabel, Anda dapat membuat kode PHP untuk mengambil data dari basis data dan menampilkannya dalam tabel. </p><h3>Mengambil Data Dari Basis Data</h3><p>Setelah Anda membuat struktur tabel, Anda dapat membuat kode PHP untuk mengambil data dari basis data. Anda dapat menggunakan query SQL untuk mengambil data dari basis data. Query SQL dapat mengambil data dari satu atau lebih tabel. Anda juga dapat menggunakan bahasa pemrograman SQL untuk mengambil data dari basis data. </p><h3>Menggunakan AJAX</h3><p>Setelah mengambil data dari basis data, Anda dapat menggunakan AJAX untuk mengirim data ke browser pengguna. Kode AJAX dapat meminta data dari basis data dan mengirimkannya ke browser. Jika data diterima oleh browser, kode AJAX akan memproses data dan menampilkannya dalam tabel Datatables. </p><h3>Menampilkan Data dalam Tabel</h3><p>Setelah data diterima oleh browser, kode AJAX akan memproses data dan menampilkannya dalam tabel Datatables. Anda dapat mengatur struktur tabel dengan menggunakan plugin Datatables. Plugin ini memungkinkan Anda untuk menambahkan kolom, melakukan sorting, melakukan pencarian, dan melakukan berbagai fungsi lainnya. Anda juga dapat mengatur properti tabel seperti ukuran, warna, dan banyak lagi. </p><h3>Menggunakan Plugin Datatables</h3><p>Plugin Datatables menawarkan berbagai fitur yang memungkinkan Anda membuat tabel yang interaktif, responsif, dan responsif. Anda dapat menggunakan plugin ini untuk menampilkan data dari basis data dalam tabel yang interaktif. Anda juga dapat mengatur properti tabel, seperti warna, ukuran, dan lain-lain. Dengan plugin Datatables, Anda dapat membuat tabel yang aman dan mudah digunakan. </p><h3>Kesimpulan</h3><p>Dengan demikian, cara menggunakan Datatables AJAX PHP sangat mudah. Anda dapat menggunakan PHP untuk mengambil data dari basis data dan menggunakan AJAX untuk mengirim data ke browser. Anda juga dapat menggunakan plugin Datatables untuk membuat tabel yang interaktif, responsif, dan responsif. Dengan plugin ini, Anda dapat membuat tabel yang aman dan mudah digunakan. </p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jelaskan-apa-yang-dimaksud-dengan-file-dan-berikan-contohnya.html">
+                jelaskan apa yang dimaksud dengan file dan berikan contohnya 
+                </a>
+                <div class="image-parent">
+                    <a href="jelaskan-apa-yang-dimaksud-dengan-file-dan-berikan-contohnya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20apa%20yang%20dimaksud%20dengan%20file%20dan%20berikan%20contohnya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jelaskan apa yang dimaksud dengan file dan berikan contohnya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-6-toko-fisik-wawonii-utara-konawe-kepulauan-sulawesi-tenggara-2023.html">
+                top 6 toko fisik wawonii utara konawe kepulauan sulawesi tenggara 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-6-toko-fisik-wawonii-utara-konawe-kepulauan-sulawesi-tenggara-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%206%20toko%20fisik%20wawonii%20utara%20konawe%20kepulauan%20sulawesi%20tenggara%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 6 toko fisik wawonii utara konawe kepulauan sulawesi tenggara 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-put-commas-between-last-names-in-excel.html">
+                how do i put commas between last names in excel 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-put-commas-between-last-names-in-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20put%20commas%20between%20last%20names%20in%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i put commas between last names in excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="mengapa-pemikiran-dan-tindakan-wahidin-sudirohusodo-pada-gambar-dalam-memperjuangkan-kemerdekaan-indonesia-di-sebut-mengawali-era-pergerakan-nasional.html">
+                mengapa pemikiran dan tindakan wahidin sudirohusodo pada gambar dalam memperjuangkan kemerdekaan indonesia di sebut mengawali era pergerakan nasional 
+                </a>
+                <div class="image-parent">
+                    <a href="mengapa-pemikiran-dan-tindakan-wahidin-sudirohusodo-pada-gambar-dalam-memperjuangkan-kemerdekaan-indonesia-di-sebut-mengawali-era-pergerakan-nasional.html">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20pemikiran%20dan%20tindakan%20wahidin%20sudirohusodo%20pada%20gambar%20dalam%20memperjuangkan%20kemerdekaan%20indonesia%20di%20sebut%20mengawali%20era%20pergerakan%20nasional&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="mengapa pemikiran dan tindakan wahidin sudirohusodo pada gambar dalam memperjuangkan kemerdekaan indonesia di sebut mengawali era pergerakan nasional">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="what-version-of-windows-comes-with-office-365.html">
+                what version of windows comes with office 365 
+                </a>
+                <div class="image-parent">
+                    <a href="what-version-of-windows-comes-with-office-365.html">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20version%20of%20windows%20comes%20with%20office%20365&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="what version of windows comes with office 365">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bola-keluar-lapangan-sepak-bola-melalui-garis-samping-selanjutnya-dilakukan-gerakan.html">
+                bola keluar lapangan sepak bola melalui garis samping selanjutnya dilakukan gerakan 
+                </a>
+                <div class="image-parent">
+                    <a href="bola-keluar-lapangan-sepak-bola-melalui-garis-samping-selanjutnya-dilakukan-gerakan.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bola%20keluar%20lapangan%20sepak%20bola%20melalui%20garis%20samping%20selanjutnya%20dilakukan%20gerakan&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bola keluar lapangan sepak bola melalui garis samping selanjutnya dilakukan gerakan">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="temukan-informasi-penting-dari-teks-usaha-rakyat-ambarawa-dalam-mempertahankan-kemerdekaan.html">
+                temukan informasi penting dari teks usaha rakyat ambarawa dalam mempertahankan kemerdekaan 
+                </a>
+                <div class="image-parent">
+                    <a href="temukan-informasi-penting-dari-teks-usaha-rakyat-ambarawa-dalam-mempertahankan-kemerdekaan.html">
+                    <img src="https://tse1.mm.bing.net/th?q=temukan%20informasi%20penting%20dari%20teks%20usaha%20rakyat%20ambarawa%20dalam%20mempertahankan%20kemerdekaan&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="temukan informasi penting dari teks usaha rakyat ambarawa dalam mempertahankan kemerdekaan">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mengatasi-printer-kedip-orange.html">
+                cara mengatasi printer kedip orange 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mengatasi-printer-kedip-orange.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mengatasi%20printer%20kedip%20orange&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mengatasi printer kedip orange">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menghentikan-mysql-agar-tidak-mogok.html">
+                bagaimana cara menghentikan mysql agar tidak mogok 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menghentikan-mysql-agar-tidak-mogok.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menghentikan%20mysql%20agar%20tidak%20mogok&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menghentikan mysql agar tidak mogok">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cocokkan-sel-di-lembar-google.html">
+                cocokkan sel di lembar google 
+                </a>
+                <div class="image-parent">
+                    <a href="cocokkan-sel-di-lembar-google.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cocokkan%20sel%20di%20lembar%20google&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cocokkan sel di lembar google">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

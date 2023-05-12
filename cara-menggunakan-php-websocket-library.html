@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Apa Itu Php Websocket Library Dan Bagaimana Cara Menggunakannya?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Php Websocket Library",
+    "datePublished": "2023-10-30T13:56:51Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20websocket%20library",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20websocket%20library&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20websocket%20library" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20websocket%20library" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Apa Itu Php Websocket Library Dan Bagaimana Cara Menggunakannya?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20websocket%20library" alt="Cara Menggunakan Array di PHP YouTube" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20websocket%20library" alt="Cara Menggunakan Array di PHP YouTube" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Cara Menggunakan Array di PHP YouTube from www.youtube.com</figcaption></figure><p>PHP WebSocket Library merupakan sebuah library yang dapat digunakan untuk menghubungkan antara web server dan client. Library ini memungkinkan para web developer untuk menghubungkan antara web server dan client secara langsung, tanpa perlu melalui protokol HTTP. Ini memungkinkan web developer untuk menghasilkan aplikasi yang terhubung dengan web server secara real-time. Dengan library ini, web developer dapat membangun aplikasi yang dapat memantau dan mengirim data secara real-time.</p><p>PHP WebSocket Library dapat digunakan untuk berbagai macam aplikasi web, termasuk aplikasi berbasis web yang dapat diakses secara real-time oleh pengguna. Aplikasi ini dapat digunakan untuk melakukan berbagai macam tugas, seperti melacak pengguna, memantau perubahan data, dan banyak lagi.</p><h2>Apa yang Diperlukan Untuk Menggunakan PHP WebSocket Library?</h2><p>Untuk dapat menggunakan PHP WebSocket Library, Anda harus memiliki beberapa hal berikut:</p><ul><li>Webserver (Apache, Nginx, atau yang lainnya)</li><li>PHP 5.3 atau lebih tinggi.</li><li>WebSocket Library (biasanya disediakan dengan package PHP).</li><li>Kode web Anda harus ditulis dalam bahasa PHP.</li></ul><p>Kemudian, Anda juga perlu mengatur konfigurasi server Anda agar dapat menggunakan library ini. Konfigurasi ini biasanya terletak di file “php.ini”. Anda harus memastikan bahwa library ini telah diaktifkan untuk dapat digunakan.</p><h2>Bagaimana Cara Menggunakan PHP WebSocket Library?</h2><p>Penggunaan PHP WebSocket Library cukup mudah. Langkah-langkahnya adalah sebagai berikut:</p><ul><li>Pertama, Anda harus menginstal library ini ke server Anda. Anda dapat menggunakan package manager seperti Composer atau PEAR. Anda juga dapat mengunduh library ini dari situs web resminya.</li><li>Kedua, Anda harus mengatur konfigurasi server Anda agar dapat menggunakan library ini. Anda harus memastikan bahwa library ini telah diaktifkan.</li><li>Ketiga, Anda harus membuat kode web Anda dalam bahasa PHP. Anda harus menggunakan API yang disediakan oleh library untuk menghubungkan antara web server dan client.</li><li>Keempat, Anda harus mengatur konfigurasi server Anda agar dapat menghandle request yang masuk.</li><li>Kelima, Anda harus membuat kode untuk melakukan pengiriman data antara web server dan client.</li></ul><p>Setelah Anda menyelesaikan semua langkah-langkah tersebut, Anda dapat memulai menggunakan PHP WebSocket Library dengan mudah. Sekarang Anda dapat menghubungkan web server dan client secara real-time.</p><h2>Apa Keuntungan Menggunakan PHP WebSocket Library?</h2><p>Ada banyak keuntungan yang bisa Anda dapatkan jika menggunakan PHP WebSocket Library. Berikut adalah beberapa di antaranya:</p><ul><li>Koneksi real-time antara web server dan client. Dengan library ini, Anda dapat menghubungkan antara web server dan client secara real-time. Anda tidak perlu lagi menggunakan protokol HTTP untuk menghubungkan antara keduanya.</li><li>Kemampuan untuk menghasilkan aplikasi berbasis web yang dapat diakses secara real-time oleh pengguna. Anda dapat membangun aplikasi yang dapat memantau dan mengirim data secara real-time.</li><li>Anda dapat menggunakan library ini untuk berbagai macam aplikasi web, termasuk aplikasi berbasis web yang memantau dan mengirim data secara real-time.</li><li>Anda dapat menggunakan library ini dengan mudah. Anda hanya perlu mengikuti beberapa langkah sederhana untuk dapat menggunakan library ini.</li></ul><h2>Kesimpulan</h2><p>PHP WebSocket Library merupakan library yang dapat digunakan untuk menghubungkan antara web server dan client secara real-time. Library ini memungkinkan web developer untuk membangun aplikasi yang dapat memantau dan mengirim data secara real-time. Dengan library ini, Anda dapat membangun aplikasi berbasis web yang dapat diakses secara real-time oleh pengguna.</p><p>Untuk dapat menggunakan library ini, Anda harus memiliki beberapa hal, seperti webserver, PHP 5.3 atau lebih tinggi, WebSocket Library, dan kode web Anda harus ditulis dalam bahasa PHP. Anda juga harus mengatur konfigurasi server Anda agar dapat menggunakan library ini.</p><p>Penggunaan library ini cukup mudah. Anda hanya perlu mengikuti beberapa langkah sederhana untuk dapat menggunakan library ini. Ada banyak keuntungan yang bisa Anda dapatkan jika menggunakan PHP WebSocket Library.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-saya-terhubung-ke-database-yang-ada-di-meja-kerja-mysql.html">
+                bagaimana cara saya terhubung ke database yang ada di meja kerja mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-saya-terhubung-ke-database-yang-ada-di-meja-kerja-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20saya%20terhubung%20ke%20database%20yang%20ada%20di%20meja%20kerja%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara saya terhubung ke database yang ada di meja kerja mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apakah-yang-dimaksud-arsip-dokumentasi-kepegawaian.html">
+                apakah yang dimaksud arsip dokumentasi kepegawaian 
+                </a>
+                <div class="image-parent">
+                    <a href="apakah-yang-dimaksud-arsip-dokumentasi-kepegawaian.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apakah%20yang%20dimaksud%20arsip%20dokumentasi%20kepegawaian&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apakah yang dimaksud arsip dokumentasi kepegawaian">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menjamak-isya-dan-maghrib.html">
+                bagaimana cara menjamak isya dan maghrib 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menjamak-isya-dan-maghrib.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menjamak%20isya%20dan%20maghrib&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menjamak isya dan maghrib">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cocokkan-sel-di-lembar-google.html">
+                cocokkan sel di lembar google 
+                </a>
+                <div class="image-parent">
+                    <a href="cocokkan-sel-di-lembar-google.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cocokkan%20sel%20di%20lembar%20google&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cocokkan sel di lembar google">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-list-of-dictionaries-python.html">
+                cara menggunakan list of dictionaries python 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-list-of-dictionaries-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20list%20of%20dictionaries%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan list of dictionaries python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="contoh-cv-bahasa-inggris-yang-benar.html">
+                contoh cv bahasa inggris yang benar 
+                </a>
+                <div class="image-parent">
+                    <a href="contoh-cv-bahasa-inggris-yang-benar.html">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20cv%20bahasa%20inggris%20yang%20benar&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="contoh cv bahasa inggris yang benar">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-vlookup-dari-sheet-lain.html">
+                cara vlookup dari sheet lain 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-vlookup-dari-sheet-lain.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20vlookup%20dari%20sheet%20lain&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara vlookup dari sheet lain">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-pengindeksan-dilakukan-di-mongodb.html">
+                bagaimana pengindeksan dilakukan di mongodb 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-pengindeksan-dilakukan-di-mongodb.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20pengindeksan%20dilakukan%20di%20mongodb&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana pengindeksan dilakukan di mongodb">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="why-my-iphone-won-t-charge.html">
+                why my iphone won t charge 
+                </a>
+                <div class="image-parent">
+                    <a href="why-my-iphone-won-t-charge.html">
+                    <img src="https://tse1.mm.bing.net/th?q=why%20my%20iphone%20won%20t%20charge&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="why my iphone won t charge">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-membuat-essen-lumut-ikan-nila-liar.html">
+                cara membuat essen lumut ikan nila liar 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-membuat-essen-lumut-ikan-nila-liar.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20membuat%20essen%20lumut%20ikan%20nila%20liar&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara membuat essen lumut ikan nila liar">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

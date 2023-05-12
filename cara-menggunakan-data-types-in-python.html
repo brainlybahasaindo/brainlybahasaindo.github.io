@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menggunakan Data Types Di Python
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Data Types In Python",
+    "datePublished": "2023-12-14T08:39:28Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20data%20types%20in%20python",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20data%20types%20in%20python&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20data%20types%20in%20python" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20data%20types%20in%20python" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menggunakan Data Types Di Python
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20data%20types%20in%20python" alt="Introducing Python Data Types" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20data%20types%20in%20python" alt="Introducing Python Data Types" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Introducing Python Data Types from www.digitalvidya.com</figcaption></figure><p>Python adalah bahasa pemrograman yang saat ini sedang populer. Python ini memiliki kemampuan untuk melakukan berbagai jenis operasi, termasuk pengolahan data. Salah satu hal yang harus Anda ketahui ketika membuat program di Python adalah pemahaman data types. Data types adalah jenis variabel yang digunakan untuk menyimpan berbagai jenis data. Data types ini sangat penting untuk membuat program yang efisien dan tepat sasaran. Dengan begitu, berikut adalah cara menggunakan data types di Python.</p><h2>Tipe Data Utama di Python</h2><p>Ada beberapa jenis data types yang dapat Anda gunakan di Python. Berikut adalah beberapa jenis data utama yang tersedia:</p><ul><li>Numerik: ini termasuk angka seperti int, float, dan complex.</li><li>Boolean: ini menyimpan nilai True atau False.</li><li>Karakter: ini menyimpan string, yaitu sebuah kumpulan huruf dan angka.</li><li>Tuple: ini adalah tipe data yang dapat digunakan untuk menyimpan berbagai macam nilai dalam satu variabel.</li><li>Dictionary: ini adalah tipe data yang dapat digunakan untuk menyimpan data yang terkait dengan kata kunci.</li><li>List: ini adalah tipe data yang dapat digunakan untuk menyimpan berbagai nilai dalam satu variabel.</li></ul><p>Ketika Anda membuat program, Anda harus membuat variabel untuk menyimpan data. Variabel ini harus memiliki tipe data yang tepat agar program Anda berjalan dengan benar dan efisien.</p><h2>Membuat Variabel</h2><p>Untuk membuat variabel, Anda harus menggunakan perintah berikut:</p><ul><li>'VarName = Value' untuk membuat variabel dengan tipe data yang telah ditentukan.</li><li>'VarName = type(Value)' untuk membuat variabel dengan tipe data yang ditentukan.</li></ul><p>Contoh:</p><ul><li>Angka = 10 (membuat variabel angka dengan nilai 10)</li><li>Nama = str(John) (membuat variabel nama dengan tipe data str dan nilai John)</li></ul><h2>Menggunakan Fungsi untuk Mengubah Tipe Data</h2><p>Ada beberapa fungsi yang dapat Anda gunakan untuk mengubah tipe data. Berikut adalah beberapa fungsi yang paling umum digunakan:</p><ul><li>int() – mengubah nilai menjadi tipe data integer.</li><li>float() – mengubah nilai menjadi tipe data float.</li><li>str() – mengubah nilai menjadi tipe data string.</li><li>list() – mengubah nilai menjadi tipe data list.</li><li>tuple() – mengubah nilai menjadi tipe data tuple.</li><li>dict() – mengubah nilai menjadi tipe data dictionary.</li></ul><p>Contoh:</p><ul><li>int(10.5) – mengubah nilai 10.5 menjadi integer 10.</li><li>float(10) – mengubah nilai 10 menjadi float 10.0.</li><li>str(10) – mengubah nilai 10 menjadi string “10”.</li><li>list() – mengubah nilai [1,2,3] menjadi list [1,2,3].</li><li>tuple() – mengubah nilai (1,2,3) menjadi tuple (1,2,3).</li><li>dict() – mengubah nilai {‘nama’:’John’} menjadi dictionary {‘nama’:’John’}.</li></ul><h2>Mengubah Tipe Data Variabel</h2><p>Ketika Anda membuat variabel, Anda dapat mengubah tipe data variabel dengan menggunakan fungsi yang sesuai. Misalnya, jika Anda memiliki variabel angka dengan nilai 10, Anda dapat mengubahnya menjadi tipe data float dengan menggunakan fungsi float () seperti ini:</p><ul><li>angka = float(10) – mengubah variabel angka menjadi float 10.0.</li></ul><h2>Menggabungkan Variabel</h2><p>Anda dapat menggabungkan dua atau lebih variabel dengan menggunakan operator +. Ini akan menghasilkan nilai gabungan dari variabel yang digabungkan. Misalnya, jika Anda memiliki variabel angka1 dengan nilai 10 dan variabel angka2 dengan nilai 20, Anda dapat menggabungkan keduanya dengan menggunakan operator + seperti ini:</p><ul><li>jumlah = angka1 + angka2 – menghasilkan nilai 30.</li></ul><h2>Menghitung Nilai Variabel</h2><p>Anda juga dapat menghitung nilai variabel dengan menggunakan operator matematika. Misalnya, jika Anda memiliki variabel angka1 dengan nilai 10 dan variabel angka2 dengan nilai 20, Anda dapat menghitung nilai keduanya dengan menggunakan operator seperti ini:</p><ul><li>jumlah = angka1 + angka2 – menghasilkan nilai 30.</li><li>kali = angka1 * angka2 – menghasilkan nilai 200.</li><li>bagi = angka1 / angka2 – menghasilkan nilai 0.5.</li><li>modulo = angka1 % angka2 – menghasilkan nilai 10.</li></ul><h2>Membandingkan Nilai Variabel</h2><p>Anda juga dapat membandingkan nilai dari dua variabel dengan menggunakan operator perbandingan seperti ini:</p><ul><li>< – lebih kecil</li><li><= – lebih kecil atau sama dengan</li><li>> – lebih besar</li><li>>= – lebih besar atau sama dengan</li><li>== – sama dengan</li><li>!= – tidak sama dengan</li></ul><p>Misalnya, jika Anda memiliki variabel angka1 dengan nilai 10 dan variabel angka2 dengan nilai 20, Anda dapat membandingkan keduanya dengan menggunakan operator seperti ini:</p><ul><li>angka1 < angka2 – Benar</li><li>angka1 > angka2 – Salah</li><li>angka1 == angka2 – Salah</li><li>angka1 != angka2 – Benar</li></ul><h2>Kesimpulan</h2><p>Data types dalam Python sangat penting untuk membuat program yang efisien dan tepat sasaran. Dengan demikian, penting bagi Anda untuk memahami cara menggunakan data types di Python. Anda harus membuat variabel dengan tipe data yang tepat dan menggunakan fungsi untuk mengubah tipe data jika diperlukan. Selain itu, Anda juga dapat menggabungkan dan membandingkan nilai variabel dengan menggunakan operator yang tepat.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apakah-yang-termasuk-bahan-makanan-sumber-protein-yang-bernilai-biologi-tinggi-tersebut.html">
+                apakah yang termasuk bahan makanan sumber protein yang bernilai biologi tinggi tersebut 
+                </a>
+                <div class="image-parent">
+                    <a href="apakah-yang-termasuk-bahan-makanan-sumber-protein-yang-bernilai-biologi-tinggi-tersebut.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apakah%20yang%20termasuk%20bahan%20makanan%20sumber%20protein%20yang%20bernilai%20biologi%20tinggi%20tersebut&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apakah yang termasuk bahan makanan sumber protein yang bernilai biologi tinggi tersebut">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-saya-mengimpor-dan-mengekspor-dari-phpmyadmin.html">
+                bagaimana cara saya mengimpor dan mengekspor dari phpmyadmin 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-saya-mengimpor-dan-mengekspor-dari-phpmyadmin.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20saya%20mengimpor%20dan%20mengekspor%20dari%20phpmyadmin&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara saya mengimpor dan mengekspor dari phpmyadmin">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-see-the-pages-i-liked-on-facebook-on-iphone.html">
+                how do i see the pages i liked on facebook on iphone 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-see-the-pages-i-liked-on-facebook-on-iphone.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20see%20the%20pages%20i%20liked%20on%20facebook%20on%20iphone&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i see the pages i liked on facebook on iphone">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-1-toko-pandu-kelam-tengah-kaur-bengkulu-2023.html">
+                top 1 toko pandu kelam tengah kaur bengkulu 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-1-toko-pandu-kelam-tengah-kaur-bengkulu-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%201%20toko%20pandu%20kelam%20tengah%20kaur%20bengkulu%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 1 toko pandu kelam tengah kaur bengkulu 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="php-ini-wordpress-location.html">
+                php ini wordpress location 
+                </a>
+                <div class="image-parent">
+                    <a href="php-ini-wordpress-location.html">
+                    <img src="https://tse1.mm.bing.net/th?q=php%20ini%20wordpress%20location&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="php ini wordpress location">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-mengirimkan-formulir-html-ke-google-sheets-tanpa-formulir-google.html">
+                bagaimana cara mengirimkan formulir html ke google sheets tanpa formulir google 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-mengirimkan-formulir-html-ke-google-sheets-tanpa-formulir-google.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20mengirimkan%20formulir%20html%20ke%20google%20sheets%20tanpa%20formulir%20google&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara mengirimkan formulir html ke google sheets tanpa formulir google">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="aturan-minum-zinc-tiens-untuk-dewasa.html">
+                aturan minum zinc tiens untuk dewasa 
+                </a>
+                <div class="image-parent">
+                    <a href="aturan-minum-zinc-tiens-untuk-dewasa.html">
+                    <img src="https://tse1.mm.bing.net/th?q=aturan%20minum%20zinc%20tiens%20untuk%20dewasa&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="aturan minum zinc tiens untuk dewasa">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="mengapa-budaya-india-dapat-menyebar-luas-dan-diterima-penduduk-indonesia-pada-masa-dahulu.html">
+                mengapa budaya india dapat menyebar luas dan diterima penduduk indonesia pada masa dahulu 
+                </a>
+                <div class="image-parent">
+                    <a href="mengapa-budaya-india-dapat-menyebar-luas-dan-diterima-penduduk-indonesia-pada-masa-dahulu.html">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20budaya%20india%20dapat%20menyebar%20luas%20dan%20diterima%20penduduk%20indonesia%20pada%20masa%20dahulu&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="mengapa budaya india dapat menyebar luas dan diterima penduduk indonesia pada masa dahulu">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menghilangkan-flek-hitam-di-wajah-yang-membandel-dengan-madu.html">
+                cara menghilangkan flek hitam di wajah yang membandel dengan madu 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menghilangkan-flek-hitam-di-wajah-yang-membandel-dengan-madu.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menghilangkan%20flek%20hitam%20di%20wajah%20yang%20membandel%20dengan%20madu&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menghilangkan flek hitam di wajah yang membandel dengan madu">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menghubungkan-php-ke-formulir-html.html">
+                cara menghubungkan php ke formulir html 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menghubungkan-php-ke-formulir-html.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menghubungkan%20php%20ke%20formulir%20html&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menghubungkan php ke formulir html">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

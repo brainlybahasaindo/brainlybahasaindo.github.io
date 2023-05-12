@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Membuat Login Dan Register Dengan Php Dan Mysqli
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Membuat Login Dan Register Dengan Php Dan Mysqli",
+    "datePublished": "2024-02-28T16:49:36Z",
+    "image": "https://tse1.mm.bing.net/th?q=membuat%20login%20dan%20register%20dengan%20php%20dan%20mysqli",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=membuat%20login%20dan%20register%20dengan%20php%20dan%20mysqli&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=membuat%20login%20dan%20register%20dengan%20php%20dan%20mysqli" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=membuat%20login%20dan%20register%20dengan%20php%20dan%20mysqli" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Membuat Login Dan Register Dengan Php Dan Mysqli
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=membuat%20login%20dan%20register%20dengan%20php%20dan%20mysqli" alt="Tutorial Membuat Register Login Logout Dengan Php Dan Mysqli Mobile" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=membuat%20login%20dan%20register%20dengan%20php%20dan%20mysqli" alt="Tutorial Membuat Register Login Logout Dengan Php Dan Mysqli Mobile" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Tutorial Membuat Register Login Logout Dengan Php Dan Mysqli Mobile from mobillegends.net</figcaption></figure><p>Di tahun 2023 ini, teknologi memiliki peran yang sangat penting. Salah satunya adalah membuat login dan register dengan PHP dan MySQLi. Prosesnya cukup mudah dan dapat dilakukan dengan cepat. Pada artikel ini, kita akan membahas bagaimana cara membuat login dan register dengan PHP dan MySQLi. Jadi, mari kita mulai!</p><h2>1. Persiapan</h2><p>Sebelum kita mulai membuat login dan register dengan PHP dan MySQLi, kita perlu mempersiapkan beberapa hal. Yang pertama adalah web server yang akan kita gunakan. Kami menggunakan XAMPP untuk membuat web server. Yang kedua adalah editor teks. Kami menggunakan Notepad ++ untuk menulis kode. Yang ketiga adalah database. Kami menggunakan phpMyAdmin untuk membuat database.</p><h2>2. Membuat Database</h2><p>Setelah kita mempersiapkan semuanya, kita akan mulai dengan membuat database. Pertama, buka phpMyAdmin dan buat database baru dengan nama “login”. Kemudian, buat tabel baru dengan nama “users”. Tabel ini akan digunakan untuk menyimpan informasi pengguna. Buat beberapa kolom dengan nama “id”, “username”, “password” dan “email”.</p><h2>3. Membuat Halaman Login</h2><p>Setelah kita selesai membuat database, kita akan membuat halaman login. Kita akan membuat halaman HTML untuk halaman login. Halaman ini akan memiliki form login yang digunakan pengguna untuk login. Kami akan menggunakan method POST dan action “login.php” untuk mengirim data.</p><h2>4. Membuat File Login.php</h2><p>Selanjutnya, kita akan membuat file login.php. Ini akan digunakan untuk mengolah data yang dikirim dari halaman login. Pertama, kita akan membuat koneksi ke database dan menyiapkan query untuk memeriksa apakah pengguna telah terdaftar. Kami akan menggunakan username dan password yang dikirimkan dari halaman login untuk memverifikasi pengguna. Jika pengguna terdaftar, kami akan mengarahkan pengguna ke halaman utama. Jika tidak, kami akan menampilkan pesan kesalahan yang menunjukkan bahwa pengguna belum terdaftar.</p><h2>5. Membuat Halaman Register</h2><p>Setelah kita selesai membuat file login.php, kita akan membuat halaman register. Halaman ini akan memiliki form register yang digunakan oleh pengguna untuk mendaftar. Kami akan menggunakan method POST dan action “register.php” untuk mengirim data.</p><h2>6. Membuat File Register.php</h2><p>Selanjutnya, kita akan membuat file register.php. Ini akan digunakan untuk mengolah data yang dikirim dari halaman register. Pertama, kita akan membuat koneksi ke database dan menyiapkan query untuk menambahkan data pengguna. Kami akan menggunakan username, password, dan email yang dikirimkan dari halaman register untuk menambahkan data pengguna. Jika data berhasil ditambahkan, kami akan mengarahkan pengguna ke halaman login. Jika tidak, kami akan menampilkan pesan kesalahan yang menunjukkan bahwa pengguna gagal mendaftar.</p><h2>7. Membuat Halaman Logout</h2><p>Setelah kita selesai membuat file register.php, kita akan membuat halaman logout. Halaman ini akan digunakan untuk menghapus session pengguna dan mengarahkan pengguna kembali ke halaman login. Kami akan menggunakan fungsi session_destroy() untuk menghapus session pengguna.</p><h2>8. Penutupan Koneksi Database</h2><p>Setelah kita selesai dengan semua halaman, kita harus menutup koneksi ke database. Kami akan menggunakan fungsi mysql_close() untuk menutup koneksi. Ini akan memastikan bahwa koneksi tidak terus-menerus terbuka dan menggunakan sumber daya yang tidak perlu.</p><h2>9. Pengujian</h2><p>Ketika kita selesai dengan semua hal, kita akan melakukan pengujian untuk memastikan bahwa semuanya berjalan dengan baik. Kami akan mencoba mengakses semua halaman, membuat akun, dan login untuk memastikan bahwa semuanya berjalan sebagaimana mestinya.</p><h2>10. Selesai!</h2><p>Setelah kita melakukan pengujian, kita telah selesai membuat login dan register dengan PHP dan MySQLi. Kami telah membuat halaman login, register, dan logout. Kami juga telah membuat file login.php dan register.php untuk mengolah data yang dikirim dari halaman login dan register. Kami telah menutup koneksi ke database. Selanjutnya, kita dapat menambahkan fitur tambahan seperti lupa password untuk membuat aplikasi lebih lengkap.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="permasalahan-kurikulum-di-indonesia-dan-solusinya.html">
+                permasalahan kurikulum di indonesia dan solusinya 
+                </a>
+                <div class="image-parent">
+                    <a href="permasalahan-kurikulum-di-indonesia-dan-solusinya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=permasalahan%20kurikulum%20di%20indonesia%20dan%20solusinya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="permasalahan kurikulum di indonesia dan solusinya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="unsur-tari-yang-menilai-keindahan-tari-berdasarkan-penampilan-visual-penarinya-disebut.html">
+                unsur tari yang menilai keindahan tari berdasarkan penampilan visual penarinya disebut 
+                </a>
+                <div class="image-parent">
+                    <a href="unsur-tari-yang-menilai-keindahan-tari-berdasarkan-penampilan-visual-penarinya-disebut.html">
+                    <img src="https://tse1.mm.bing.net/th?q=unsur%20tari%20yang%20menilai%20keindahan%20tari%20berdasarkan%20penampilan%20visual%20penarinya%20disebut&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="unsur tari yang menilai keindahan tari berdasarkan penampilan visual penarinya disebut">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-list-to-sqlite-python.html">
+                cara menggunakan list to sqlite python 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-list-to-sqlite-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20list%20to%20sqlite%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan list to sqlite python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cetak-angka-genap-dengan-python-menggunakan-while-loop.html">
+                cetak angka genap dengan python menggunakan while loop 
+                </a>
+                <div class="image-parent">
+                    <a href="cetak-angka-genap-dengan-python-menggunakan-while-loop.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cetak%20angka%20genap%20dengan%20python%20menggunakan%20while%20loop&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cetak angka genap dengan python menggunakan while loop">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-mengurutkan-data-di-google-sheets.html">
+                bagaimana cara mengurutkan data di google sheets 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-mengurutkan-data-di-google-sheets.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20mengurutkan%20data%20di%20google%20sheets&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara mengurutkan data di google sheets">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="urgensi-psikologi-pendidikan-menurut-para-ahli.html">
+                urgensi psikologi pendidikan menurut para ahli 
+                </a>
+                <div class="image-parent">
+                    <a href="urgensi-psikologi-pendidikan-menurut-para-ahli.html">
+                    <img src="https://tse1.mm.bing.net/th?q=urgensi%20psikologi%20pendidikan%20menurut%20para%20ahli&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="urgensi psikologi pendidikan menurut para ahli">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-memasang-kabel-pompa-air-shimizu-3-kabel.html">
+                cara memasang kabel pompa air shimizu 3 kabel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-memasang-kabel-pompa-air-shimizu-3-kabel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20memasang%20kabel%20pompa%20air%20shimizu%203%20kabel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara memasang kabel pompa air shimizu 3 kabel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="program-penjualan-dengan-php.html">
+                program penjualan dengan php 
+                </a>
+                <div class="image-parent">
+                    <a href="program-penjualan-dengan-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=program%20penjualan%20dengan%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="program penjualan dengan php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-belajar-bahasa-inggris-otodidak.html">
+                bagaimana cara belajar bahasa inggris otodidak 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-belajar-bahasa-inggris-otodidak.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20belajar%20bahasa%20inggris%20otodidak&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara belajar bahasa inggris otodidak">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-to-open-and-edit-php-file.html">
+                how to open and edit php file 
+                </a>
+                <div class="image-parent">
+                    <a href="how-to-open-and-edit-php-file.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20open%20and%20edit%20php%20file&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how to open and edit php file">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

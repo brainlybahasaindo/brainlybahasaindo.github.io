@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menggunakan Grails Mysql 8
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Grails Mysql 8",
+    "datePublished": "2023-11-28T23:58:59Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20grails%20mysql%208",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20grails%20mysql%208&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20grails%20mysql%208" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20grails%20mysql%208" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menggunakan Grails Mysql 8
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20grails%20mysql%208" alt="Cara Remote MySQL Yang Tepat" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20grails%20mysql%208" alt="Cara Remote MySQL Yang Tepat" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Cara Remote MySQL Yang Tepat from idwebhost.com</figcaption></figure><p>MySQL 8 adalah versi terbaru dari database open source yang populer dan banyak digunakan. Penggunaan MySQL telah meningkat sejak diluncurkan pada tahun 2018. Salah satu alasan utama popularitasnya adalah bahwa MySQL 8 tersedia untuk digunakan dengan banyak bahasa pemrograman seperti Java, PHP, dan Go. Salah satu bahasa pemrograman yang dapat digunakan dengan MySQL 8 adalah Grails. Grails adalah bahasa pemrograman yang berbasis Java yang dapat digunakan untuk menulis aplikasi web. Berikut ini adalah cara menggunakan Grails MySQL 8.</p><h2>Langkah 1: Instalasi Grails</h2><p>Untuk dapat menggunakan Grails dengan MySQL 8, Anda harus terlebih dahulu menginstal Grails. Grails dapat diunduh dari situs web Grails.org. Setelah mengunduh, Anda harus mengikuti petunjuk instalasi untuk menginstal Grails di sistem Anda. Grails dapat diinstal di sistem Windows, Mac, dan Linux. Setelah menginstal, Anda dapat memulai menggunakan Grails.</p><h2>Langkah 2: Instalasi Plugin MySQL</h2><p>Plugin MySQL harus diinstal untuk dapat menggunakan Grails dengan MySQL 8. Plugin MySQL dapat diunduh dari situs web Grails.org. Setelah mengunduh, Anda harus mengikuti petunjuk instalasi untuk menginstal plugin MySQL di sistem Anda. Setelah menginstal, Anda dapat mulai menggunakan plugin MySQL.</p><h2>Langkah 3: Konfigurasi Database</h2><p>Setelah menginstal Grails dan plugin MySQL, Anda harus mengkonfigurasi database. Konfigurasi database berarti Anda harus mengatur username dan password untuk database, membuat user untuk database, dan mengatur hak akses. Semua informasi konfigurasi ini dapat ditemukan di dokumentasi MySQL 8. Setelah selesai, Anda dapat memulai mengakses dan menggunakan database.</p><h2>Langkah 4: Install Driver JDBC</h2><p>Untuk dapat menggunakan Grails dengan MySQL 8, Anda harus menginstal driver JDBC. Driver JDBC adalah sebuah program yang dapat digunakan untuk menghubungkan aplikasi Grails dengan database MySQL. Driver JDBC dapat diunduh dari situs web MySQL 8. Setelah mengunduh, Anda harus mengikuti petunjuk instalasi untuk menginstal driver JDBC di sistem Anda. Setelah menginstal, Anda dapat mulai menggunakan driver JDBC.</p><h2>Langkah 5: Buat Aplikasi Grails</h2><p>Setelah menginstal Grails, plugin MySQL, dan driver JDBC, Anda dapat memulai membuat aplikasi Grails. Aplikasi Grails dapat dibuat dengan banyak cara berbeda. Anda dapat menggunakan bahasa pemrograman Java untuk menulis aplikasi Grails. Anda juga dapat menggunakan banyak framework seperti Spring, Hibernate, dan lainnya untuk membuat aplikasi Grails. Setelah selesai membuat aplikasi, Anda dapat mulai menggunakan aplikasi dengan MySQL 8.</p><h2>Langkah 6: Menggunakan Aplikasi Grails</h2><p>Setelah aplikasi Grails selesai dibuat, Anda dapat mulai menggunakannya. Anda dapat menggunakan aplikasi Grails untuk mengakses dan mengelola data di database MySQL 8. Anda juga dapat menggunakan aplikasi Grails untuk membuat laporan, melakukan analisis data, dan melakukan banyak lagi. Aplikasi Grails dapat digunakan secara efisien dengan banyak fitur yang tersedia.</p><h2>Langkah 7: Memperbarui Database</h2><p>Ketika Anda menggunakan aplikasi Grails dengan MySQL 8, Anda harus memperbarui database secara berkala. Perbaruan database dapat dilakukan dengan cara menambahkan data baru, menghapus data yang sudah ada, dan memperbarui data yang ada. Perbaruan database dapat dilakukan dengan menggunakan perintah SQL yang diketikkan di konsol. Anda juga dapat menggunakan aplikasi Grails untuk melakukan perbaruan database secara efisien.</p><h2>Langkah 8: Mengelola Database</h2><p>Database dapat dikelola dengan menggunakan aplikasi Grails. Anda dapat menggunakan aplikasi Grails untuk mengelola database dengan cara menambahkan data baru, menghapus data yang sudah ada, dan memperbarui data yang ada. Anda juga dapat menggunakan aplikasi Grails untuk membuat laporan, melakukan analisis data, dan melakukan banyak lagi. Dengan aplikasi Grails, Anda dapat dengan mudah mengelola dan mengontrol database MySQL 8.</p><h2>Langkah 9: Membuat Laporan</h2><p>Aplikasi Grails dapat digunakan untuk membuat laporan yang berisi data dari database MySQL 8. Anda dapat membuat laporan dengan menggunakan bahasa pemrograman Java maupun dengan menggunakan framework seperti Spring, Hibernate, dan lainnya. Anda juga dapat menggunakan aplikasi Grails untuk melakukan analisis data dan membuat laporan yang sesuai dengan kebutuhan Anda.</p><h2>Langkah 10: Analisis Data</h2><p>Aplikasi Grails juga dapat digunakan untuk melakukan analisis data. Anda dapat menggunakan aplikasi Grails untuk menganalisis data dari database MySQL 8. Analisis data dapat meliputi mencari pola, mencari hubungan antar data, dan lainnya. Dengan aplikasi Grails, Anda dapat melakukan analisis data secara efisien dan akurat.</p><h3>Kesimpulan</h3><p>Cara menggunakan Grails MySQL 8 adalah dengan menginstal Grails, plugin MySQL, driver JDBC, dan membuat aplikasi Grails. Anda juga dapat menggunakan aplikasi Grails untuk memperbarui database, mengelola database, membuat laporan, dan melakukan analisis data. Dengan aplikasi Grails, Anda dapat dengan mudah mengelola dan mengontrol database MySQL 8.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-memindahkan-data-game-ke-kartu-sd-di-hp-xiaomi.html">
+                cara memindahkan data game ke kartu sd di hp xiaomi 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-memindahkan-data-game-ke-kartu-sd-di-hp-xiaomi.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20memindahkan%20data%20game%20ke%20kartu%20sd%20di%20hp%20xiaomi&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara memindahkan data game ke kartu sd di hp xiaomi">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="kapan-waktu-terbaik-makan-buah-mangga.html">
+                kapan waktu terbaik makan buah mangga 
+                </a>
+                <div class="image-parent">
+                    <a href="kapan-waktu-terbaik-makan-buah-mangga.html">
+                    <img src="https://tse1.mm.bing.net/th?q=kapan%20waktu%20terbaik%20makan%20buah%20mangga&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="kapan waktu terbaik makan buah mangga">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menghubungkan-google-ke-python.html">
+                bagaimana cara menghubungkan google ke python 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menghubungkan-google-ke-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menghubungkan%20google%20ke%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menghubungkan google ke python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menginstal-kode-pustaka-python-di-visual-studio.html">
+                bagaimana cara menginstal kode pustaka python di visual studio 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menginstal-kode-pustaka-python-di-visual-studio.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menginstal%20kode%20pustaka%20python%20di%20visual%20studio&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menginstal kode pustaka python di visual studio">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="plugin-recaptcha-terbaik-untuk-wordpress.html">
+                plugin recaptcha terbaik untuk wordpress 
+                </a>
+                <div class="image-parent">
+                    <a href="plugin-recaptcha-terbaik-untuk-wordpress.html">
+                    <img src="https://tse1.mm.bing.net/th?q=plugin%20recaptcha%20terbaik%20untuk%20wordpress&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="plugin recaptcha terbaik untuk wordpress">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-background-position-css.html">
+                cara menggunakan background position css 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-background-position-css.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20background%20position%20css&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan background position css">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="php-dalam-bahasa-inggris.html">
+                php dalam bahasa inggris 
+                </a>
+                <div class="image-parent">
+                    <a href="php-dalam-bahasa-inggris.html">
+                    <img src="https://tse1.mm.bing.net/th?q=php%20dalam%20bahasa%20inggris&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="php dalam bahasa inggris">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="dasar-penyusunan-laporan-arus-kas-dengan-metode-langsung-adalah.html">
+                dasar penyusunan laporan arus kas dengan metode langsung adalah 
+                </a>
+                <div class="image-parent">
+                    <a href="dasar-penyusunan-laporan-arus-kas-dengan-metode-langsung-adalah.html">
+                    <img src="https://tse1.mm.bing.net/th?q=dasar%20penyusunan%20laporan%20arus%20kas%20dengan%20metode%20langsung%20adalah&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="dasar penyusunan laporan arus kas dengan metode langsung adalah">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="dapatkan-ekstensi-dari-nama-file-javascript.html">
+                dapatkan ekstensi dari nama file javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="dapatkan-ekstensi-dari-nama-file-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=dapatkan%20ekstensi%20dari%20nama%20file%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="dapatkan ekstensi dari nama file javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-yang-menghapus-lakukan-dengan-python.html">
+                apa yang menghapus lakukan dengan python 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-yang-menghapus-lakukan-dengan-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20menghapus%20lakukan%20dengan%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa yang menghapus lakukan dengan python">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

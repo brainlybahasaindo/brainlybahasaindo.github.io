@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Apakah Objek Php Lewat Referensi?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Apakah Objek Php Lewat Referensi",
+    "datePublished": "2023-11-03T00:38:25Z",
+    "image": "https://tse1.mm.bing.net/th?q=apakah%20objek%20php%20lewat%20referensi",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=apakah%20objek%20php%20lewat%20referensi&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=apakah%20objek%20php%20lewat%20referensi" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=apakah%20objek%20php%20lewat%20referensi" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Apakah Objek Php Lewat Referensi?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=apakah%20objek%20php%20lewat%20referensi" alt="Jawaban Peristiwa Atau Objek Apakah yang Nampak Pada Kedua Gambar di Atas" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=apakah%20objek%20php%20lewat%20referensi" alt="Jawaban Peristiwa Atau Objek Apakah yang Nampak Pada Kedua Gambar di Atas" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Jawaban Peristiwa Atau Objek Apakah yang Nampak Pada Kedua Gambar di Atas from oriflameid.com</figcaption></figure><p>Ketika berbicara tentang objek dalam bahasa pemrograman PHP, referensi sering menjadi topik yang kompleks. Sebagian besar pemrogram menganggapnya sebagai hal yang rumit, tetapi pahamilah bahwa begitu Anda mengerti mekanisme dasarnya, semuanya akan terasa jauh lebih sederhana. Dalam artikel ini, kita akan membahas apa itu objek PHP lewat referensi, bagaimana dan kapan Anda harus menggunakannya, dan beberapa contoh implementasi.</p><h2>Apa Itu Referensi PHP?</h2><p>Seperti yang disebutkan sebelumnya, sebelum membahas lebih lanjut tentang objek PHP lewat referensi, mari kita lihat apa itu referensi dalam bahasa pemrograman PHP. Referensi adalah mekanisme yang digunakan untuk menyimpan alamat memori dari objek tertentu. Ini berarti bahwa ketika Anda membuat referensi dari sebuah objek, Anda tidak membuat salinan objek tersebut, melainkan menyimpan alamat memori dari objek tersebut. Ketika Anda membuat referensi, Anda sebenarnya tidak menyimpan nilai dari objek, melainkan hanya menyimpan alamat memori dari objek tersebut. Ini berarti bahwa ketika Anda membuat referensi, Anda tidak menghabiskan memori untuk menyimpan nilai dari objek, melainkan hanya menyimpan alamat memori dari objek tersebut.</p><h2>Bagaimana Membuat Objek PHP Lewat Referensi?</h2><p>Ada dua cara untuk membuat objek PHP lewat referensi. Pertama, Anda dapat menggunakan operator & untuk membuat referensi. Kedua, Anda dapat menggunakan fungsi bawaan PHP, yaitu fungsi create_function(). Operator & adalah cara yang paling umum digunakan untuk membuat referensi. Jika Anda menggunakan operator &, maka Anda harus menggunakannya sebelum mengakses objek. Jadi, misalnya jika Anda ingin mengakses properti dari objek, maka Anda harus menggunakan operator & sebelumnya. Berikut adalah contoh sederhana dari cara menggunakan operator & untuk membuat referensi dari objek:</p><p>$obj = new stdClass;<br /> $ref = &$obj;</p><h2>Kapan Harus Menggunakan Referensi?</h2><p>Referensi dapat digunakan ketika Anda ingin mengubah nilai dari objek tanpa harus membuat salinan dari objek tersebut. Misalnya, jika Anda membuat sebuah array dan ingin mengubah nilai dari sebuah elemen array, Anda dapat menggunakan referensi untuk mengubah nilai dari elemen array tanpa harus membuat salinan array tersebut. Referensi juga dapat digunakan jika Anda ingin mengirimkan nilai dari sebuah objek ke sebuah fungsi tanpa harus membuat salinan objek tersebut. Anda juga dapat menggunakan referensi jika Anda ingin mengakses properti dari sebuah objek tanpa harus membuat salinan objek tersebut.</p><h2>Contoh Implementasi Referensi</h2><p>Berikut adalah contoh sederhana dari cara menggunakan referensi untuk mengakses properti dari sebuah objek:</p><p>$obj = new stdClass();<br /> $obj->name ='John Doe';<br /> $ref = &$obj;<br /> echo $ref->name; // output: John Doe</p><h2>Kesimpulan</h2><p>Referensi PHP adalah mekanisme yang digunakan untuk menyimpan alamat memori dari objek tertentu. Anda dapat menggunakan referensi untuk mengubah nilai dari objek tanpa harus membuat salinan dari objek tersebut, mengirimkan nilai dari sebuah objek ke sebuah fungsi tanpa harus membuat salinan objek tersebut, dan mengakses properti dari objek tanpa harus membuat salinan objek tersebut. Operator & adalah cara yang paling umum digunakan untuk membuat referensi. Anda juga dapat menggunakan fungsi bawaan PHP, yaitu fungsi create_function() untuk membuat referensi. Dengan memahami mekanisme dasar referensi, Anda akan dapat dengan mudah memahami cara kerja objek PHP lewat referensi.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-much-a-wordpress-developer-earn.html">
+                how much a wordpress developer earn 
+                </a>
+                <div class="image-parent">
+                    <a href="how-much-a-wordpress-developer-earn.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20much%20a%20wordpress%20developer%20earn&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how much a wordpress developer earn">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-mengarahkan-ulang-di-php.html">
+                bagaimana cara mengarahkan ulang di php 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-mengarahkan-ulang-di-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20mengarahkan%20ulang%20di%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara mengarahkan ulang di php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="buatlah-10-soal-structure-multiple-choice-choosing-the-best-answer-beserta-jawabannya.html">
+                buatlah 10 soal structure multiple choice choosing the best answer beserta jawabannya 
+                </a>
+                <div class="image-parent">
+                    <a href="buatlah-10-soal-structure-multiple-choice-choosing-the-best-answer-beserta-jawabannya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=buatlah%2010%20soal%20structure%20multiple%20choice%20choosing%20the%20best%20answer%20beserta%20jawabannya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="buatlah 10 soal structure multiple choice choosing the best answer beserta jawabannya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="sebutkan-3-ketuhanan-menurut-dasar-kemanusiaan-dalam-lingkungan-bangsa-dan-negara.html">
+                sebutkan 3 ketuhanan menurut dasar kemanusiaan dalam lingkungan bangsa dan negara 
+                </a>
+                <div class="image-parent">
+                    <a href="sebutkan-3-ketuhanan-menurut-dasar-kemanusiaan-dalam-lingkungan-bangsa-dan-negara.html">
+                    <img src="https://tse1.mm.bing.net/th?q=sebutkan%203%20ketuhanan%20menurut%20dasar%20kemanusiaan%20dalam%20lingkungan%20bangsa%20dan%20negara&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="sebutkan 3 ketuhanan menurut dasar kemanusiaan dalam lingkungan bangsa dan negara">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-contoh-soal-array-php.html">
+                cara menggunakan contoh soal array php 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-contoh-soal-array-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20contoh%20soal%20array%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan contoh soal array php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apakah-dosa-jika-kita-membuang-kucing.html">
+                apakah dosa jika kita membuang kucing 
+                </a>
+                <div class="image-parent">
+                    <a href="apakah-dosa-jika-kita-membuang-kucing.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apakah%20dosa%20jika%20kita%20membuang%20kucing&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apakah dosa jika kita membuang kucing">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="kredit-hp-di-akulaku-apakah-aman.html">
+                kredit hp di akulaku apakah aman 
+                </a>
+                <div class="image-parent">
+                    <a href="kredit-hp-di-akulaku-apakah-aman.html">
+                    <img src="https://tse1.mm.bing.net/th?q=kredit%20hp%20di%20akulaku%20apakah%20aman&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="kredit hp di akulaku apakah aman">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-python-combine-image.html">
+                cara menggunakan python combine image 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-python-combine-image.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20combine%20image&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan python combine image">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="di-mana-situs-wordpress-saya-dihosting.html">
+                di mana situs wordpress saya dihosting 
+                </a>
+                <div class="image-parent">
+                    <a href="di-mana-situs-wordpress-saya-dihosting.html">
+                    <img src="https://tse1.mm.bing.net/th?q=di%20mana%20situs%20wordpress%20saya%20dihosting&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="di mana situs wordpress saya dihosting">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menemukan-kata-sandi-mysql-saya-di-windows.html">
+                bagaimana cara menemukan kata sandi mysql saya di windows 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menemukan-kata-sandi-mysql-saya-di-windows.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menemukan%20kata%20sandi%20mysql%20saya%20di%20windows&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menemukan kata sandi mysql saya di windows">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

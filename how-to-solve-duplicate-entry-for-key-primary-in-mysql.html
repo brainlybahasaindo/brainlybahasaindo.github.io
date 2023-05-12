@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bagaimana Cara Mengatasi Duplikat Masukan Untuk Kunci Utama Dalam Mysql?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "How To Solve Duplicate Entry For Key Primary In Mysql",
+    "datePublished": "2023-07-22T09:30:18Z",
+    "image": "https://tse1.mm.bing.net/th?q=how%20to%20solve%20duplicate%20entry%20for%20key%20primary%20in%20mysql",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=how%20to%20solve%20duplicate%20entry%20for%20key%20primary%20in%20mysql&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20solve%20duplicate%20entry%20for%20key%20primary%20in%20mysql" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20solve%20duplicate%20entry%20for%20key%20primary%20in%20mysql" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bagaimana Cara Mengatasi Duplikat Masukan Untuk Kunci Utama Dalam Mysql?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=how%20to%20solve%20duplicate%20entry%20for%20key%20primary%20in%20mysql" alt="mysql 1062 Duplicate entry 0&#039; for key &#039;PRIMARY&#039; Stack Overflow" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=how%20to%20solve%20duplicate%20entry%20for%20key%20primary%20in%20mysql" alt="mysql 1062 Duplicate entry 0&#039; for key &#039;PRIMARY&#039; Stack Overflow" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>mysql 1062 Duplicate entry 0&#039; for key &#039;PRIMARY&#039; Stack Overflow from stackoverflow.com</figcaption></figure><p>Ketika menggunakan basis data MySQL, Anda harus memahami bagaimana membuat dan memelihara kunci utama. Kunci utama adalah kolom atau grup kolom yang berisi nilai unik. Setiap nilai di dalam kolom ini harus unik. Jika Anda mencoba memasukkan nilai yang sudah ada, Anda akan mendapatkan kesalahan 'duplikat masukan untuk kunci utama'.</p><p>Meskipun ini mungkin terdengar menakutkan, Anda dapat dengan mudah mengatasinya. Ini adalah cara yang lebih aman dan efisien untuk mengatur basis data Anda. Ini adalah beberapa cara yang dapat Anda lakukan untuk mengatasi masalah ini.</p><h2>1. Memeriksa Nilai-nilai yang Sudah Ada</h2><p>Jika Anda mencoba memasukkan nilai yang sudah ada ke dalam kolom kunci utama Anda, Anda harus memeriksa nilai-nilai yang sudah ada. Anda dapat melakukannya dengan menggunakan perintah SELECT. Ini adalah perintah SQL yang akan memungkinkan Anda mengambil dan menampilkan nilai-nilai yang sudah ada. Anda dapat menggunakan perintah ini untuk memeriksa dan memastikan bahwa nilai yang Anda masukkan tidak sudah ada di tabel. Jika nilai sudah ada, Anda harus menghapusnya atau membuat nilai yang baru sebelum melanjutkan.</p><h2>2. Memeriksa Tipe Kolom</h2><p>Ketika membuat kunci utama, Anda harus memastikan bahwa tipe kolom yang Anda pilih sesuai dengan nilai yang akan Anda masukkan. Jika Anda mencoba memasukkan nilai karakter ke dalam kolom integer, Anda akan mendapatkan kesalahan. Anda harus memastikan bahwa tipe kolom yang Anda gunakan sesuai dengan nilai yang akan Anda masukkan. Jika Anda tidak yakin tentang tipe kolom yang harus Anda gunakan, Anda harus memeriksa dokumentasi MySQL atau berkonsultasi dengan pengembang basis data Anda.</p><h2>3. Menggunakan Perintah REPLACE</h2><p>Perintah REPLACE akan menghapus nilai yang sudah ada dan menggantinya dengan yang baru. Ini adalah cara yang bagus untuk mengganti nilai tanpa harus menghapus baris yang ada. Ini juga memungkinkan Anda untuk menggantikan nilai yang sudah ada dengan nilai yang baru tanpa harus membuat data yang baru. Perintah ini juga akan memungkinkan Anda untuk menghindari kesalahan 'duplikat masukan untuk kunci utama'.</p><h2>4. Menggunakan Perintah INSERT IGNORE</h2><p>Perintah INSERT IGNORE akan menambahkan data baru ke tabel tanpa menghapus nilai yang sudah ada. Ini berarti bahwa jika Anda mencoba memasukkan data dengan nilai yang sudah ada, perintah ini akan mengabaikan nilai yang sudah ada dan menambahkan data baru. Ini adalah cara yang bagus untuk memastikan bahwa data Anda tetap aman dan tidak terganggu oleh nilai yang sudah ada.</p><h2>5. Menggunakan Perintah UPDATE</h2><p>Perintah UPDATE adalah cara lain untuk memastikan bahwa nilai yang sudah ada tetap aman. Ini adalah perintah SQL yang akan memungkinkan Anda untuk memperbarui nilai-nilai yang sudah ada. Jika Anda mencoba memasukkan nilai yang sudah ada, Anda dapat menggunakan perintah ini untuk memperbarui nilai yang sudah ada dengan nilai yang baru. Ini adalah cara yang bagus untuk memastikan bahwa data Anda tetap aman dan tidak terganggu oleh nilai-nilai yang sudah ada.</p><h2>6. Menggunakan Perintah REPLACE INTO</h2><p>Perintah REPLACE INTO adalah cara lain untuk menghindari kesalahan 'duplikat masukan untuk kunci utama'. Ini adalah perintah SQL yang akan menghapus nilai yang sudah ada dan menggantinya dengan nilai yang baru. Ini adalah cara yang bagus untuk memastikan bahwa data Anda tetap aman dan tidak terganggu oleh nilai-nilai yang sudah ada.</p><h2>7. Menggunakan Perintah DELETE</h2><p>Perintah DELETE adalah cara lain untuk menghindari kesalahan 'duplikat masukan untuk kunci utama'. Ini adalah perintah SQL yang akan menghapus baris yang berisi nilai yang sudah ada. Ini adalah cara yang bagus untuk memastikan bahwa data Anda tetap aman dan tidak terganggu oleh nilai-nilai yang sudah ada. Jika Anda ingin menggunakan cara ini, Anda harus memastikan bahwa Anda memiliki cara lain untuk memasukkan data.</p><h2>8. Menggunakan Perintah ALTER TABLE</h2><p>Perintah ALTER TABLE adalah cara lain untuk menghindari kesalahan 'duplikat masukan untuk kunci utama'. Ini adalah perintah SQL yang akan memungkinkan Anda untuk mengubah kolom kunci utama. Dengan menggunakan perintah ini, Anda dapat mengubah kolom kunci utama dari satu tipe data ke tipe data lain. Ini adalah cara yang bagus untuk memastikan bahwa nilai yang sudah ada tetap aman.</p><h2>9. Menggunakan Perintah TRUNCATE TABLE</h2><p>Perintah TRUNCATE TABLE adalah cara lain untuk menghindari kesalahan 'duplikat masukan untuk kunci utama'. Ini adalah perintah SQL yang akan menghapus semua baris dalam tabel secara permanen. Ini adalah cara yang bagus untuk memastikan bahwa nilai yang sudah ada tetap aman. Jika Anda menggunakan cara ini, Anda harus memastikan bahwa Anda memiliki cara lain untuk memasukkan data.</p><h2>10. Menggunakan Perintah BEGIN TRANSACTION</h2><p>Perintah BEGIN TRANSACTION adalah cara lain untuk menghindari kesalahan 'duplikat masukan untuk kunci utama'. Ini adalah perintah SQL yang akan memungkinkan Anda untuk memulai transaksi. Dengan menggunakan perintah ini, Anda dapat memastikan bahwa data yang Anda masukkan tetap aman dan tidak terganggu oleh nilai-nilai yang sudah ada. Ini adalah cara yang bagus untuk memastikan bahwa data Anda tetap aman dan tidak terganggu oleh nilai-nilai yang sudah ada.</p><p>Dengan demikian, Anda dapat dengan mudah mengatasi masalah 'duplikat masukan untuk kunci utama' dalam MySQL. Ini adalah cara yang aman dan efisien untuk mengatur basis data Anda. Semoga artikel ini bermanfaat bagi Anda. Terima kasih.</p></code></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menautkan-sel-ke-lembar-lain.html">
+                bagaimana cara menautkan sel ke lembar lain 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menautkan-sel-ke-lembar-lain.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menautkan%20sel%20ke%20lembar%20lain&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menautkan sel ke lembar lain">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-python-constant-array.html">
+                cara menggunakan python constant array 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-python-constant-array.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20constant%20array&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan python constant array">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="periksa-python-versi-konektor-mysql.html">
+                periksa python versi konektor mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="periksa-python-versi-konektor-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=periksa%20python%20versi%20konektor%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="periksa python versi konektor mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-you-fix-negative-values-in-python.html">
+                how do you fix negative values in python 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-you-fix-negative-values-in-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20you%20fix%20negative%20values%20in%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do you fix negative values in python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menggunakan-memanggil-css-dalam-html.html">
+                bagaimana cara menggunakan memanggil css dalam html 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menggunakan-memanggil-css-dalam-html.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menggunakan%20memanggil%20css%20dalam%20html&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menggunakan memanggil css dalam html">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-tanggal-php.html">
+                cara menggunakan tanggal php 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-tanggal-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20tanggal%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan tanggal php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menghubungkan-google-ke-python.html">
+                bagaimana cara menghubungkan google ke python 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menghubungkan-google-ke-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menghubungkan%20google%20ke%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menghubungkan google ke python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jawaban-tema-3-kelas-3-halaman-53.html">
+                jawaban tema 3 kelas 3 halaman 53 
+                </a>
+                <div class="image-parent">
+                    <a href="jawaban-tema-3-kelas-3-halaman-53.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jawaban%20tema%203%20kelas%203%20halaman%2053&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jawaban tema 3 kelas 3 halaman 53">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="putar-otomatis-video-html-dengan-suara.html">
+                putar otomatis video html dengan suara 
+                </a>
+                <div class="image-parent">
+                    <a href="putar-otomatis-video-html-dengan-suara.html">
+                    <img src="https://tse1.mm.bing.net/th?q=putar%20otomatis%20video%20html%20dengan%20suara&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="putar otomatis video html dengan suara">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="alat-elektronik-rumah-tangga-apa-aja-yang-menghasilkan-energi-gerak-minimal-5-contoh.html">
+                alat elektronik rumah tangga apa aja yang menghasilkan energi gerak minimal 5 contoh 
+                </a>
+                <div class="image-parent">
+                    <a href="alat-elektronik-rumah-tangga-apa-aja-yang-menghasilkan-energi-gerak-minimal-5-contoh.html">
+                    <img src="https://tse1.mm.bing.net/th?q=alat%20elektronik%20rumah%20tangga%20apa%20aja%20yang%20menghasilkan%20energi%20gerak%20minimal%205%20contoh&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="alat elektronik rumah tangga apa aja yang menghasilkan energi gerak minimal 5 contoh">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

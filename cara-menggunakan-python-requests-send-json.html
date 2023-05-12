@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menggunakan Python Requests Untuk Mengirim Json Di Tahun 2023
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Python Requests Send Json",
+    "datePublished": "2023-12-13T20:14:15Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20requests%20send%20json",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20requests%20send%20json&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20requests%20send%20json" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20requests%20send%20json" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menggunakan Python Requests Untuk Mengirim Json Di Tahun 2023
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20requests%20send%20json" alt="Cara menggunakan json pada python flask eofel" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20requests%20send%20json" alt="Cara menggunakan json pada python flask eofel" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Cara menggunakan json pada python flask eofel from eofel.blogspot.com</figcaption></figure><p>Python Requests telah menjadi salah satu cara paling mudah untuk mengirim data JSON dari aplikasi Anda. Ini digunakan oleh berbagai aplikasi web dan mobile untuk mengirim data ke server dan menerima balasan. Python Requests memiliki beberapa fitur yang berguna, seperti kemampuan untuk mengirim data dalam berbagai format, seperti plain-text, JSON, dan lainnya. Ini juga memungkinkan Anda untuk menetapkan parameter pada permintaan, memeriksa status response, dan banyak lagi. Di tahun 2023, Python Requests telah menjadi alat wajib bagi banyak pengembang aplikasi web dan mobile.</p><p>Pada tutorial ini, Anda akan belajar bagaimana cara menggunakan Python Requests untuk mengirim data JSON. Anda akan membuat aplikasi sederhana untuk mengirim data JSON ke server. Kita akan memulai dengan menginstal Python Requests. Anda dapat menginstalnya dengan menggunakan perintah pip install requests di command line. Setelah itu, Anda dapat memulai membuat aplikasi Anda.</p><h2>Membuat Aplikasi Sederhana untuk Mengirim JSON</h2><p>Kita akan membuat aplikasi sederhana untuk mengirim data JSON ke server. Pertama, Anda perlu membuat file Python. Kita akan memanggil file ini "app.py". Setelah itu, Anda dapat menambahkan kode berikut ke file tersebut:</p><p>import requests<br> url ='http://example.com/api/v1/send_data'<br> data = {'name': 'John Doe', 'age': 30}<br> response = requests.post(url, json=data)</p><p>Kode di atas akan mengirim data JSON ke server. Sebagai contoh, kita akan mengirim nama dan usia seseorang. Anda dapat mengirim berbagai jenis data json, seperti array, dictionary, atau bahkan string. Selain itu, Anda juga dapat mengirim header dengan permintaan Anda dengan menambahkan parameter headers ke fungsi post.</p><h2>Memeriksa Response dari Server</h2><p>Setelah mengirim data JSON ke server, Anda dapat memeriksa respons dari server. Anda dapat memeriksa status respons dan data balasan dengan menggunakan properti response. Anda dapat menggunakan properti ini untuk memeriksa apakah data telah berhasil dikirim atau tidak. Sebagai contoh, Anda dapat menggunakan kode berikut untuk memeriksa status respons:</p><p>if response.status_code == 200:<br> print('Data berhasil dikirim')<br> else:<br> print('Data gagal dikirim')</p><p>Selain itu, Anda juga dapat memeriksa data balasan dari server. Data balasan akan berisi informasi tentang apakah data telah berhasil dikirim atau tidak. Sebagai contoh, Anda dapat menggunakan kode berikut untuk memeriksa data balasan:</p><p>response_data = response.json()<br> if response_data['success']:<br> print('Data berhasil dikirim')<br> else:<br> print('Data gagal dikirim')</p><h2>Menggunakan Fungsi Waktu untuk Mengirim Data</h2><p>Python Requests juga memungkinkan Anda untuk menggunakan fungsi waktu untuk mengirim data. Ini berguna jika Anda ingin mengirim data berulang-ulang dalam jangka waktu tertentu. Sebagai contoh, Anda dapat menggunakan kode berikut untuk mengirim data secara berkala:</p><p>import time<br> while True:<br> response = requests.post(url, json=data)<br> time.sleep(60) # sleep for 1 minute</p><p>Kode di atas akan mengirim permintaan setiap menit. Anda dapat mengubah waktu jeda sesuai kebutuhan Anda. Ini juga memungkinkan Anda untuk mengirim data secara real-time dengan menggunakan konsep publikasi-subskripsi.</p><h2>Kesimpulan</h2><p>Python Requests adalah alat yang berguna untuk mengirim data JSON ke server. Di tahun 2023, Python Requests telah menjadi alat wajib bagi banyak pengembang aplikasi web dan mobile. Anda dapat menggunakan Python Requests untuk mengirim data JSON dalam berbagai format, seperti plain-text, JSON, dan lainnya. Selain itu, Anda juga dapat menggunakan fungsi waktu untuk mengirim data secara berkala dan memeriksa status respons dan data balasan dari server.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="faktor-apa-saja-keberhasilan-proses-perlindungan-dan-penegakan-hukum-di-masyarakat.html">
+                faktor apa saja keberhasilan proses perlindungan dan penegakan hukum di masyarakat 
+                </a>
+                <div class="image-parent">
+                    <a href="faktor-apa-saja-keberhasilan-proses-perlindungan-dan-penegakan-hukum-di-masyarakat.html">
+                    <img src="https://tse1.mm.bing.net/th?q=faktor%20apa%20saja%20keberhasilan%20proses%20perlindungan%20dan%20penegakan%20hukum%20di%20masyarakat&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="faktor apa saja keberhasilan proses perlindungan dan penegakan hukum di masyarakat">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-force-restart-a-windows-service.html">
+                how do i force restart a windows service 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-force-restart-a-windows-service.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20force%20restart%20a%20windows%20service&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i force restart a windows service">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="php-dalam-bahasa-inggris.html">
+                php dalam bahasa inggris 
+                </a>
+                <div class="image-parent">
+                    <a href="php-dalam-bahasa-inggris.html">
+                    <img src="https://tse1.mm.bing.net/th?q=php%20dalam%20bahasa%20inggris&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="php dalam bahasa inggris">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-set-up-redirects-in-wordpress.html">
+                how do i set up redirects in wordpress 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-set-up-redirects-in-wordpress.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20set%20up%20redirects%20in%20wordpress&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i set up redirects in wordpress">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="ganti-karakter-terakhir-dalam-string-javascript.html">
+                ganti karakter terakhir dalam string javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="ganti-karakter-terakhir-dalam-string-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=ganti%20karakter%20terakhir%20dalam%20string%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="ganti karakter terakhir dalam string javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-koneksi-postgresql-dengan-laravel.html">
+                cara koneksi postgresql dengan laravel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-koneksi-postgresql-dengan-laravel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20koneksi%20postgresql%20dengan%20laravel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara koneksi postgresql dengan laravel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-to-insert-single-checkbox-value-in-database-using-laravel.html">
+                how to insert single checkbox value in database using laravel 
+                </a>
+                <div class="image-parent">
+                    <a href="how-to-insert-single-checkbox-value-in-database-using-laravel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20insert%20single%20checkbox%20value%20in%20database%20using%20laravel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how to insert single checkbox value in database using laravel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="permasalahan-kurikulum-di-indonesia-dan-solusinya.html">
+                permasalahan kurikulum di indonesia dan solusinya 
+                </a>
+                <div class="image-parent">
+                    <a href="permasalahan-kurikulum-di-indonesia-dan-solusinya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=permasalahan%20kurikulum%20di%20indonesia%20dan%20solusinya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="permasalahan kurikulum di indonesia dan solusinya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="instal-mysql-di-oracle-linux.html">
+                instal mysql di oracle linux 
+                </a>
+                <div class="image-parent">
+                    <a href="instal-mysql-di-oracle-linux.html">
+                    <img src="https://tse1.mm.bing.net/th?q=instal%20mysql%20di%20oracle%20linux&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="instal mysql di oracle linux">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-saja-hal-hal-yang-dapat-dilakukan-untuk-meningkatkan-kualitas-sumber-daya-manusia.html">
+                apa saja hal hal yang dapat dilakukan untuk meningkatkan kualitas sumber daya manusia 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-saja-hal-hal-yang-dapat-dilakukan-untuk-meningkatkan-kualitas-sumber-daya-manusia.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20saja%20hal%20hal%20yang%20dapat%20dilakukan%20untuk%20meningkatkan%20kualitas%20sumber%20daya%20manusia&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa saja hal hal yang dapat dilakukan untuk meningkatkan kualitas sumber daya manusia">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Mengimpor Modul Typescript Di Node Js Panduan Langkah Demi Langkah Dengan Contoh
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Mengimpor Modul Typescript Di Node Js Panduan Langkah Demi Langkah Dengan Contoh",
+    "datePublished": "2024-02-20T15:18:57Z",
+    "image": "https://tse1.mm.bing.net/th?q=mengimpor%20modul%20typescript%20di%20node%20js%20panduan%20langkah%20demi%20langkah%20dengan%20contoh",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=mengimpor%20modul%20typescript%20di%20node%20js%20panduan%20langkah%20demi%20langkah%20dengan%20contoh&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=mengimpor%20modul%20typescript%20di%20node%20js%20panduan%20langkah%20demi%20langkah%20dengan%20contoh" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=mengimpor%20modul%20typescript%20di%20node%20js%20panduan%20langkah%20demi%20langkah%20dengan%20contoh" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Mengimpor Modul Typescript Di Node Js Panduan Langkah Demi Langkah Dengan Contoh
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=mengimpor%20modul%20typescript%20di%20node%20js%20panduan%20langkah%20demi%20langkah%20dengan%20contoh" alt="Tutorial Node.js Apa itu Node.js dan dasardasar Node.js Dicoding Blog" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=mengimpor%20modul%20typescript%20di%20node%20js%20panduan%20langkah%20demi%20langkah%20dengan%20contoh" alt="Tutorial Node.js Apa itu Node.js dan dasardasar Node.js Dicoding Blog" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Tutorial Node.js Apa itu Node.js dan dasardasar Node.js Dicoding Blog from www.dicoding.com</figcaption></figure><p>TypeScript adalah bahasa pemrograman yang berbasis JavaScript. Ia diciptakan oleh Microsoft dan dirilis pada tahun 2012. TypeScript memungkinkan pengembang untuk membuat fungsi dan variabel kompleks secara mudah. TypeScript bisa digunakan untuk menulis kode JavaScript yang lebih bersih dan terstruktur. Bahasa ini juga memungkinkan pengembang untuk menulis kode yang lebih mudah dibaca dan diikuti.</p><p>Node.js adalah platform open source yang dibangun di atas JavaScript. Ia memungkinkan pengembang untuk membuat aplikasi web dan server berbasis JavaScript. Node.js juga memungkinkan pengembang untuk menggunakan TypeScript untuk membuat aplikasi web dan server yang lebih kompleks dan efisien.</p><p>Sebagai pengembang Node.js, Anda mungkin ingin mengimpor modul TypeScript ke Node.js. Ini adalah proses yang mudah yang dapat dilakukan dengan beberapa langkah sederhana. Dalam panduan ini, kami akan memberi Anda panduan yang mudah untuk mengimpor modul TypeScript ke Node.js dengan contoh.</p><h2>Langkah 1: Instal TypeScript</h2><p>Untuk memulai proses, Anda harus menginstal TypeScript di sistem Anda. Ini dapat dilakukan dengan menggunakan NPM (Node Package Manager). Anda dapat menggunakan perintah berikut untuk menginstal TypeScript di sistem Anda.</p><p>npm install -g typescript</p><p>Setelah TypeScript berhasil diinstal, Anda bisa memulai proses mengimpor modul TypeScript ke Node.js.</p><h2>Langkah 2: Buat File TypeScript</h2><p>Selanjutnya, Anda harus membuat file TypeScript. File ini akan mengandung modul TypeScript yang akan diimpor ke Node.js. Anda harus menulis kode TypeScript dalam file ini. File ini akan berisi kode JavaScript yang dapat diimpor ke Node.js. Anda juga dapat menulis kode TypeScript dalam file ini untuk membuat aplikasi yang lebih kompleks.</p><h2>Langkah 3: Kompilasi File TypeScript</h2><p>Setelah Anda membuat file TypeScript, Anda harus mengompilasinya menjadi JavaScript. Anda dapat menggunakan compiler TypeScript untuk mengompilasinya. Anda dapat menggunakan perintah berikut untuk mengompilasi file TypeScript.</p><p>tsc nama_file.ts</p><p>Setelah Anda mengompilasinya, Anda akan mendapatkan file JavaScript yang dapat diimpor ke Node.js.</p><h2>Langkah 4: Impor File JavaScript ke Node.js</h2><p>Selanjutnya, Anda harus mengimpor file JavaScript ke Node.js. Anda dapat menggunakan perintah berikut untuk mengimpor file JavaScript ke Node.js.</p><p>const modul = require('nama_file.js');</p><p>Setelah Anda mengimpor file JavaScript, Anda dapat menggunakannya dalam aplikasi Node.js Anda.</p><h2>Langkah 5: Gunakan Modul TypeScript di Node.js</h2><p>Setelah Anda berhasil mengimpor modul TypeScript, Anda dapat menggunakannya di aplikasi Node.js Anda. Anda dapat menggunakan fungsi dan variabel yang didefinisikan dalam modul TypeScript. Anda juga dapat menggunakan kode TypeScript untuk membuat aplikasi yang lebih kompleks.</p><h2>Contoh</h2><p>Berikut adalah contoh sederhana untuk menggunakan modul TypeScript di Node.js. Ini adalah contoh kode TypeScript yang akan Anda gunakan untuk membuat fungsi sederhana.</p><p>function add(a: number, b: number): number { return a + b; }</p><p>Setelah Anda menulis kode ini, Anda harus mengompilasinya menjadi JavaScript. Anda dapat menggunakan perintah berikut untuk mengompilasinya.</p><p>tsc nama_file.ts</p><p>Setelah Anda berhasil mengompilasinya, Anda harus mengimpor file JavaScript ke Node.js. Anda dapat menggunakan perintah berikut untuk mengimpor file JavaScript.</p><p>const modul = require('nama_file.js');</p><p>Setelah Anda berhasil mengimpor file JavaScript, Anda dapat menggunakan fungsi yang diimpor di Node.js Anda. Anda dapat menggunakan fungsi yang didefinisikan dalam modul TypeScript.</p><p>let hasil = modul.add(2, 3); console.log(hasil);</p><p>Jika Anda menjalankan kode ini, Anda akan mendapatkan hasil 5. Ini adalah contoh sederhana untuk menggunakan modul TypeScript di Node.js.</p><h2>Kesimpulan</h2><p>Mengimpor modul TypeScript ke Node.js adalah proses yang mudah. Anda dapat mengikuti beberapa langkah sederhana untuk mengimpor modul TypeScript dengan berhasil. Langkah-langkah ini meliputi instalasi TypeScript, membuat file TypeScript, kompilasi file TypeScript, dan mengimpor file JavaScript ke Node.js. Setelah Anda mengikuti langkah-langkah ini, Anda dapat dengan mudah mengimpor modul TypeScript ke Node.js.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-15-toko-baru-serasan-natuna-kepulauan-riau-2023.html">
+                top 15 toko baru serasan natuna kepulauan riau 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-15-toko-baru-serasan-natuna-kepulauan-riau-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2015%20toko%20baru%20serasan%20natuna%20kepulauan%20riau%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 15 toko baru serasan natuna kepulauan riau 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-itu-ekspresi-di-mongodb.html">
+                apa itu ekspresi di mongodb 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-itu-ekspresi-di-mongodb.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20ekspresi%20di%20mongodb&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa itu ekspresi di mongodb">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="perbedaan-sqlite-dengan-mysql.html">
+                perbedaan sqlite dengan mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="perbedaan-sqlite-dengan-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=perbedaan%20sqlite%20dengan%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="perbedaan sqlite dengan mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-melakukan-kombinasi-gerak-non-lokomotor-dan-manipulatif-dalam-gerakan-passing-bawah.html">
+                bagaimana cara melakukan kombinasi gerak non lokomotor dan manipulatif dalam gerakan passing bawah 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-melakukan-kombinasi-gerak-non-lokomotor-dan-manipulatif-dalam-gerakan-passing-bawah.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20melakukan%20kombinasi%20gerak%20non%20lokomotor%20dan%20manipulatif%20dalam%20gerakan%20passing%20bawah&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara melakukan kombinasi gerak non lokomotor dan manipulatif dalam gerakan passing bawah">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-what-is-phpmyadmin-interface.html">
+                cara menggunakan what is phpmyadmin interface 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-what-is-phpmyadmin-interface.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20what%20is%20phpmyadmin%20interface&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan what is phpmyadmin interface">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-buat-database-mysql.html">
+                cara buat database mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-buat-database-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20buat%20database%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara buat database mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jelaskan-apa-yang-dimaksud-dengan-file-dan-berikan-contohnya.html">
+                jelaskan apa yang dimaksud dengan file dan berikan contohnya 
+                </a>
+                <div class="image-parent">
+                    <a href="jelaskan-apa-yang-dimaksud-dengan-file-dan-berikan-contohnya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20apa%20yang%20dimaksud%20dengan%20file%20dan%20berikan%20contohnya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jelaskan apa yang dimaksud dengan file dan berikan contohnya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-ros-python.html">
+                cara menggunakan ros python 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-ros-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20ros%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan ros python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mengatur-suhu-setrika-philips.html">
+                cara mengatur suhu setrika philips 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mengatur-suhu-setrika-philips.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mengatur%20suhu%20setrika%20philips&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mengatur suhu setrika philips">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-learn-css-online-free.html">
+                cara menggunakan learn css online free 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-learn-css-online-free.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20learn%20css%20online%20free&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan learn css online free">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

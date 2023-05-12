@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Bagaimana Membandingkan Dua Daftar String Dengan Python?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Bagaimana Anda Membandingkan Dua Daftar String Dengan Python",
+    "datePublished": "2023-10-18T12:34:10Z",
+    "image": "https://tse1.mm.bing.net/th?q=bagaimana%20anda%20membandingkan%20dua%20daftar%20string%20dengan%20python",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=bagaimana%20anda%20membandingkan%20dua%20daftar%20string%20dengan%20python&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bagaimana%20anda%20membandingkan%20dua%20daftar%20string%20dengan%20python" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=bagaimana%20anda%20membandingkan%20dua%20daftar%20string%20dengan%20python" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Bagaimana Membandingkan Dua Daftar String Dengan Python?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=bagaimana%20anda%20membandingkan%20dua%20daftar%20string%20dengan%20python" alt="Jelaskan Bagaimana LangkahLangkah yang Kalian Lakukan Untuk" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=bagaimana%20anda%20membandingkan%20dua%20daftar%20string%20dengan%20python" alt="Jelaskan Bagaimana LangkahLangkah yang Kalian Lakukan Untuk" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Jelaskan Bagaimana LangkahLangkah yang Kalian Lakukan Untuk from peta-hd.com</figcaption></figure><p>Python telah lama menjadi bahasa pemrograman yang populer di dunia. Diperkenalkan pada tahun 1991, bahasa pemrograman ini telah menjadi favorit banyak programmer dan pengembang web. Salah satu alasan utama mengapa banyak orang menyukai bahasa pemrograman ini adalah karena mudah untuk dipelajari dan digunakan. Dengan fungsi yang bervariasi dan cukup komprehensif, bahasa pemrograman ini dapat digunakan untuk melakukan hampir semua hal yang Anda inginkan, termasuk membandingkan dua daftar string dengan Python.</p><p>Python dapat digunakan untuk membandingkan dua daftar string dengan mudah. Setelah Anda telah membuat daftar string, Anda dapat menggunakan perintah yang tepat untuk membandingkan mereka. Berikut ini adalah beberapa cara yang dapat Anda gunakan untuk membandingkan daftar string dengan Python:</p><h2>Menggunakan Fungsi Bawaan Python</h2><p>Python memiliki fungsi bawaan yang dapat digunakan untuk membandingkan dua daftar string. Fungsi ini disebut “cmp” dan dapat digunakan dengan sangat mudah. Cara termudah untuk menggunakan fungsi ini adalah dengan menggunakan perintah berikut: cmp(daftar1, daftar2). Parameter daftar1 dan daftar2 berisi daftar string yang akan dibandingkan. Jika dua daftar tersebut memiliki nilai yang sama, fungsi ini akan mengembalikan nilai 0. Jika daftar pertama memiliki nilai lebih besar dari daftar kedua, fungsi ini akan mengembalikan nilai positif. Selain itu, jika daftar pertama memiliki nilai lebih kecil dari daftar kedua, fungsi ini akan mengembalikan nilai negatif.</p><h2>Menggunakan List Comprehension</h2><p>List comprehension adalah fitur Python yang dapat digunakan untuk melakukan berbagai macam operasi pada daftar string. Dengan list comprehension, Anda dapat dengan mudah membandingkan dua daftar string dengan cara yang efisien. Cara termudah untuk menggunakan list comprehension adalah dengan menggunakan perintah berikut: [a for a in daftar1 if a in daftar2]. Perintah ini akan mengembalikan semua elemen dari daftar pertama yang juga ada dalam daftar kedua. Jika tidak ada item yang sama di kedua daftar, perintah ini akan mengembalikan daftar kosong.</p><h2>Menggunakan Loop</h2><p>Loop adalah cara lain yang dapat Anda gunakan untuk membandingkan dua daftar string dengan Python. Cara termudah untuk menggunakan loop adalah dengan menggunakan perintah berikut: for a in daftar1: if a in daftar2:.... Perintah ini akan melakukan perulangan melalui daftar pertama dan mengecek apakah item yang sama ada dalam daftar kedua. Jika ada, loop akan mengembalikan item tersebut. Jika tidak, loop akan mengembalikan daftar kosong.</p><h2>Menggunakan Set</h2><p>Set adalah struktur data yang dapat digunakan untuk menyimpan item yang unik. Anda dapat dengan mudah membuat dan menggunakan set untuk membandingkan dua daftar string dengan Python. Cara termudah untuk menggunakan set adalah dengan menggunakan perintah berikut: set1 = set(daftar1) set2 = set(daftar2) set1.intersection(set2). Perintah ini akan membuat dua set dari daftar string dan mengembalikan semua item yang unik yang ada dalam kedua set tersebut. Jika tidak ada item yang sama, set akan mengembalikan daftar kosong.</p><h2>Menggunakan Sorted</h2><p>Python juga memiliki fungsi bawaan yang disebut “sorted” yang dapat digunakan untuk membandingkan dua daftar string. Fungsi ini akan mengurutkan daftar string berdasarkan abjad dan mengembalikan daftar yang telah diurutkan. Cara termudah untuk menggunakan fungsi ini adalah dengan menggunakan perintah berikut: sorted(daftar1) == sorted(daftar2). Perintah ini akan mengurutkan kedua daftar string dan membandingkan hasilnya. Jika kedua daftar memiliki nilai yang sama, fungsi ini akan mengembalikan nilai True. Jika nilai berbeda, fungsi ini akan mengembalikan nilai False.</p><h2>Kesimpulan</h2><p>Dengan semua cara yang disebutkan di atas, Anda dapat dengan mudah membandingkan dua daftar string dengan Python. Anda dapat menggunakan fungsi bawaan Python seperti cmp, list comprehension, loop, set, dan sorted untuk membandingkan daftar string. Semua cara tersebut dapat digunakan untuk membandingkan dua daftar string dengan mudah dan efisien. Dengan begitu, Anda dapat dengan mudah menggunakan Python untuk membandingkan dua daftar string dan menyelesaikan tugas Anda dengan cepat dan mudah.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-melakukan-servis-pendek-dalam-permainan-bulu-tangkis.html">
+                bagaimana cara melakukan servis pendek dalam permainan bulu tangkis 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-melakukan-servis-pendek-dalam-permainan-bulu-tangkis.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20melakukan%20servis%20pendek%20dalam%20permainan%20bulu%20tangkis&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara melakukan servis pendek dalam permainan bulu tangkis">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mendapatkan-surat-keterangan-bebas-narkoba.html">
+                cara mendapatkan surat keterangan bebas narkoba 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mendapatkan-surat-keterangan-bebas-narkoba.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mendapatkan%20surat%20keterangan%20bebas%20narkoba&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mendapatkan surat keterangan bebas narkoba">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="konversi-json-menjadi-string-di-mysql.html">
+                konversi json menjadi string di mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="konversi-json-menjadi-string-di-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=konversi%20json%20menjadi%20string%20di%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="konversi json menjadi string di mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-list-to-sqlite-python.html">
+                cara menggunakan list to sqlite python 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-list-to-sqlite-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20list%20to%20sqlite%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan list to sqlite python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="tanda-tangan-digital-pake-aplikasi-apa.html">
+                tanda tangan digital pake aplikasi apa 
+                </a>
+                <div class="image-parent">
+                    <a href="tanda-tangan-digital-pake-aplikasi-apa.html">
+                    <img src="https://tse1.mm.bing.net/th?q=tanda%20tangan%20digital%20pake%20aplikasi%20apa&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="tanda tangan digital pake aplikasi apa">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-itu-ekstensi-php-mysqli.html">
+                apa itu ekstensi php mysqli 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-itu-ekstensi-php-mysqli.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20ekstensi%20php%20mysqli&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa itu ekstensi php mysqli">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-saja-ketidaknyamanan-pada-trimester-3.html">
+                apa saja ketidaknyamanan pada trimester 3 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-saja-ketidaknyamanan-pada-trimester-3.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20saja%20ketidaknyamanan%20pada%20trimester%203&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa saja ketidaknyamanan pada trimester 3">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-saya-terhubung-ke-database-yang-ada-di-meja-kerja-mysql.html">
+                bagaimana cara saya terhubung ke database yang ada di meja kerja mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-saya-terhubung-ke-database-yang-ada-di-meja-kerja-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20saya%20terhubung%20ke%20database%20yang%20ada%20di%20meja%20kerja%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara saya terhubung ke database yang ada di meja kerja mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-agar-kulit-tidak-keriput.html">
+                bagaimana cara agar kulit tidak keriput 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-agar-kulit-tidak-keriput.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20agar%20kulit%20tidak%20keriput&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara agar kulit tidak keriput">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="buat-file-csv-di-google-sheets.html">
+                buat file csv di google sheets 
+                </a>
+                <div class="image-parent">
+                    <a href="buat-file-csv-di-google-sheets.html">
+                    <img src="https://tse1.mm.bing.net/th?q=buat%20file%20csv%20di%20google%20sheets&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="buat file csv di google sheets">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

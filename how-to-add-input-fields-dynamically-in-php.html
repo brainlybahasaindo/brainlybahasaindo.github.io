@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menambahkan Input Fields Dinamis Dengan Php
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "How To Add Input Fields Dynamically In Php",
+    "datePublished": "2023-10-01T13:27:26Z",
+    "image": "https://tse1.mm.bing.net/th?q=how%20to%20add%20input%20fields%20dynamically%20in%20php",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=how%20to%20add%20input%20fields%20dynamically%20in%20php&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20add%20input%20fields%20dynamically%20in%20php" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20add%20input%20fields%20dynamically%20in%20php" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menambahkan Input Fields Dinamis Dengan Php
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=how%20to%20add%20input%20fields%20dynamically%20in%20php" alt="37 Javascript Textbox On Enter Modern Javascript Blog" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=how%20to%20add%20input%20fields%20dynamically%20in%20php" alt="37 Javascript Textbox On Enter Modern Javascript Blog" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>37 Javascript Textbox On Enter Modern Javascript Blog from gregoryboxij.blogspot.com</figcaption></figure><p>Membuat website yang kaya fitur dan interaktif adalah impian semua web developer. Dengan berbagai macam plugin, widget dan bahkan API yang tersedia, membuat website yang menarik tak lagi menjadi hal yang sulit. Namun, ada kalanya Anda harus menyelesaikan tugas yang membutuhkan keterampilan tingkat lanjut dalam pemrograman web. Salah satu dari tugas-tugas tersebut adalah menambahkan input fields dinamis. Untuk mencapai hal ini, Anda harus tahu bagaimana cara menggunakan PHP untuk membuat formulir interaktif.</p><p>Pada artikel ini, kami akan membahas cara membuat input fields dinamis dengan PHP. Kami akan menjelaskan bagaimana cara membuat formulir, menambahkan input field, menangani input yang dikirimkan, dan memvalidasi data yang dimasukkan. Setelah Anda membaca artikel ini, Anda akan memiliki pengetahuan yang cukup untuk membuat formulir interaktif yang responsif.</p><h2>Apa itu Input Fields Dinamis?</h2><p>Input fields dinamis adalah formulir web yang berbeda dari formulir yang Anda biasa lihat. Input fields dinamis dapat dikustomisasi untuk memenuhi kebutuhan spesifik aplikasi web Anda. Dengan kata lain, Anda dapat menambahkan, menghapus, dan mengubah input field sesuai kebutuhan Anda.</p><p>Input fields dinamis dapat membantu Anda menghasilkan formulir yang responsif. Hal ini karena Anda dapat mengatur jumlah input field yang Anda inginkan dan menampilkan hanya yang diperlukan di halaman web Anda. Ini akan membuat formulir Anda lebih ramah pengguna dan membuatnya lebih mudah untuk diisi. Dengan menggunakan input fields dinamis, Anda dapat menciptakan formulir yang lebih mudah digunakan.</p><h2>Bagaimana Menambahkan Input Fields Dinamis Dengan PHP?</h2><p>Untuk menambahkan input fields dinamis dengan PHP, Anda harus membuat form HTML standar dan menambahkan PHP ke dalamnya. Langkah-langkah yang harus Anda lakukan adalah sebagai berikut:</p><h3>1. Buat Form HTML</h3><p>Formulir HTML standar adalah hal yang harus Anda lakukan. Anda dapat menggunakan tag HTML seperti <form>, <input>, dan <textarea> untuk membuat formulir. Anda juga harus menentukan atribut ID dan name untuk setiap input field di formulir.</p><h3>2. Tambahkan PHP</h3><p>Setelah Anda membuat formulir, Anda harus menambahkan PHP ke dalamnya. Anda harus menggunakan tag PHP seperti <?php ?> untuk menulis kode PHP. Anda akan menggunakan kode PHP ini untuk menambahkan dan menghapus input field dinamis.</p><h3>3. Dapatkan Input Dari User</h3><p>Setelah Anda menambahkan PHP ke dalam formulir Anda, Anda harus menangani input yang dikirimkan oleh pengguna. Anda dapat menggunakan PHP untuk mendapatkan input dari pengguna. Anda harus menggunakan fungsi $_POST atau $_GET untuk mendapatkan data yang dimasukkan oleh pengguna.</p><h3>4. Buat Input Fields Dinamis</h3><p>Kemudian, Anda harus menggunakan kode PHP untuk membuat input fields dinamis. Untuk melakukan hal ini, Anda harus menggunakan perulangan dan fungsi PHP seperti for(), while(), atau foreach(). Dengan cara ini, Anda dapat membuat input field baru setiap kali pengguna mengirimkan data.</p><h3>5. Validasi Input</h3><p>Setelah Anda selesai dengan menambahkan input fields dinamis, Anda harus memvalidasi data yang dimasukkan oleh pengguna. Anda harus memeriksa bahwa data yang dimasukkan oleh pengguna valid dan sesuai dengan kebutuhan aplikasi Anda. Anda dapat menggunakan fungsi PHP seperti filter_var() untuk memvalidasi data yang dimasukkan oleh pengguna.</p><p>Setelah Anda selesai dengan menambahkan input fields dinamis, Anda harus memastikan bahwa formulir Anda berfungsi dengan benar. Anda harus mengujinya dengan berbagai macam data untuk memastikan bahwa semua input valid dan diterima oleh aplikasi Anda.</p><h2>Kesimpulan</h2><p>Dalam artikel ini, kami telah membahas cara menambahkan input fields dinamis dengan PHP. Kami telah menjelaskan bagaimana cara membuat formulir HTML, menambahkan input field, menangani input yang dikirimkan, dan memvalidasi data yang dimasukkan. Dengan memahami cara ini, Anda akan dapat membuat formulir web yang responsif.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-setwindowfields-mongodb.html">
+                cara menggunakan setwindowfields mongodb 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-setwindowfields-mongodb.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20setwindowfields%20mongodb&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan setwindowfields mongodb">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="selain-bentuk-energi-yaitu-energi-apakah-yang-dihasilkan-dari-sumber-energi-yang-digunakan-pada-proses-penjemuran-ikan-asin.html">
+                selain bentuk energi yaitu energi apakah yang dihasilkan dari sumber energi yang digunakan pada proses penjemuran ikan asin 
+                </a>
+                <div class="image-parent">
+                    <a href="selain-bentuk-energi-yaitu-energi-apakah-yang-dihasilkan-dari-sumber-energi-yang-digunakan-pada-proses-penjemuran-ikan-asin.html">
+                    <img src="https://tse1.mm.bing.net/th?q=selain%20bentuk%20energi%20yaitu%20energi%20apakah%20yang%20dihasilkan%20dari%20sumber%20energi%20yang%20digunakan%20pada%20proses%20penjemuran%20ikan%20asin&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="selain bentuk energi yaitu energi apakah yang dihasilkan dari sumber energi yang digunakan pada proses penjemuran ikan asin">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-daftar-paspor-online-lewat-aplikasi.html">
+                cara daftar paspor online lewat aplikasi 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-daftar-paspor-online-lewat-aplikasi.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20daftar%20paspor%20online%20lewat%20aplikasi&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara daftar paspor online lewat aplikasi">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-merubah-copyright-website.html">
+                cara merubah copyright website 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-merubah-copyright-website.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20merubah%20copyright%20website&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara merubah copyright website">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="gambar-organ-peredaran-darah-manusia-kelas-5-sd.html">
+                gambar organ peredaran darah manusia kelas 5 sd 
+                </a>
+                <div class="image-parent">
+                    <a href="gambar-organ-peredaran-darah-manusia-kelas-5-sd.html">
+                    <img src="https://tse1.mm.bing.net/th?q=gambar%20organ%20peredaran%20darah%20manusia%20kelas%205%20sd&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="gambar organ peredaran darah manusia kelas 5 sd">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="fade-in-codepen-css-animasi-kanan.html">
+                fade in codepen css animasi kanan 
+                </a>
+                <div class="image-parent">
+                    <a href="fade-in-codepen-css-animasi-kanan.html">
+                    <img src="https://tse1.mm.bing.net/th?q=fade%20in%20codepen%20css%20animasi%20kanan&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="fade in codepen css animasi kanan">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="dapatkah-array-diiris-dengan-python.html">
+                dapatkah array diiris dengan python 
+                </a>
+                <div class="image-parent">
+                    <a href="dapatkah-array-diiris-dengan-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=dapatkah%20array%20diiris%20dengan%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="dapatkah array diiris dengan python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-anda-mencetak-atribut-suatu-objek-dengan-python.html">
+                bagaimana anda mencetak atribut suatu objek dengan python 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-anda-mencetak-atribut-suatu-objek-dengan-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20anda%20mencetak%20atribut%20suatu%20objek%20dengan%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana anda mencetak atribut suatu objek dengan python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-create-html-file-mac.html">
+                cara menggunakan create html file mac 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-create-html-file-mac.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20create%20html%20file%20mac&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan create html file mac">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="tulis-program-python-untuk-mengubah-array-numpy-menjadi-nilai-array-dengan-presisi-3.html">
+                tulis program python untuk mengubah array numpy menjadi nilai array dengan presisi 3 
+                </a>
+                <div class="image-parent">
+                    <a href="tulis-program-python-untuk-mengubah-array-numpy-menjadi-nilai-array-dengan-presisi-3.html">
+                    <img src="https://tse1.mm.bing.net/th?q=tulis%20program%20python%20untuk%20mengubah%20array%20numpy%20menjadi%20nilai%20array%20dengan%20presisi%203&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="tulis program python untuk mengubah array numpy menjadi nilai array dengan presisi 3">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

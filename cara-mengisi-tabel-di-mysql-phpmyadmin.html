@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Mengisi Tabel Di Mysql Phpmyadmin Yang Mudah Dilakukan
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Mengisi Tabel Di Mysql Phpmyadmin",
+    "datePublished": "2023-12-16T14:30:49Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20mengisi%20tabel%20di%20mysql%20phpmyadmin",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20mengisi%20tabel%20di%20mysql%20phpmyadmin&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20mengisi%20tabel%20di%20mysql%20phpmyadmin" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20mengisi%20tabel%20di%20mysql%20phpmyadmin" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Mengisi Tabel Di Mysql Phpmyadmin Yang Mudah Dilakukan
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20mengisi%20tabel%20di%20mysql%20phpmyadmin" alt="Cara Mengisi Data Pada Tabel Database Di Phpmyadmin Try Now Otosection" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20mengisi%20tabel%20di%20mysql%20phpmyadmin" alt="Cara Mengisi Data Pada Tabel Database Di Phpmyadmin Try Now Otosection" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Cara Mengisi Data Pada Tabel Database Di Phpmyadmin Try Now Otosection from kgoo.dcmusic.ca</figcaption></figure><p>MySQL adalah salah satu jenis sistem manajemen basis data yang populer. Banyak aplikasi yang menggunakan MySQL sebagai basis data, seperti WordPress, Joomla, dan lainnya. MySQL dapat diakses melalui kebanyakan hosting web. PhpMyAdmin adalah aplikasi web yang berfungsi untuk memudahkan Anda dalam mengelola database MySQL. Di dalam PhpMyAdmin ini, Anda dapat melakukan berbagai hal, termasuk membuat dan mengisi tabel. Berikut ini adalah cara mengisi tabel di MySQL PhpMyAdmin yang mudah dilakukan.</p><h2>1. Membuka PhpMyAdmin</h2><p>Langkah pertama yang harus Anda lakukan adalah membuka PhpMyAdmin. Pada umumnya, Anda dapat mengakses PhpMyAdmin melalui cPanel hosting Anda. Setelah Anda login ke cPanel hosting, Anda dapat menemukan link menuju PhpMyAdmin. Klik link tersebut untuk masuk ke PhpMyAdmin.</p><h2>2. Membuat Tabel</h2><p>Selanjutnya, Anda harus membuat tabel terlebih dahulu. Anda dapat membuat tabel dengan mengklik tombol "Tambah" pada jendela PhpMyAdmin. Setelah itu, masukkan nama tabel yang akan Anda buat. Anda juga dapat menambahkan kolom pada tabel tersebut. Masukkan nama kolom dan jenis field yang akan Anda gunakan. Anda juga dapat membuat kolom primary key dan auto increment untuk memudahkan dalam mengelola tabel.</p><h2>3. Mengisi Tabel</h2><p>Selanjutnya, Anda dapat mulai mengisi tabel yang telah Anda buat. Untuk mengisi tabel, pilih tabel yang akan Anda isi. Pada jendela PhpMyAdmin, klik tabel yang ingin Anda isi. Setelah itu, klik tombol "Masukkan" yang berada pada jendela PhpMyAdmin. Pada jendela yang muncul, masukkan data yang akan Anda isi pada kolom-kolom yang telah Anda buat. Setelah selesai, klik tombol "Simpan" untuk menyimpan data yang telah Anda masukkan.</p><h2>4. Melihat Data</h2><p>Setelah Anda mengisi tabel, Anda dapat melihat data yang telah Anda masukkan. Anda dapat melihat data yang telah Anda masukkan dengan cara mengklik tabel yang telah Anda buat. Pada jendela PhpMyAdmin, Anda akan melihat daftar data yang telah Anda masukkan. Anda juga dapat mengedit data yang telah Anda masukkan dengan mengklik tombol "Ubah" yang berada pada jendela PhpMyAdmin.</p><h2>5. Menghapus Data</h2><p>Selain mengisi dan mengedit data, Anda juga dapat menghapus data yang telah Anda masukkan. Untuk menghapus data, Anda harus memilih salah satu data yang ingin Anda hapus. Setelah itu, klik tombol "Hapus" pada jendela PhpMyAdmin. Setelah itu, Anda akan diminta konfirmasi untuk menghapus data tersebut. Klik tombol "OK" untuk menghapus data.</p><h2>6. Mencari Data</h2><p>Anda juga dapat mencari data yang telah Anda masukkan. Untuk mencari data, Anda dapat memasukkan kata kunci yang akan Anda cari pada kolom "Cari". Setelah itu, klik tombol "Go" untuk melakukan pencarian. Hasil pencarian akan ditampilkan pada jendela PhpMyAdmin. Anda juga dapat melakukan pencarian dengan menggunakan parameter pencarian tertentu.</p><h2>7. Membackup Data</h2><p>Selain itu, Anda juga dapat membackup data yang telah Anda masukkan. Untuk membackup data, Anda harus memilih tabel yang akan Anda backup. Setelah itu, klik tombol "Ekspor" pada jendela PhpMyAdmin. Pada jendela yang muncul, Anda dapat memilih format file yang akan Anda gunakan untuk membackup data. Setelah itu, klik tombol "Kirim" untuk membackup data.</p><h2>8. Mencetak Data</h2><p>Anda juga dapat mencetak data yang telah Anda masukkan. Untuk mencetak data, Anda harus memilih tabel yang akan Anda cetak. Setelah itu, klik tombol "Cetak" pada jendela PhpMyAdmin. Pada jendela yang muncul, Anda dapat memilih format file yang akan Anda gunakan untuk mencetak data. Setelah itu, klik tombol "Kirim" untuk mencetak data.</p><h2>9. Mengimpor Data</h2><p>Selain itu, Anda juga dapat mengimpor data ke dalam tabel. Untuk mengimpor data, Anda harus memilih tabel yang akan Anda gunakan. Setelah itu, klik tombol "Impor" pada jendela PhpMyAdmin. Pada jendela yang muncul, Anda dapat memilih file yang akan Anda gunakan untuk mengimpor data. Setelah itu, klik tombol "Kirim" untuk mengimpor data.</p><h2>10. Menghapus Tabel</h2><p>Anda juga dapat menghapus tabel yang telah Anda buat. Untuk menghapus tabel, Anda harus memilih tabel yang akan Anda hapus. Setelah itu, klik tombol "Hapus" pada jendela PhpMyAdmin. Setelah itu, Anda akan diminta konfirmasi untuk menghapus tabel tersebut. Klik tombol "OK" untuk menghapus tabel.</p><p>Demikianlah cara mengisi tabel di MySQL PhpMyAdmin yang mudah dilakukan. Dengan mengikuti cara di atas, Anda dapat dengan mudah mengisi, mengedit, mencari, membackup, mencetak, dan menghapus data pada tabel yang telah Anda buat. Selain itu, Anda juga dapat mengimpor data ke dalam tabel dengan mudah. Semoga informasi ini bermanfaat.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="contoh-kasus-hukum-acara-perdata-dan-penyelesaiannya.html">
+                contoh kasus hukum acara perdata dan penyelesaiannya 
+                </a>
+                <div class="image-parent">
+                    <a href="contoh-kasus-hukum-acara-perdata-dan-penyelesaiannya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=contoh%20kasus%20hukum%20acara%20perdata%20dan%20penyelesaiannya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="contoh kasus hukum acara perdata dan penyelesaiannya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bauran-pemasaran-atau-marketing-mix-adalah.html">
+                bauran pemasaran atau marketing mix adalah 
+                </a>
+                <div class="image-parent">
+                    <a href="bauran-pemasaran-atau-marketing-mix-adalah.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bauran%20pemasaran%20atau%20marketing%20mix%20adalah&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bauran pemasaran atau marketing mix adalah">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="google-sheets-query-percent-of-total.html">
+                google sheets query percent of total 
+                </a>
+                <div class="image-parent">
+                    <a href="google-sheets-query-percent-of-total.html">
+                    <img src="https://tse1.mm.bing.net/th?q=google%20sheets%20query%20percent%20of%20total&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="google sheets query percent of total">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menggunakan-memanggil-css-dalam-html.html">
+                bagaimana cara menggunakan memanggil css dalam html 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menggunakan-memanggil-css-dalam-html.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menggunakan%20memanggil%20css%20dalam%20html&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menggunakan memanggil css dalam html">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menyembunyikan-tabel-di-excel.html">
+                cara menyembunyikan tabel di excel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menyembunyikan-tabel-di-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menyembunyikan%20tabel%20di%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menyembunyikan tabel di excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="di-mana-situs-wordpress-saya-dihosting.html">
+                di mana situs wordpress saya dihosting 
+                </a>
+                <div class="image-parent">
+                    <a href="di-mana-situs-wordpress-saya-dihosting.html">
+                    <img src="https://tse1.mm.bing.net/th?q=di%20mana%20situs%20wordpress%20saya%20dihosting&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="di mana situs wordpress saya dihosting">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menggabungkan-beberapa-file-excel-menjadi-satu-file.html">
+                bagaimana cara menggabungkan beberapa file excel menjadi satu file 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menggabungkan-beberapa-file-excel-menjadi-satu-file.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menggabungkan%20beberapa%20file%20excel%20menjadi%20satu%20file&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menggabungkan beberapa file excel menjadi satu file">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-python-list-replace-range.html">
+                cara menggunakan python list replace range 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-python-list-replace-range.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20list%20replace%20range&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan python list replace range">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="mengotomatiskan-google-docs-dengan-python.html">
+                mengotomatiskan google docs dengan python 
+                </a>
+                <div class="image-parent">
+                    <a href="mengotomatiskan-google-docs-dengan-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=mengotomatiskan%20google%20docs%20dengan%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="mengotomatiskan google docs dengan python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="density-contour-python.html">
+                density contour python 
+                </a>
+                <div class="image-parent">
+                    <a href="density-contour-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=density%20contour%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="density contour python">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

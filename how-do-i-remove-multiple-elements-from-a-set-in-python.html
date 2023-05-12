@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menghapus Beberapa Elemen Dari Set Di Python
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "How Do I Remove Multiple Elements From A Set In Python",
+    "datePublished": "2023-11-17T00:42:25Z",
+    "image": "https://tse1.mm.bing.net/th?q=how%20do%20i%20remove%20multiple%20elements%20from%20a%20set%20in%20python",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=how%20do%20i%20remove%20multiple%20elements%20from%20a%20set%20in%20python&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20do%20i%20remove%20multiple%20elements%20from%20a%20set%20in%20python" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20do%20i%20remove%20multiple%20elements%20from%20a%20set%20in%20python" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menghapus Beberapa Elemen Dari Set Di Python
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20remove%20multiple%20elements%20from%20a%20set%20in%20python" alt="Set in Python Learning Points" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=how%20do%20i%20remove%20multiple%20elements%20from%20a%20set%20in%20python" alt="Set in Python Learning Points" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Set in Python Learning Points from learningpoints.in</figcaption></figure><h2>Apa itu Set?</h2><p>Set adalah struktur data yang berisi himpunan elemen unik dalam urutan yang tidak teratur. Struktur data ini sangat berguna karena memungkinkan Anda melakukan operasi pencarian cepat, menghapus elemen, dan menambahkan elemen. Set juga sering digunakan untuk menghindari duplikasi data. Salah satu cara yang paling umum untuk membuat set adalah dengan menggunakan fungsi set () Python. Fungsi tersebut akan mengambil parameter dan mengembalikan himpunan elemen unik. Sebagai contoh, jika Anda memiliki daftar yang berisi angka 1, 2, 3, 4, 5, maka jika Anda memanggil fungsi set () pada daftar tersebut, Anda akan mendapatkan himpunan {1, 2, 3, 4, 5}.</p><h2>Cara Menghapus Beberapa Elemen dari Set di Python</h2><p>Untuk menghapus beberapa elemen dari set di Python, gunakan metode discard () atau remove () pada objek set. Metode discard () akan menghapus elemen tertentu dari himpunan dan menghasilkan himpunan yang tidak mengandung elemen tersebut. Metode remove () akan menghapus elemen tertentu dari himpunan dan mengembalikan himpunan yang tidak mengandung elemen tersebut. Jika elemen yang Anda coba hapus tidak ada dalam himpunan, maka metode discard () akan berjalan tanpa menghasilkan error. Namun, jika Anda menggunakan metode remove () dan elemen yang Anda coba hapus tidak ada dalam himpunan, maka metode tersebut akan menghasilkan error KeyError. Sebagai contoh, jika Anda memiliki himpunan {1, 2, 3, 4, 5} dan Anda ingin menghapus angka 4, maka Anda bisa menggunakan metode discard () atau remove () untuk menghapus angka 4 dari himpunan.</p><h2>Cara Menghapus Beberapa Elemen dari Set dengan discard ()</h2><p>Untuk menghapus beberapa elemen dari set dengan discard (), gunakan sintaks berikut:<br><br>  set_name.discard(element)<br><br>  Sebagai contoh, jika Anda memiliki himpunan {1, 2, 3, 4, 5} dan ingin menghapus angka 4, maka gunakan sintaks berikut:  my_set.discard(4)  Setelah menambahkan sintaks di atas, himpunan Anda akan berubah menjadi {1, 2, 3, 5}. Metode discard () akan menghapus elemen yang ditentukan jika elemen tersebut ada dalam himpunan. Namun, jika elemen yang ditentukan tidak ada dalam himpunan, maka metode ini tidak akan menghasilkan error.</p><h2>Cara Menghapus Beberapa Elemen dari Set dengan remove ()</h2><p>Untuk menghapus beberapa elemen dari set dengan remove (), gunakan sintaks berikut:<br><br>  set_name.remove(element)<br><br>  Sebagai contoh, jika Anda memiliki himpunan {1, 2, 3, 4, 5} dan ingin menghapus angka 4, maka gunakan sintaks berikut:  my_set.remove(4)  Setelah menambahkan sintaks di atas, himpunan Anda akan berubah menjadi {1, 2, 3, 5}. Metode remove () akan menghapus elemen yang ditentukan jika elemen tersebut ada dalam himpunan. Namun, jika elemen yang ditentukan tidak ada dalam himpunan, maka metode ini akan menghasilkan error KeyError. Oleh karena itu, sebelum menggunakan metode remove (), pastikan bahwa elemen yang ditentukan ada dalam himpunan.</p><h2>Cara Menghapus Beberapa Elemen dari Set dengan clear ()</h2><p>Untuk menghapus semua elemen dari set, gunakan metode clear (). Metode ini akan menghapus semua elemen dari himpunan. Gunakan sintaks berikut untuk menggunakan metode clear ():<br><br>  set_name.clear()<br><br>  Sebagai contoh, jika Anda memiliki himpunan {1, 2, 3, 4, 5}, maka gunakan sintaks berikut untuk menghapus semua elemen dari himpunan:  my_set.clear()  Setelah menambahkan sintaks di atas, himpunan Anda akan berubah menjadi himpunan kosong {}. Metode clear () akan menghapus semua elemen dari himpunan. Namun, jika himpunan kosong, maka metode ini tidak akan menghasilkan error.</p><h2>Cara Menghapus Beberapa Elemen dari Set dengan pop ()</h2><p>Untuk menghapus satu elemen acak dari set, gunakan metode pop (). Metode ini akan menghapus satu elemen acak dari himpunan. Gunakan sintaks berikut untuk menggunakan metode pop ():<br><br>  set_name.pop()<br><br>  Sebagai contoh, jika Anda memiliki himpunan {1, 2, 3, 4, 5}, maka gunakan sintaks berikut untuk menghapus satu elemen acak dari himpunan:  my_set.pop()  Setelah menambahkan sintaks di atas, himpunan Anda akan berubah menjadi himpunan yang tidak mengandung elemen yang dihapus. Metode pop () akan menghapus satu elemen acak dari himpunan. Namun, jika himpunan kosong, maka metode ini akan menghasilkan error KeyError.</p><h2>Cara Menghapus Beberapa Elemen dari Set dengan remove () dan discard ()</h2><p>Untuk menghapus beberapa elemen dari set dengan remove () dan discard (), gunakan sintaks berikut:<br><br>  set_name.remove(elements)<br><br>  atau<br><br>  set_name.discard(elements)<br><br>  Sebagai contoh, jika Anda memiliki himpunan {1, 2, 3, 4, 5} dan ingin menghapus angka 4 dan 5, maka gunakan sintaks berikut:  my_set.remove(4, 5)  atau  my_set.discard(4, 5)  Setelah menambahkan sintaks di atas, himpunan Anda akan berubah menjadi {1, 2, 3}. Metode remove () akan menghapus elemen yang ditentukan jika elemen tersebut ada dalam himpunan. Namun, jika elemen yang ditentukan tidak ada dalam himpunan, maka metode ini akan menghasilkan error KeyError. Metode discard () akan menghapus elemen yang ditentukan jika elemen tersebut ada dalam himpunan. Namun, jika elemen yang ditentukan tidak ada dalam himpunan, maka metode ini tidak akan menghasilkan error.</p><h2>Kesimpulan</h2><p>Dalam artikel ini, kami telah membahas cara menghapus beberapa elemen dari set di Python. Kami telah membahas cara menggunakan discard (), remove (), clear (), dan pop () untuk menghapus elemen dari set. Kami juga telah membahas cara menggunakan remove () dan discard () untuk menghapus beberapa elemen dari set. Setelah membaca artikel ini, Anda akan memiliki pemahaman yang lebih baik tentang cara menghapus elemen dari set di Python.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-itu-html-dan-json.html">
+                apa itu html dan json 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-itu-html-dan-json.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20html%20dan%20json&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa itu html dan json">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-much-a-wordpress-developer-earn.html">
+                how much a wordpress developer earn 
+                </a>
+                <div class="image-parent">
+                    <a href="how-much-a-wordpress-developer-earn.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20much%20a%20wordpress%20developer%20earn&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how much a wordpress developer earn">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-force-restart-a-windows-service.html">
+                how do i force restart a windows service 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-force-restart-a-windows-service.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20force%20restart%20a%20windows%20service&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i force restart a windows service">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mendapatkan-uang-dari-facebook-ads.html">
+                cara mendapatkan uang dari facebook ads 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mendapatkan-uang-dari-facebook-ads.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mendapatkan%20uang%20dari%20facebook%20ads&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mendapatkan uang dari facebook ads">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="mengapa-sel-surya-termasuk-teknologi-yang-terinspirasi-dari-struktur-tumbuhan.html">
+                mengapa sel surya termasuk teknologi yang terinspirasi dari struktur tumbuhan 
+                </a>
+                <div class="image-parent">
+                    <a href="mengapa-sel-surya-termasuk-teknologi-yang-terinspirasi-dari-struktur-tumbuhan.html">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20sel%20surya%20termasuk%20teknologi%20yang%20terinspirasi%20dari%20struktur%20tumbuhan&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="mengapa sel surya termasuk teknologi yang terinspirasi dari struktur tumbuhan">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-pengindeksan-dilakukan-di-mongodb.html">
+                bagaimana pengindeksan dilakukan di mongodb 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-pengindeksan-dilakukan-di-mongodb.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20pengindeksan%20dilakukan%20di%20mongodb&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana pengindeksan dilakukan di mongodb">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="google-sheets-number-format-billions.html">
+                google sheets number format billions 
+                </a>
+                <div class="image-parent">
+                    <a href="google-sheets-number-format-billions.html">
+                    <img src="https://tse1.mm.bing.net/th?q=google%20sheets%20number%20format%20billions&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="google sheets number format billions">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-python-sql-insert.html">
+                cara menggunakan python sql insert 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-python-sql-insert.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20sql%20insert&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan python sql insert">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-masuk-ke-mysql.html">
+                bagaimana cara masuk ke mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-masuk-ke-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20masuk%20ke%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara masuk ke mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="python-mengganti-nilai-tag-xml.html">
+                python mengganti nilai tag xml 
+                </a>
+                <div class="image-parent">
+                    <a href="python-mengganti-nilai-tag-xml.html">
+                    <img src="https://tse1.mm.bing.net/th?q=python%20mengganti%20nilai%20tag%20xml&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="python mengganti nilai tag xml">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

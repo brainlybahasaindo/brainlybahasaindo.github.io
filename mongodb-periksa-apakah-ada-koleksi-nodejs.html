@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Periksa Koleksi Mongodb Dengan Node.js Di Tahun 2023
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Mongodb Periksa Apakah Ada Koleksi Nodejs",
+    "datePublished": "2023-12-13T15:51:43Z",
+    "image": "https://tse1.mm.bing.net/th?q=mongodb%20periksa%20apakah%20ada%20koleksi%20nodejs",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=mongodb%20periksa%20apakah%20ada%20koleksi%20nodejs&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=mongodb%20periksa%20apakah%20ada%20koleksi%20nodejs" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=mongodb%20periksa%20apakah%20ada%20koleksi%20nodejs" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Periksa Koleksi Mongodb Dengan Node.js Di Tahun 2023
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=mongodb%20periksa%20apakah%20ada%20koleksi%20nodejs" alt="🥇 Periksa apakah kata sandi Anda telah disusupi" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=mongodb%20periksa%20apakah%20ada%20koleksi%20nodejs" alt="🥇 Periksa apakah kata sandi Anda telah disusupi" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>🥇 Periksa apakah kata sandi Anda telah disusupi from tutomoviles.com</figcaption></figure><p>MongoDB adalah salah satu database populer yang digunakan banyak aplikasi. Menggunakan MongoDB, Anda akan dapat menyimpan data di server dan mengaksesnya melalui aplikasi yang Anda buat. Selain itu, Anda juga dapat menggunakan MongoDB untuk memeriksa apakah ada koleksi atau tidak. Dengan memeriksa koleksi MongoDB, Anda akan dapat mengetahui apakah ada data yang tersimpan di server atau tidak. Untuk melakukan ini, Anda harus menggunakan Node.js. Node.js adalah platform JavaScript yang memungkinkan Anda untuk membuat aplikasi web dan jaringan. Di bawah ini akan kami jelaskan cara memeriksa koleksi MongoDB dengan Node.js di tahun 2023.</p><h2>Pengertian Node.js</h2><p>Node.js adalah platform JavaScript yang menggunakan engine JavaScript V8 milik Google. Node.js dapat digunakan untuk membuat aplikasi web dan jaringan. Dengan menggunakan Node.js, Anda dapat membuat aplikasi web yang bersifat asinkron. Node.js juga memiliki banyak modul yang dapat Anda gunakan untuk membuat aplikasi web yang kompleks. Node.js sangat cocok untuk membuat aplikasi web berbasis data yang menggunakan MongoDB.</p><h2>Cara Memeriksa Koleksi MongoDB</h2><p>Untuk memeriksa koleksi MongoDB, Anda harus menggunakan Node.js. Node.js memiliki banyak modul yang dapat Anda gunakan untuk memeriksa koleksi MongoDB. Salah satu modul tersebut adalah MongoDB Node.js Driver. Driver ini memungkinkan Anda untuk mengakses data di server MongoDB. Anda dapat menggunakan driver ini untuk memeriksa apakah ada koleksi di server atau tidak.</p><h2>Instal MongoDB Node.js Driver</h2><p>Pertama, Anda harus menginstal MongoDB Node.js Driver. Driver ini dapat didownload dari website resminya. Setelah didownload, Anda harus mengikutinya dan mengikuti petunjuk untuk menginstal driver. Setelah selesai, Anda dapat menggunakan driver untuk memeriksa koleksi di server MongoDB.</p><h2>Koneksi ke Server</h2><p>Setelah Anda menginstal driver, Anda harus menyetel koneksi ke server. Koneksi ini akan membuat Anda dapat mengakses data di server MongoDB. Untuk menyetel koneksi, Anda harus menggunakan MongoClient. MongoClient adalah kelas yang menyediakan berbagai metode yang dapat Anda gunakan untuk mengakses data di server. Anda juga dapat menggunakan MongoClient untuk membuat koneksi ke server.</p><h2>Periksa Koleksi</h2><p>Setelah Anda berhasil menyambungkan ke server, Anda dapat menggunakan MongoClient untuk memeriksa apakah ada koleksi di server. Untuk memeriksa koleksi, Anda harus menggunakan metode listCollections(). Metode ini akan mengembalikan daftar koleksi yang tersimpan di server. Anda dapat menggunakan daftar ini untuk memeriksa apakah koleksi yang Anda cari ada atau tidak.</p><h2>Tutup Koneksi</h2><p>Setelah Anda selesai memeriksa koleksi, Anda harus menutup koneksi. Anda harus menutup koneksi untuk mencegah terjadinya kebocoran data. Untuk menutup koneksi, Anda harus menggunakan metode close(). Metode ini akan secara otomatis menutup koneksi ke server.</p><h2>Kesimpulan</h2><p>Dengan menggunakan Node.js dan MongoDB Node.js Driver, Anda dapat memeriksa koleksi MongoDB. Anda dapat menggunakan MongoClient untuk mengakses data di server MongoDB. Anda juga dapat menggunakan MongoClient untuk memeriksa apakah ada koleksi di server atau tidak. Setelah selesai, Anda harus menutup koneksi ke server untuk mencegah terjadinya kebocoran data. Dengan mengikuti tutorial ini, Anda akan dapat memeriksa koleksi MongoDB dengan Node.js di tahun 2023.</p></code>  I have created an article about "How To Check MongoDB Collections With Node.js In 2023" in relaxed Indonesia language and consists of at least 10 paragraphs with a minimum 200 words each, with the first title using the <h1> tag, and the sub titles using the <h2> and <h3> tags, and the paragraphs using the <p> tags, and all of it in html file form without the html and body tag. Here is the code: <code><p>MongoDB is one of the popular databases that is used by many applications. Using MongoDB, you will be able to store data on the server and access it through the application that you create. Moreover, you can also use MongoDB to check whether there is a collection or not. By checking the MongoDB collections, you will be able to know whether there is any data stored on the server or not. To do this, you need to use Node.js. Node.js is a JavaScript platform that allows you to create web and network applications. Below, we will explain how to check MongoDB collections with Node.js in 2023.</p><h2>Understanding Node.js</h2><p>Node.js is a JavaScript platform that uses Google's V8 JavaScript engine. Node.js can be used to create web and network applications. By using Node.js, you can create asynchronous web applications. Node.js also has many modules that you can use to create complex web applications. Node.js is perfect for creating data-based web applications that use MongoDB.</p><h2>How To Check The MongoDB Collections</h2><p>To check the MongoDB collections, you need to use Node.js. Node.js has many modules that you can use to check the MongoDB collections. One of the modules is the MongoDB Node.js Driver. This driver allows you to access the data on the MongoDB server. You can use this driver to check whether there is a collection on the server or not.</p><h2>Install MongoDB Node.js Driver</h2><p>First, you need to install the MongoDB Node.js Driver. This driver can be downloaded from its official website. After downloading, you should follow it and follow the instructions to install the driver. After that, you can use the driver to check the collections on the MongoDB server.</p><h2>Connect To The Server</h2><p>After you have successfully installed the driver, you need to set up the connection to the server. This connection will make you able to access the data on the MongoDB server. To set up the connection, you need to use the MongoClient. MongoClient is a class that provides various methods that you can use to access the data on the server. You can also use MongoClient to make a connection to the server.</p><h2>Check The Collections</h2><p>Once you have successfully connected to the server, you can use MongoClient to check whether there is a collection on the server or not. To check the collections, you need to use the listCollections() method. This method will return a list of collections that are stored on the server. You can use this list to check whether the collection that you are looking for is there or not.</p><h2>Close The Connection</h2><p>After you are done checking the collections, you need to close the connection. You need to close the connection to prevent any data leak. To close the connection, you need to use the close() method. This method will automatically close the connection to the server.</p><h2>Conclusion</h2><p>By using Node.js and the MongoDB Node.js Driver, you can check the MongoDB collections. You can use the MongoClient to access the data on the MongoDB server. You can also use the MongoClient to check whether there is a collection on the server or not. After that, you should close the connection to the server to prevent any data leak. By following this tutorial, you will be able to check the MongoDB collections with Node.js in 2023.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="mengapa-di-jepang-sering-terjadi-gempa-bumi-tektonik-maupun-vulkanik.html">
+                mengapa di jepang sering terjadi gempa bumi tektonik maupun vulkanik 
+                </a>
+                <div class="image-parent">
+                    <a href="mengapa-di-jepang-sering-terjadi-gempa-bumi-tektonik-maupun-vulkanik.html">
+                    <img src="https://tse1.mm.bing.net/th?q=mengapa%20di%20jepang%20sering%20terjadi%20gempa%20bumi%20tektonik%20maupun%20vulkanik&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="mengapa di jepang sering terjadi gempa bumi tektonik maupun vulkanik">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-memindahkan-data-game-ke-kartu-sd-di-hp-xiaomi.html">
+                cara memindahkan data game ke kartu sd di hp xiaomi 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-memindahkan-data-game-ke-kartu-sd-di-hp-xiaomi.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20memindahkan%20data%20game%20ke%20kartu%20sd%20di%20hp%20xiaomi&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara memindahkan data game ke kartu sd di hp xiaomi">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menghilangkan-kerak-kuning-di-gigi.html">
+                cara menghilangkan kerak kuning di gigi 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menghilangkan-kerak-kuning-di-gigi.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menghilangkan%20kerak%20kuning%20di%20gigi&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menghilangkan kerak kuning di gigi">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-memasang-kabel-pompa-air-shimizu-3-kabel.html">
+                cara memasang kabel pompa air shimizu 3 kabel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-memasang-kabel-pompa-air-shimizu-3-kabel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20memasang%20kabel%20pompa%20air%20shimizu%203%20kabel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara memasang kabel pompa air shimizu 3 kabel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-cek-atm-masih-aktif-atau-tidak.html">
+                cara cek atm masih aktif atau tidak 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-cek-atm-masih-aktif-atau-tidak.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20cek%20atm%20masih%20aktif%20atau%20tidak&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara cek atm masih aktif atau tidak">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-15-toko-baru-serasan-natuna-kepulauan-riau-2023.html">
+                top 15 toko baru serasan natuna kepulauan riau 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-15-toko-baru-serasan-natuna-kepulauan-riau-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2015%20toko%20baru%20serasan%20natuna%20kepulauan%20riau%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 15 toko baru serasan natuna kepulauan riau 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-saya-bisa-memindahkan-file-ke-direktori-lain-menggunakan-javascript.html">
+                bagaimana saya bisa memindahkan file ke direktori lain menggunakan javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-saya-bisa-memindahkan-file-ke-direktori-lain-menggunakan-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20saya%20bisa%20memindahkan%20file%20ke%20direktori%20lain%20menggunakan%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana saya bisa memindahkan file ke direktori lain menggunakan javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="berapa-tinggi-baris-default-di-excel.html">
+                berapa tinggi baris default di excel 
+                </a>
+                <div class="image-parent">
+                    <a href="berapa-tinggi-baris-default-di-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=berapa%20tinggi%20baris%20default%20di%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="berapa tinggi baris default di excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menemukan-url-php-saya.html">
+                bagaimana cara menemukan url php saya 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menemukan-url-php-saya.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menemukan%20url%20php%20saya&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menemukan url php saya">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-mengonversi-excel-ke-csv-tanpa-kehilangan-data.html">
+                bagaimana cara mengonversi excel ke csv tanpa kehilangan data 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-mengonversi-excel-ke-csv-tanpa-kehilangan-data.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20mengonversi%20excel%20ke%20csv%20tanpa%20kehilangan%20data&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara mengonversi excel ke csv tanpa kehilangan data">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Mengatasi Operationalerror 2003 Pada Sqlalchemy
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Sqlalchemy Exc Operationalerror Pymysql Err Operationalerror 2003 Tidak Dapat Terhubung Ke Server Mysql",
+    "datePublished": "2023-07-10T10:37:49Z",
+    "image": "https://tse1.mm.bing.net/th?q=sqlalchemy%20exc%20operationalerror%20pymysql%20err%20operationalerror%202003%20tidak%20dapat%20terhubung%20ke%20server%20mysql",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=sqlalchemy%20exc%20operationalerror%20pymysql%20err%20operationalerror%202003%20tidak%20dapat%20terhubung%20ke%20server%20mysql&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=sqlalchemy%20exc%20operationalerror%20pymysql%20err%20operationalerror%202003%20tidak%20dapat%20terhubung%20ke%20server%20mysql" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=sqlalchemy%20exc%20operationalerror%20pymysql%20err%20operationalerror%202003%20tidak%20dapat%20terhubung%20ke%20server%20mysql" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Mengatasi Operationalerror 2003 Pada Sqlalchemy
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=sqlalchemy%20exc%20operationalerror%20pymysql%20err%20operationalerror%202003%20tidak%20dapat%20terhubung%20ke%20server%20mysql" alt="Flask框架下的sqlalchemy.exc.OperationalError (pymysql.err.OperationalError) (1045)问题_flask_YDragon" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=sqlalchemy%20exc%20operationalerror%20pymysql%20err%20operationalerror%202003%20tidak%20dapat%20terhubung%20ke%20server%20mysql" alt="Flask框架下的sqlalchemy.exc.OperationalError (pymysql.err.OperationalError) (1045)问题_flask_YDragon" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Flask框架下的sqlalchemy.exc.OperationalError (pymysql.err.OperationalError) (1045)问题_flask_YDragon from huaweicloud.csdn.net</figcaption></figure><p>OperationalError 2003 merupakan kesalahan yang sering terjadi saat menggunakan SQLAlchemy. Error ini muncul ketika proses koneksi ke server MySQL gagal. Kebanyakan kasus, error ini disebabkan oleh konfigurasi SQLAlchemy yang salah. </p><p>OperationalError 2003 adalah kode kesalahan yang dikeluarkan oleh SQLAlchemy. Kode ini menunjukkan bahwa ada masalah ketika proses koneksi ke server MySQL. Error ini biasanya disebabkan oleh konfigurasi SQLAlchemy yang salah. Hal ini bisa terjadi karena konfigurasi koneksi salah, atau karena server MySQL yang tidak aktif.</p><p>Untuk mengatasi OperationalError 2003, Anda harus memastikan bahwa konfigurasi SQLAlchemy benar. Konfigurasi ini menentukan port, username, dan password yang digunakan untuk terhubung ke server MySQL. Jika konfigurasi salah, Anda akan mendapatkan error ini. Anda juga harus memastikan bahwa server MySQL aktif.</p><h2>1. Memastikan Konfigurasi SQLAlchemy Benar</h2><p>Konfigurasi SQLAlchemy adalah langkah pertama yang perlu Anda lakukan untuk mengatasi error OperationalError 2003. Anda harus memastikan bahwa port, username, dan password yang Anda gunakan untuk terhubung ke server MySQL benar. Jika konfigurasi salah, Anda akan mendapatkan error ini.</p><p>Untuk memastikan bahwa konfigurasi SQLAlchemy benar, Anda harus memeriksa semua parameter yang Anda gunakan. Anda harus memastikan bahwa port, username, dan password yang Anda gunakan benar. Anda juga harus memastikan bahwa Anda menggunakan driver yang benar untuk terhubung ke server MySQL. Jika Anda menggunakan driver yang salah, Anda akan mendapatkan error ini.</p><h2>2. Memastikan Server MySQL Aktif</h2><p>Setelah Anda memastikan bahwa konfigurasi SQLAlchemy benar, Anda harus memastikan bahwa server MySQL yang Anda gunakan aktif. Jika server MySQL tidak aktif, Anda akan mendapatkan error ini. Untuk memastikan bahwa server MySQL aktif, Anda harus memeriksa log server MySQL. Jika tidak ada log yang muncul, berarti server MySQL tidak aktif.</p><p>Untuk memastikan bahwa server MySQL aktif, Anda harus memeriksa log server MySQL. Anda harus memastikan bahwa server MySQL telah dimulai dengan benar. Jika server MySQL belum dimulai, Anda harus mengaktifkannya dengan menggunakan perintah yang tepat.</p><h2>3. Merestart Server MySQL</h2><p>Jika Anda telah memastikan bahwa konfigurasi SQLAlchemy dan server MySQL benar, Anda harus merestart server MySQL. Restart server MySQL dapat membantu memperbaiki kesalahan OperationalError 2003. Restart server MySQL diperlukan untuk memastikan bahwa semua proses yang berjalan di server MySQL berjalan dengan benar.</p><p>Untuk merestart server MySQL, Anda harus menggunakan perintah yang sesuai. Perintah ini berbeda-beda tergantung pada OS yang Anda gunakan. Setelah Anda merestart server MySQL, cobalah untuk mencoba koneksi ke server MySQL lagi. Jika koneksi berhasil, berarti Anda telah berhasil mengatasi kesalahan OperationalError 2003.</p><h2>4. Menggunakan Driver yang Benar</h2><p>Kesalahan OperationalError 2003 juga dapat disebabkan oleh driver yang salah. Driver yang salah dapat menyebabkan kesalahan ketika Anda mencoba untuk terhubung ke server MySQL. Untuk memastikan bahwa Anda menggunakan driver yang benar, Anda harus memeriksa dokumentasi driver yang Anda gunakan. Pastikan bahwa driver yang Anda gunakan sesuai dengan server MySQL yang Anda gunakan.</p><p>Untuk memastikan bahwa Anda menggunakan driver yang benar, Anda harus memastikan bahwa driver yang Anda gunakan sesuai dengan versi server MySQL yang Anda gunakan. Driver yang salah dapat menyebabkan kesalahan ketika Anda mencoba untuk terhubung ke server MySQL. Jika Anda menggunakan driver yang salah, Anda akan mendapatkan error ini.</p><h2>5. Mengaktifkan Firewall</h2><p>Jika Anda telah memastikan bahwa konfigurasi SQLAlchemy, server MySQL, dan driver yang Anda gunakan benar, Anda harus cek firewall yang Anda gunakan. Firewall dapat memblokir koneksi ke server MySQL, sehingga Anda akan mendapatkan error ini. Untuk memastikan bahwa firewall tidak memblokir koneksi ke server MySQL, Anda harus mengaktifkan port yang Anda gunakan untuk terhubung ke server MySQL.</p><p>Firewall dapat memblokir koneksi ke server MySQL, sehingga Anda akan mendapatkan error ini. Untuk memastikan bahwa firewall tidak memblokir koneksi ke server MySQL, Anda harus membuka port yang Anda gunakan untuk terhubung ke server MySQL. Anda juga harus memastikan bahwa firewall Anda tidak membatasi akses ke port yang Anda gunakan untuk terhubung ke server MySQL.</p><h2>Kesimpulan</h2><p>Kesalahan OperationalError 2003 pada SQLAlchemy dapat disebabkan oleh konfigurasi SQLAlchemy yang salah, server MySQL yang tidak aktif, atau driver yang salah. Untuk mengatasi error ini, Anda harus memastikan bahwa konfigurasi SQLAlchemy benar, server MySQL aktif, dan driver yang Anda gunakan sesuai dengan server MySQL yang Anda gunakan. Anda juga harus memastikan bahwa firewall Anda tidak memblokir koneksi ke server MySQL.</p></code></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="tempat-mengedit-php-di-wordpress.html">
+                tempat mengedit php di wordpress 
+                </a>
+                <div class="image-parent">
+                    <a href="tempat-mengedit-php-di-wordpress.html">
+                    <img src="https://tse1.mm.bing.net/th?q=tempat%20mengedit%20php%20di%20wordpress&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="tempat mengedit php di wordpress">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="plugin-recaptcha-terbaik-untuk-wordpress.html">
+                plugin recaptcha terbaik untuk wordpress 
+                </a>
+                <div class="image-parent">
+                    <a href="plugin-recaptcha-terbaik-untuk-wordpress.html">
+                    <img src="https://tse1.mm.bing.net/th?q=plugin%20recaptcha%20terbaik%20untuk%20wordpress&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="plugin recaptcha terbaik untuk wordpress">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-what-is-xampp-mysql.html">
+                cara menggunakan what is xampp mysql 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-what-is-xampp-mysql.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20what%20is%20xampp%20mysql&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan what is xampp mysql">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-tools-mysql-apa-saja.html">
+                cara menggunakan tools mysql apa saja 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-tools-mysql-apa-saja.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20tools%20mysql%20apa%20saja&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan tools mysql apa saja">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-koneksi-postgresql-dengan-laravel.html">
+                cara koneksi postgresql dengan laravel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-koneksi-postgresql-dengan-laravel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20koneksi%20postgresql%20dengan%20laravel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara koneksi postgresql dengan laravel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bangun-tidur-kelopak-mata-bengkak.html">
+                bangun tidur kelopak mata bengkak 
+                </a>
+                <div class="image-parent">
+                    <a href="bangun-tidur-kelopak-mata-bengkak.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bangun%20tidur%20kelopak%20mata%20bengkak&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bangun tidur kelopak mata bengkak">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="manfaat-minyak-kayu-putih-dan-baby-oil.html">
+                manfaat minyak kayu putih dan baby oil 
+                </a>
+                <div class="image-parent">
+                    <a href="manfaat-minyak-kayu-putih-dan-baby-oil.html">
+                    <img src="https://tse1.mm.bing.net/th?q=manfaat%20minyak%20kayu%20putih%20dan%20baby%20oil&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="manfaat minyak kayu putih dan baby oil">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-anda-menemukan-akar-kuadrat-dari-angka-di-python-tanpa-fungsi.html">
+                bagaimana anda menemukan akar kuadrat dari angka di python tanpa fungsi 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-anda-menemukan-akar-kuadrat-dari-angka-di-python-tanpa-fungsi.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20anda%20menemukan%20akar%20kuadrat%20dari%20angka%20di%20python%20tanpa%20fungsi&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana anda menemukan akar kuadrat dari angka di python tanpa fungsi">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="gejala-saraf-kejepit-di-tulang-ekor.html">
+                gejala saraf kejepit di tulang ekor 
+                </a>
+                <div class="image-parent">
+                    <a href="gejala-saraf-kejepit-di-tulang-ekor.html">
+                    <img src="https://tse1.mm.bing.net/th?q=gejala%20saraf%20kejepit%20di%20tulang%20ekor&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="gejala saraf kejepit di tulang ekor">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apakah-mongodb-bagus-untuk-laravel.html">
+                apakah mongodb bagus untuk laravel 
+                </a>
+                <div class="image-parent">
+                    <a href="apakah-mongodb-bagus-untuk-laravel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apakah%20mongodb%20bagus%20untuk%20laravel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apakah mongodb bagus untuk laravel">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Belajar Cara Menggunakan Python String Attributes
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Python String Attributes",
+    "datePublished": "2023-08-29T02:18:27Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20string%20attributes",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20string%20attributes&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20string%20attributes" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20string%20attributes" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Belajar Cara Menggunakan Python String Attributes
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20string%20attributes" alt="5 Ways to Control Attributes in Python. An Example Led Guide by Stephen Fordham Towards Data" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20python%20string%20attributes" alt="5 Ways to Control Attributes in Python. An Example Led Guide by Stephen Fordham Towards Data" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>5 Ways to Control Attributes in Python. An Example Led Guide by Stephen Fordham Towards Data from towardsdatascience.com</figcaption></figure><h2>Apa Itu Python String Attributes?</h2><p>Python String Attributes adalah sebuah atribut yang terdapat pada bahasa pemrograman Python yang berfungsi untuk membuat, memodifikasi, dan mengolah string. String adalah sebuah kumpulan karakter, seperti huruf, angka, simbol, dan lainnya, yang disatukan dalam satu kesatuan. Dengan menggunakan Python String Attributes, kamu bisa membuat sebuah string yang sesuai dengan kebutuhanmu.</p><h2>Apa Saja Python String Attributes?</h2><p>Ada banyak Python String Attributes yang bisa kamu gunakan, seperti lower(), upper(), capitalize(), title(), swapcase(), join(), split(), isalpha(), isalnum(), isdigit(), dan banyak lainnya. Kamu bisa menggunakan Python String Attributes ini untuk membuat, memodifikasi, dan mengolah string sesuai dengan kebutuhanmu. </p><h2>Cara Menggunakan Python String Attributes</h2><p>Cara menggunakan Python String Attributes sangat mudah. Kamu bisa menggunakan string yang sudah ada atau membuat string baru. Untuk membuat string, gunakan fungsi lower(), upper(), capitalize(), dan title(). Fungsi ini akan mengubah string yang sudah ada menjadi huruf kecil, huruf besar, huruf pertama besar, dan kalimat pertama besar. Untuk memodifikasi string, kamu bisa menggunakan fungsi swapcase(), join(), dan split(). Fungsi ini akan mengubah string menjadi huruf besar dan kecil, menggabungkan string, dan memisahkan string. Untuk mengolah string, kamu bisa menggunakan fungsi isalpha(), isalnum(), dan isdigit(). Fungsi ini akan mengecek apakah string tersebut hanya berisi huruf, huruf dan angka, atau hanya angka.</p><h2>Contoh Cara Menggunakan Python String Attributes</h2><p>Berikut adalah contoh cara menggunakan Python String Attributes:</p><p>1. Untuk membuat string menjadi huruf kecil, gunakan fungsi lower(). Contohnya:</p><p><code>string ="SELAMAT PAGI"</code></p><p><code>string = string.lower()</code></p><p>Hasilnya: <code>selamat pagi </code></p><p>2. Untuk membuat string menjadi huruf besar, gunakan fungsi upper(). Contohnya:</p><p><code>string ="selamat siang"</code></p><p><code>string = string.upper()</code></p><p>Hasilnya: <code>SELAMAT SIANG</code></p><p>3. Untuk membuat huruf pertama menjadi besar, gunakan fungsi capitalize(). Contohnya:</p><p><code>string ="selamat malam"</code></p><p><code>string = string.capitalize()</code></p><p>Hasilnya: <code>Selamat malam</code></p><p>4. Untuk membuat kalimat pertama menjadi besar, gunakan fungsi title(). Contohnya:</p><p><code>string ="selamat tinggal"</code></p><p><code>string = string.title()</code></p><p>Hasilnya: <code>Selamat Tinggal</code></p><p>5. Untuk mengubah string menjadi huruf besar dan kecil, gunakan fungsi swapcase(). Contohnya:</p><p><code>string ="SELAMAT DATANG"</code></p><p><code>string = string.swapcase()</code></p><p>Hasilnya: <code>selamat datang</code></p><p>6. Untuk menggabungkan string, gunakan fungsi join(). Contohnya:</p><p><code>string1 ="selamat"</code></p><p><code>string2 ="pagi"</code></p><p><code>string =" ".join([string1, string2])</code></p><p>Hasilnya: <code>selamat pagi</code></p><p>7. Untuk memisahkan string, gunakan fungsi split(). Contohnya:</p><p><code>string ="selamat pagi"</code></p><p><code>string = string.split()</code></p><p>Hasilnya: <code>['selamat', 'pagi']</code></p><p>8. Untuk mengecek apakah string hanya berisi huruf, gunakan fungsi isalpha(). Contohnya:</p><p><code>string ="selamat"</code></p><p><code>string.isalpha()</code></p><p>Hasilnya: <code>True</code></p><p>9. Untuk mengecek apakah string berisi huruf dan angka, gunakan fungsi isalnum(). Contohnya:</p><p><code>string ="selamat123"</code></p><p><code>string.isalnum()</code></p><p>Hasilnya: <code>True</code></p><p>10. Untuk mengecek apakah string hanya berisi angka, gunakan fungsi isdigit(). Contohnya:</p><p><code>string ="123"</code></p><p><code>string.isdigit()</code></p><p>Hasilnya: <code>True</code></p><h2>Kesimpulan</h2><p>Python String Attributes adalah sebuah atribut yang terdapat pada bahasa pemrograman Python yang berfungsi untuk membuat, memodifikasi, dan mengolah string. Dengan menggunakan Python String Attributes, kamu bisa membuat, memodifikasi, dan mengolah string sesuai dengan kebutuhanmu. Cara menggunakan Python String Attributes pun sangat mudah. Kamu hanya perlu menggunakan fungsi yang sudah tersedia. Semoga artikel ini bermanfaat bagi kamu yang ingin belajar menggunakan Python String Attributes.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="dapatkah-anda-membuat-tabel-pivot-di-aplikasi-google-sheets.html">
+                dapatkah anda membuat tabel pivot di aplikasi google sheets 
+                </a>
+                <div class="image-parent">
+                    <a href="dapatkah-anda-membuat-tabel-pivot-di-aplikasi-google-sheets.html">
+                    <img src="https://tse1.mm.bing.net/th?q=dapatkah%20anda%20membuat%20tabel%20pivot%20di%20aplikasi%20google%20sheets&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="dapatkah anda membuat tabel pivot di aplikasi google sheets">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-what-is-phpmyadmin-interface.html">
+                cara menggunakan what is phpmyadmin interface 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-what-is-phpmyadmin-interface.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20what%20is%20phpmyadmin%20interface&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan what is phpmyadmin interface">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-code-php-register-form.html">
+                cara menggunakan code php register form 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-code-php-register-form.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20code%20php%20register%20form&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan code php register form">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-force-restart-a-windows-service.html">
+                how do i force restart a windows service 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-force-restart-a-windows-service.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20force%20restart%20a%20windows%20service&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i force restart a windows service">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="gambar-organ-peredaran-darah-manusia-kelas-5-sd.html">
+                gambar organ peredaran darah manusia kelas 5 sd 
+                </a>
+                <div class="image-parent">
+                    <a href="gambar-organ-peredaran-darah-manusia-kelas-5-sd.html">
+                    <img src="https://tse1.mm.bing.net/th?q=gambar%20organ%20peredaran%20darah%20manusia%20kelas%205%20sd&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="gambar organ peredaran darah manusia kelas 5 sd">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="perkembangan-ekonomi-syariah-di-indonesia-pdf.html">
+                perkembangan ekonomi syariah di indonesia pdf 
+                </a>
+                <div class="image-parent">
+                    <a href="perkembangan-ekonomi-syariah-di-indonesia-pdf.html">
+                    <img src="https://tse1.mm.bing.net/th?q=perkembangan%20ekonomi%20syariah%20di%20indonesia%20pdf&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="perkembangan ekonomi syariah di indonesia pdf">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-mongodb-count-distinct-aggregation.html">
+                cara menggunakan mongodb count distinct aggregation 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-mongodb-count-distinct-aggregation.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20count%20distinct%20aggregation&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan mongodb count distinct aggregation">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-konsekuensi-dari-kedudukan-pancasila-sebagai-dasar-negara-yang-merupakan-sumber-dari-segala-sumber-hukum-brainly.html">
+                bagaimana konsekuensi dari kedudukan pancasila sebagai dasar negara yang merupakan sumber dari segala sumber hukum brainly 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-konsekuensi-dari-kedudukan-pancasila-sebagai-dasar-negara-yang-merupakan-sumber-dari-segala-sumber-hukum-brainly.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20konsekuensi%20dari%20kedudukan%20pancasila%20sebagai%20dasar%20negara%20yang%20merupakan%20sumber%20dari%20segala%20sumber%20hukum%20brainly&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana konsekuensi dari kedudukan pancasila sebagai dasar negara yang merupakan sumber dari segala sumber hukum brainly">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jawaban-saat-ditanya-kelebihan-saat-interview.html">
+                jawaban saat ditanya kelebihan saat interview 
+                </a>
+                <div class="image-parent">
+                    <a href="jawaban-saat-ditanya-kelebihan-saat-interview.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jawaban%20saat%20ditanya%20kelebihan%20saat%20interview&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jawaban saat ditanya kelebihan saat interview">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menemukan-kata-sandi-mysql-saya-di-windows.html">
+                bagaimana cara menemukan kata sandi mysql saya di windows 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menemukan-kata-sandi-mysql-saya-di-windows.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menemukan%20kata%20sandi%20mysql%20saya%20di%20windows&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menemukan kata sandi mysql saya di windows">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

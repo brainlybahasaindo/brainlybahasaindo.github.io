@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Apa Itu Database Dan Koleksi Di Mongodb?
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Apa Itu Database Dan Koleksi Di Mongodb",
+    "datePublished": "2023-05-05T12:26:51Z",
+    "image": "https://tse1.mm.bing.net/th?q=apa%20itu%20database%20dan%20koleksi%20di%20mongodb",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=apa%20itu%20database%20dan%20koleksi%20di%20mongodb&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=apa%20itu%20database%20dan%20koleksi%20di%20mongodb" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=apa%20itu%20database%20dan%20koleksi%20di%20mongodb" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Apa Itu Database Dan Koleksi Di Mongodb?
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=apa%20itu%20database%20dan%20koleksi%20di%20mongodb" alt="Apa itu Database? Definisi Pengertian dan Contohnya Kabar Terkini" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=apa%20itu%20database%20dan%20koleksi%20di%20mongodb" alt="Apa itu Database? Definisi Pengertian dan Contohnya Kabar Terkini" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Apa itu Database? Definisi Pengertian dan Contohnya Kabar Terkini from www.indolifenews.com</figcaption></figure><p>MongoDB adalah salah satu platform database relasional yang berkembang pesat. Platform ini menggunakan struktur data non-relasional yang disebut "document". Platform ini juga dikenal sebagai "document-oriented database". Platform ini banyak digunakan oleh para pengembang aplikasi karena kemudahan dalam mengakses data dan karena ia juga dapat menangani data yang berubah-ubah dengan mudah.   MongoDB memiliki konsep struktur data yang berbeda dibandingkan dengan platform database relasional. Di MongoDB, data disimpan dalam bentuk "dokumen" yang berisi data yang berbeda. Kumpulan dokumen ini disebut "koleksi". Koleksi dapat dianggap sebagai tabel di platform database relasional.</p><h2>Apa itu Database?</h2><p>Database adalah sistem penyimpanan data yang dirancang untuk memungkinkan pengguna untuk menyimpan, mencari, mengambil, dan memodifikasi data dengan mudah. Database dapat berupa file atau bahkan sebuah server yang menyimpan data. Database juga dapat dibagi menjadi berbagai jenis dan jenis data yang tersimpan dalam database juga berbeda-beda sesuai dengan jenisnya.   Database dapat digunakan untuk menyimpan berbagai jenis data, seperti data transaksi, data pengiriman, data pelanggan, dan lainnya. Database juga dapat digunakan untuk membuat aplikasi yang dapat digunakan untuk menelusuri, mencari, dan mengambil data.</p><h2>Apa Itu Koleksi di MongoDB?</h2><p>Koleksi adalah kumpulan dokumen yang berisi data yang berbeda-beda. Koleksi ini mirip dengan tabel di platform database relasional. Koleksi dapat berisi berbagai jenis data, seperti data pelanggan, data transaksi, data pengiriman, dan lainnya.   Koleksi dapat dibuat dengan menggunakan perintah MongoDB, dan dokumen dapat dimasukkan ke dalam koleksi dengan menggunakan perintah yang sama. Perintah ini juga dapat digunakan untuk mengambil dokumen dari koleksi dan memodifikasinya.   Selain itu, MongoDB juga memungkinkan pengguna untuk menggunakan query yang dapat digunakan untuk mencari dan menelusuri dokumen dalam koleksi. Query ini juga memungkinkan pengguna untuk memfilter dan mengurutkan dokumen dalam koleksi.</p><h2>Keuntungan Menggunakan MongoDB</h2><p>Keuntungan utama dari menggunakan MongoDB adalah mudahnya mengakses data. Karena MongoDB menggunakan struktur data non-relasional, data dapat diakses dengan mudah menggunakan berbagai query. Selain itu, MongoDB juga memiliki struktur data yang fleksibel, sehingga data dapat berubah-ubah dengan mudah tanpa harus memodifikasi struktur data yang ada.   Selain itu, MongoDB juga dapat dengan mudah menangani data yang berubah-ubah dengan mudah. Hal ini karena struktur data MongoDB yang fleksibel dan karena MongoDB memiliki berbagai fitur yang memungkinkan pengguna untuk mengelola data dengan mudah.   MongoDB juga sangat skalabel dan dapat menangani berbagai jenis data yang berbeda-beda. Hal ini karena MongoDB memiliki berbagai fitur yang memungkinkan pengguna untuk mengelola data dengan mudah. Dengan MongoDB, pengguna dapat dengan mudah menambahkan, menghapus, dan memodifikasi data dengan mudah.   Selain itu, MongoDB juga memiliki fitur yang memungkinkan pengguna untuk mengelola data secara real-time. Dengan fitur ini, pengguna dapat menangani data yang berubah-ubah dengan mudah. Dengan MongoDB, pengguna juga dapat menggunakan berbagai query untuk menelusuri dan mencari data dengan mudah.</p><h2>Kesimpulan</h2><p>MongoDB adalah salah satu platform database yang berkembang pesat. Platform ini menggunakan struktur data non-relasional yang disebut "document". Data disimpan dalam bentuk "dokumen" yang berisi data yang berbeda. Kumpulan dokumen ini disebut "koleksi". Koleksi dapat dianggap sebagai tabel di platform database relasional.   Keuntungan utama dari menggunakan MongoDB adalah mudahnya mengakses data. Selain itu, MongoDB juga dapat dengan mudah menangani data yang berubah-ubah dengan mudah. MongoDB juga sangat skalabel dan dapat menangani berbagai jenis data yang berbeda-beda. MongoDB juga memiliki fitur yang memungkinkan pengguna untuk mengelola data secara real-time.   MongoDB merupakan pilihan yang baik bagi para pengembang aplikasi yang ingin menangani data yang berubah-ubah dengan mudah. MongoDB juga sangat fleksibel dan memungkinkan pengguna untuk mengelola data dengan mudah. Dengan MongoDB, pengguna dapat dengan mudah mengelola data dan menggunakan berbagai query untuk menelusuri dan mencari data dengan mudah.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menghilangkan-bekas-gigitan-nyamuk-dengan-cepat.html">
+                cara menghilangkan bekas gigitan nyamuk dengan cepat 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menghilangkan-bekas-gigitan-nyamuk-dengan-cepat.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menghilangkan%20bekas%20gigitan%20nyamuk%20dengan%20cepat&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menghilangkan bekas gigitan nyamuk dengan cepat">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="python-lulus-fungsi-kosong-sebagai-argumen.html">
+                python lulus fungsi kosong sebagai argumen 
+                </a>
+                <div class="image-parent">
+                    <a href="python-lulus-fungsi-kosong-sebagai-argumen.html">
+                    <img src="https://tse1.mm.bing.net/th?q=python%20lulus%20fungsi%20kosong%20sebagai%20argumen&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="python lulus fungsi kosong sebagai argumen">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="pengertian-html-php-javascript-css.html">
+                pengertian html php javascript css 
+                </a>
+                <div class="image-parent">
+                    <a href="pengertian-html-php-javascript-css.html">
+                    <img src="https://tse1.mm.bing.net/th?q=pengertian%20html%20php%20javascript%20css&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="pengertian html php javascript css">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-mysql-query-excel.html">
+                cara menggunakan mysql query excel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-mysql-query-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mysql%20query%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan mysql query excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-itu-kotak-ajaib-di-python.html">
+                apa itu kotak ajaib di python 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-itu-kotak-ajaib-di-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20kotak%20ajaib%20di%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa itu kotak ajaib di python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jawaban-tema-3-kelas-3-halaman-53.html">
+                jawaban tema 3 kelas 3 halaman 53 
+                </a>
+                <div class="image-parent">
+                    <a href="jawaban-tema-3-kelas-3-halaman-53.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jawaban%20tema%203%20kelas%203%20halaman%2053&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jawaban tema 3 kelas 3 halaman 53">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-agar-bisa-masuk-universitas-luar-negeri.html">
+                cara agar bisa masuk universitas luar negeri 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-agar-bisa-masuk-universitas-luar-negeri.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20agar%20bisa%20masuk%20universitas%20luar%20negeri&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara agar bisa masuk universitas luar negeri">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="sebutkan-tipe-tag-pada-html-5.html">
+                sebutkan tipe tag pada html 5 
+                </a>
+                <div class="image-parent">
+                    <a href="sebutkan-tipe-tag-pada-html-5.html">
+                    <img src="https://tse1.mm.bing.net/th?q=sebutkan%20tipe%20tag%20pada%20html%205&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="sebutkan tipe tag pada html 5">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="why-do-we-import-in-python.html">
+                why do we import in python 
+                </a>
+                <div class="image-parent">
+                    <a href="why-do-we-import-in-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=why%20do%20we%20import%20in%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="why do we import in python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-edit-foto-siluet-di-capcut.html">
+                cara edit foto siluet di capcut 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-edit-foto-siluet-di-capcut.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20edit%20foto%20siluet%20di%20capcut&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara edit foto siluet di capcut">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

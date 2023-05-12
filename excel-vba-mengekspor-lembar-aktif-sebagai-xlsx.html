@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Ekspor Lembar Aktif Excel Ke Xlsx Dengan Vba
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Excel Vba Mengekspor Lembar Aktif Sebagai Xlsx",
+    "datePublished": "2023-06-11T09:09:04Z",
+    "image": "https://tse1.mm.bing.net/th?q=excel%20vba%20mengekspor%20lembar%20aktif%20sebagai%20xlsx",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=excel%20vba%20mengekspor%20lembar%20aktif%20sebagai%20xlsx&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=excel%20vba%20mengekspor%20lembar%20aktif%20sebagai%20xlsx" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=excel%20vba%20mengekspor%20lembar%20aktif%20sebagai%20xlsx" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Ekspor Lembar Aktif Excel Ke Xlsx Dengan Vba
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=excel%20vba%20mengekspor%20lembar%20aktif%20sebagai%20xlsx" alt="Vba Excel Visual Basic For Vba In Excel." width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=excel%20vba%20mengekspor%20lembar%20aktif%20sebagai%20xlsx" alt="Vba Excel Visual Basic For Vba In Excel." width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Vba Excel Visual Basic For Vba In Excel. from sonicactivex.com</figcaption></figure><p>Dalam pembuatan sebuah laporan di Microsoft Excel, para pengguna sering menggunakan Microsoft Visual Basic for Applications (VBA) untuk membuat laporan yang mudah dibaca. VBA memungkinkan pengguna untuk menyimpan laporan sebagai file Excel (.xlsx) yang dapat diubah menjadi file lain. Untuk mengekspor lembar aktif Excel ke file XLSX, Anda perlu menggunakan kode VBA berikut.</p><h2>Langkah-Langkah untuk Mengekspor Lembar Aktif Excel ke XLSX</h2><h3>Langkah 1: Buka Visual Basic Editor</h3><p>Buka Visual Basic Editor (VBE) dengan menekan tombol Alt+F11. VBE adalah editor kode yang digunakan untuk membuat laporan Excel yang lebih mudah dibaca. Setelah Anda membuka VBE, kemudian buka lembar aktif yang ingin Anda ekspor. Kemudian buka Visual Basic Editor (VBE) lewat tab Developer dalam Ribbon Excel. Jika tab Developer tidak ditampilkan, buka opsi “Ribbon Display Options” dari tab File dan pilih “Show Developer Tab in the Ribbon”.</p><h3>Langkah 2: Buat Sub Routine</h3><p>Setelah Anda membuka Visual Basic Editor, Anda perlu membuat sub routine baru. Sub routine adalah bagian dari macro yang mengandung kode yang akan dijalankan oleh VBA. Anda dapat membuat sub routine dengan menekan tombol F5 atau dengan memilih menu Insert > Module. Setelah membuat sub routine, Anda perlu menambahkan kode VBA untuk mengekspor lembar aktif ke file XLSX.</p><h3>Langkah 3: Tambahkan Kode VBA</h3><p>Untuk mengekspor lembar aktif ke file XLSX, Anda perlu menambahkan kode VBA berikut. Kode ini menyimpan lembar aktif yang terbuka ke file XLSX dengan nama yang telah Anda tentukan.</p><p><code>ActiveWorkbook.SaveAs Filename:="C:\Documents\MyFile.xlsx", FileFormat:=xlOpenXMLWorkbook</code></p><h3>Langkah 4: Jalankan Kode VBA</h3><p>Setelah Anda menambahkan kode VBA, Anda dapat menjalankan kode tersebut dengan menekan tombol F5 atau dengan memilih menu Run > Run Sub/UserForm. Setelah menjalankan kode, lembar aktif yang terbuka akan disimpan ke file XLSX dengan nama yang telah Anda tentukan. Anda juga dapat mengubah kode VBA sesuai kebutuhan.</p><h2>Kesimpulan</h2><p>Mengekspor lembar aktif Excel ke file XLSX dapat dilakukan dengan menggunakan kode VBA. Kode ini dapat Anda jalankan dengan menekan tombol F5 atau dengan memilih menu Run > Run Sub/UserForm. Dengan begitu, Anda dapat dengan mudah mengekspor lembar aktif Excel ke file XLSX yang dapat diubah menjadi file lain. </p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="ganti-karakter-terakhir-dalam-string-javascript.html">
+                ganti karakter terakhir dalam string javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="ganti-karakter-terakhir-dalam-string-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=ganti%20karakter%20terakhir%20dalam%20string%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="ganti karakter terakhir dalam string javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-php-get-variable.html">
+                cara menggunakan php get variable 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-php-get-variable.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20get%20variable&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan php get variable">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apakah-perusahaan-game-menggunakan-python.html">
+                apakah perusahaan game menggunakan python 
+                </a>
+                <div class="image-parent">
+                    <a href="apakah-perusahaan-game-menggunakan-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apakah%20perusahaan%20game%20menggunakan%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apakah perusahaan game menggunakan python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-menghitung-jumlah-array-javascript.html">
+                cara menggunakan menghitung jumlah array javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-menghitung-jumlah-array-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20menghitung%20jumlah%20array%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan menghitung jumlah array javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-membuat-login-admin-php.html">
+                cara membuat login admin php 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-membuat-login-admin-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20membuat%20login%20admin%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara membuat login admin php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-20-toko-alquran-kopang-lombok-tengah-nusa-tenggara-barat-2023.html">
+                top 20 toko alquran kopang lombok tengah nusa tenggara barat 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-20-toko-alquran-kopang-lombok-tengah-nusa-tenggara-barat-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2020%20toko%20alquran%20kopang%20lombok%20tengah%20nusa%20tenggara%20barat%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 20 toko alquran kopang lombok tengah nusa tenggara barat 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="dapatkah-anda-membaca-cookie-httponly-di-javascript.html">
+                dapatkah anda membaca cookie httponly di javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="dapatkah-anda-membaca-cookie-httponly-di-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=dapatkah%20anda%20membaca%20cookie%20httponly%20di%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="dapatkah anda membaca cookie httponly di javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-do-i-create-an-image-from-pixel-values-in-python.html">
+                how do i create an image from pixel values in python 
+                </a>
+                <div class="image-parent">
+                    <a href="how-do-i-create-an-image-from-pixel-values-in-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20create%20an%20image%20from%20pixel%20values%20in%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how do i create an image from pixel values in python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-setwindowfields-mongodb.html">
+                cara menggunakan setwindowfields mongodb 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-setwindowfields-mongodb.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20setwindowfields%20mongodb&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan setwindowfields mongodb">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-apresiasi-yang-bisa-anda-berikan-kepada-diri-sendiri-jika-berhasil-mencapai-suatu-tujuan.html">
+                apa apresiasi yang bisa anda berikan kepada diri sendiri jika berhasil mencapai suatu tujuan 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-apresiasi-yang-bisa-anda-berikan-kepada-diri-sendiri-jika-berhasil-mencapai-suatu-tujuan.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20apresiasi%20yang%20bisa%20anda%20berikan%20kepada%20diri%20sendiri%20jika%20berhasil%20mencapai%20suatu%20tujuan&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa apresiasi yang bisa anda berikan kepada diri sendiri jika berhasil mencapai suatu tujuan">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

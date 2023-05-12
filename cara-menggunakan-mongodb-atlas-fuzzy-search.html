@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Menggunakan Mongodb Atlas Fuzzy Search
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Menggunakan Mongodb Atlas Fuzzy Search",
+    "datePublished": "2023-04-29T19:47:39Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20atlas%20fuzzy%20search",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20atlas%20fuzzy%20search&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20atlas%20fuzzy%20search" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20atlas%20fuzzy%20search" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Menggunakan Mongodb Atlas Fuzzy Search
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20atlas%20fuzzy%20search" alt="Mengenal MongoDB Untuk Pemula Webzid Developer" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20mongodb%20atlas%20fuzzy%20search" alt="Mengenal MongoDB Untuk Pemula Webzid Developer" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Mengenal MongoDB Untuk Pemula Webzid Developer from webzid.com</figcaption></figure><p>MongoDB Atlas Fuzzy Search adalah sebuah fitur yang sangat berguna yang tersedia di MongoDB Atlas. Fitur ini memungkinkan Anda mencari data yang mungkin ada dalam basis data Anda, meskipun tidak tepat. Fitur ini sangat berguna bagi pengguna yang mencari data dalam lingkungan yang beragam. Dengan menggunakan MongoDB Atlas Fuzzy Search, Anda dapat menemukan data yang Anda cari, meskipun tidak sempurna.</p><h2>Mengapa Anda Perlu Menggunakan Fuzzy Search?</h2><p>Mengapa Anda perlu menggunakan Fuzzy Search? Pertama, Fuzzy Search memungkinkan Anda untuk menemukan data yang mungkin ada di dalam basis data Anda. Fuzzy Search akan memeriksa kata-kata yang diketikkan pengguna dan memberikan hasil yang mungkin berisi data yang pengguna cari. Karena Fuzzy Search menggunakan algoritma yang lebih halus, hasil pencariannya jauh lebih akurat daripada pencarian biasa.</p><h2>Cara Menggunakan Fuzzy Search di MongoDB Atlas</h2><p>Mengatur dan menggunakan Fuzzy Search di MongoDB Atlas tidaklah sulit. Pertama, Anda harus memastikan bahwa Anda memiliki akses ke MongoDB Atlas. Anda dapat melakukan ini dengan masuk ke portal MongoDB Atlas. Setelah masuk, Anda perlu mengkonfigurasi Fuzzy Search. Anda bisa melakukannya dengan mengklik tombol Fuzzy Search di navigasi. Setelah itu, Anda dapat menyesuaikan pengaturan Fuzzy Search sesuai keinginan Anda.</p><h3>Cara Menggunakan Fuzzy Search di MongoDB Atlas secara Langsung</h3><p>Selain mengkonfigurasi Fuzzy Search di MongoDB Atlas, Anda juga dapat menggunakannya langsung dalam pencarian. Anda dapat melakukannya dengan memasukkan parameter fuzzy ke dalam kueri MongoDB. Anda juga dapat mengkonfigurasi parameter fuzzy untuk menyesuaikan hasil pencarian. Parameter fuzzy akan membantu Anda menemukan data yang Anda cari, meskipun tidak sempurna.</p><h2>Manfaat Menggunakan Fuzzy Search di MongoDB Atlas</h2><p>Menggunakan Fuzzy Search di MongoDB Atlas membawa banyak manfaat. Pertama, fitur ini memungkinkan Anda untuk menemukan data yang mungkin tidak tepat. Hal ini sangat berguna bagi pengguna yang mencari data dalam lingkungan yang beragam. Selain itu, Fuzzy Search akan membantu Anda menemukan data yang mungkin tidak sesuai dengan parameter yang Anda tentukan. Ini memudahkan Anda untuk menemukan data yang mungkin tertinggal dalam basis data Anda.</p><h2>Bagaimana Fuzzy Search Berbeda dari Pencarian Biasa?</h2><p>Fuzzy Search dan pencarian biasa berbeda dalam cara mereka mencari data. Pencarian biasa akan mencari data yang tepat sesuai dengan parameter yang ditentukan. Fuzzy Search, di sisi lain, akan mencari data yang mungkin tidak tepat sesuai dengan parameter yang ditentukan. Ini membuat Fuzzy Search jauh lebih akurat daripada pencarian biasa. Selain itu, Fuzzy Search juga memungkinkan Anda untuk menemukan data yang mungkin tertinggal dalam basis data Anda.</p><h2>Cara Membuat Kueri Fuzzy Search di MongoDB Atlas</h2><p>Membuat kueri Fuzzy Search di MongoDB Atlas tidaklah susah. Pertama, Anda harus memastikan bahwa Anda telah mengkonfigurasi Fuzzy Search di MongoDB Atlas. Setelah itu, Anda dapat menggunakan kueri MongoDB untuk mengambil data dari MongoDB Atlas. Anda dapat menambahkan parameter Fuzzy Search ke dalam kueri MongoDB Anda agar Fuzzy Search dapat bekerja. Parameter Fuzzy Search akan membantu Anda menemukan data yang mungkin tidak tepat sesuai dengan parameter yang ditentukan.</p><h2>Kesimpulan</h2><p>MongoDB Atlas Fuzzy Search adalah fitur yang sangat berguna yang tersedia di MongoDB Atlas. Fitur ini memungkinkan Anda untuk menemukan data yang mungkin ada dalam basis data Anda. Dengan menggunakan Fuzzy Search, Anda dapat menemukan data yang Anda cari meskipun tidak sempurna. Fuzzy Search jauh lebih akurat daripada pencarian biasa dan memungkinkan Anda untuk menemukan data yang mungkin tertinggal dalam basis data Anda. MongoDB Atlas menawarkan fitur Fuzzy Search yang dapat Anda gunakan dengan mudah. Dengan menggunakan Fuzzy Search, Anda dapat menemukan data yang Anda cari dengan lebih cepat dan akurat.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="selain-bentuk-energi-yaitu-energi-apakah-yang-dihasilkan-dari-sumber-energi-yang-digunakan-pada-proses-penjemuran-ikan-asin.html">
+                selain bentuk energi yaitu energi apakah yang dihasilkan dari sumber energi yang digunakan pada proses penjemuran ikan asin 
+                </a>
+                <div class="image-parent">
+                    <a href="selain-bentuk-energi-yaitu-energi-apakah-yang-dihasilkan-dari-sumber-energi-yang-digunakan-pada-proses-penjemuran-ikan-asin.html">
+                    <img src="https://tse1.mm.bing.net/th?q=selain%20bentuk%20energi%20yaitu%20energi%20apakah%20yang%20dihasilkan%20dari%20sumber%20energi%20yang%20digunakan%20pada%20proses%20penjemuran%20ikan%20asin&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="selain bentuk energi yaitu energi apakah yang dihasilkan dari sumber energi yang digunakan pada proses penjemuran ikan asin">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-yang-menghapus-lakukan-dengan-python.html">
+                apa yang menghapus lakukan dengan python 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-yang-menghapus-lakukan-dengan-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20menghapus%20lakukan%20dengan%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa yang menghapus lakukan dengan python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="membuat-penjumlahan-pengurangan-html.html">
+                membuat penjumlahan pengurangan html 
+                </a>
+                <div class="image-parent">
+                    <a href="membuat-penjumlahan-pengurangan-html.html">
+                    <img src="https://tse1.mm.bing.net/th?q=membuat%20penjumlahan%20pengurangan%20html&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="membuat penjumlahan pengurangan html">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-cancatinate-pada-python.html">
+                cara menggunakan cancatinate pada python 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-cancatinate-pada-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20cancatinate%20pada%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan cancatinate pada python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-membekukan-baris-teratas-di-excel-untuk-mac.html">
+                bagaimana cara membekukan baris teratas di excel untuk mac 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-membekukan-baris-teratas-di-excel-untuk-mac.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20membekukan%20baris%20teratas%20di%20excel%20untuk%20mac&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara membekukan baris teratas di excel untuk mac">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-1-toko-mirza-rupat-utara-bengkalis-riau-2023.html">
+                top 1 toko mirza rupat utara bengkalis riau 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-1-toko-mirza-rupat-utara-bengkalis-riau-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%201%20toko%20mirza%20rupat%20utara%20bengkalis%20riau%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 1 toko mirza rupat utara bengkalis riau 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-itu-kotak-ajaib-di-python.html">
+                apa itu kotak ajaib di python 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-itu-kotak-ajaib-di-python.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20kotak%20ajaib%20di%20python&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa itu kotak ajaib di python">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-15-toko-baru-serasan-natuna-kepulauan-riau-2023.html">
+                top 15 toko baru serasan natuna kepulauan riau 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-15-toko-baru-serasan-natuna-kepulauan-riau-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2015%20toko%20baru%20serasan%20natuna%20kepulauan%20riau%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 15 toko baru serasan natuna kepulauan riau 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-php-get-variable.html">
+                cara menggunakan php get variable 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-php-get-variable.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20php%20get%20variable&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan php get variable">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-itu-html-dan-json.html">
+                apa itu html dan json 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-itu-html-dan-json.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20itu%20html%20dan%20json&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa itu html dan json">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

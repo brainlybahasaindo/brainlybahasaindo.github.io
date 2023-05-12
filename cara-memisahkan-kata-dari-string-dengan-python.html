@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Cara Memisahkan Kata Dari String Dengan Python
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Cara Memisahkan Kata Dari String Dengan Python",
+    "datePublished": "2024-01-01T19:42:56Z",
+    "image": "https://tse1.mm.bing.net/th?q=cara%20memisahkan%20kata%20dari%20string%20dengan%20python",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=cara%20memisahkan%20kata%20dari%20string%20dengan%20python&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20memisahkan%20kata%20dari%20string%20dengan%20python" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=cara%20memisahkan%20kata%20dari%20string%20dengan%20python" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Cara Memisahkan Kata Dari String Dengan Python
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=cara%20memisahkan%20kata%20dari%20string%20dengan%20python" alt="Cara Memisahkan Kata Di Excel Mama Baca" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=cara%20memisahkan%20kata%20dari%20string%20dengan%20python" alt="Cara Memisahkan Kata Di Excel Mama Baca" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Cara Memisahkan Kata Di Excel Mama Baca from mamabaca.com</figcaption></figure><h2>Apa itu Python?</h2><p>Python adalah bahasa pemrograman yang menarik dan menyenangkan yang dirancang untuk meningkatkan produktivitas programmer. Ini berupa bahasa tingkat tinggi yang sangat fleksibel, yang memungkinkan programmer untuk menulis program jauh lebih cepat daripada bahasa pemrograman lainnya. Python sangat populer di dunia pemrograman, dan menjadi bahasa pemrograman yang paling banyak digunakan di berbagai platform. Python juga merupakan salah satu bahasa pemrograman yang paling mudah dipelajari, dan banyak programmer baru yang mulai belajar Python karena kemudahannya.</p><h2>Apa itu String?</h2><p>String adalah tipe data yang umum digunakan dalam bahasa pemrograman, dan Python tidak berbeda. String adalah salah satu tipe data yang banyak digunakan dalam Python. String adalah tipe data yang berisi karakter alfabet, angka, atau karakter lain yang ditulis di antara tanda petik tunggal atau ganda. String digunakan dalam berbagai keadaan, seperti untuk menyimpan data, menampilkan data, atau memproses data. Dengan demikian, string sangat penting untuk dipahami dan digunakan dalam pemrograman Python.</p><h2>Apa itu Memisahkan Kata dari String?</h2><p>Memisahkan kata dari string adalah proses mengambil kata-kata dari sebuah string, misalnya memisahkan kata dari sebuah kalimat. Proses ini berguna ketika kita ingin menggunakan kata-kata dalam sebuah program. Misalnya, kita ingin menampilkan kata-kata dalam sebuah kalimat dalam urutan yang berbeda atau mengambil kata-kata dengan karakter tertentu. Proses memisahkan kata dari string dapat dilakukan menggunakan berbagai bahasa pemrograman, termasuk Python.</p><h2>Cara Memisahkan Kata dari String dengan Python</h2><p>Python memiliki fungsi yang disebut split () yang memungkinkan programmer untuk memisahkan kata-kata dari sebuah string. Fungsi ini menerima sebuah string sebagai argumen dan kemudian memecah string menjadi beberapa bagian, atau token. Fungsi split () akan mengembalikan sebuah daftar token, yang dapat digunakan oleh programmer untuk melakukan tugas yang diinginkan. Berikut adalah contoh penggunaan fungsi split () untuk memisahkan kata-kata dari sebuah string:</p><p>```contoh_string ="ini adalah contoh string"<br> token = contoh_string.split()<br> print(token)<br> # Output ['Ini', 'adalah', 'contoh', 'string']```</p><h2>Fungsi Join () untuk Menggabungkan Token</h2><p>Setelah kita dapat mengambil token dari string, kita mungkin juga ingin menggabungkan token menjadi sebuah string. Python memiliki fungsi join () yang memungkinkan programmer untuk melakukan hal ini. Fungsi join () menerima sebuah daftar token sebagai argumen dan mengembalikan string yang terbentuk dari token-token tersebut. Berikut adalah contoh penggunaan fungsi join () untuk menggabungkan token menjadi sebuah string:</p><p>```token = ['Ini', 'adalah', 'contoh', 'string']<br> contoh_string =' '.join(token)<br> print(contoh_string)<br> # Output ini adalah contoh string```</p><h2>Mengambil Kata dengan Karakter Tertentu</h2><p>Kadang-kadang kita ingin mengambil kata yang memiliki karakter tertentu dari sebuah string. Ini bisa dilakukan dengan menggunakan fungsi filter () dan fungsi lambda. Fungsi filter () menerima sebuah fungsi sebagai argumen, dan mengembalikan daftar token yang memenuhi persyaratan fungsi tersebut. Fungsi lambda adalah sebuah fungsi anonim yang memungkinkan programmer untuk membuat fungsi sederhana tanpa menulis banyak kode. Berikut adalah contoh penggunaan fungsi filter () dan fungsi lambda untuk mengambil kata dengan karakter tertentu dari sebuah string:</p><p>```contoh_string ="ini adalah contoh string"<br> token = contoh_string.split()<br> karakter ='h'<br> hasil = list(filter(lambda x: karakter in x, token))<br> print(hasil)<br> # Output ['adalah', 'contoh']```</p><h2>Kesimpulan</h2><p>Ketika bekerja dengan string di Python, kita dapat memecah string menjadi kata-kata dan melakukan tugas yang kita inginkan dengan token-token tersebut. Fungsi split () memungkinkan kita untuk memecah string menjadi token, sedangkan fungsi join () memungkinkan kita untuk menggabungkan token kembali menjadi sebuah string. Kita dapat menggunakan fungsi filter () dan fungsi lambda untuk mengambil token dengan karakter tertentu dari sebuah string. Dengan demikian, kita dapat dengan mudah memisahkan kata dari string dengan Python.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-mengatasi-printer-kedip-orange.html">
+                cara mengatasi printer kedip orange 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-mengatasi-printer-kedip-orange.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20mengatasi%20printer%20kedip%20orange&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara mengatasi printer kedip orange">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="berapa-tinggi-baris-default-di-excel.html">
+                berapa tinggi baris default di excel 
+                </a>
+                <div class="image-parent">
+                    <a href="berapa-tinggi-baris-default-di-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=berapa%20tinggi%20baris%20default%20di%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="berapa tinggi baris default di excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-is-php-74-stable.html">
+                cara menggunakan is php 74 stable 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-is-php-74-stable.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20is%20php%2074%20stable&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan is php 74 stable">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-saja-contoh-kalimat-past-tense.html">
+                apa saja contoh kalimat past tense 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-saja-contoh-kalimat-past-tense.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20saja%20contoh%20kalimat%20past%20tense&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa saja contoh kalimat past tense">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="bagaimana-cara-menerjemahkan-situs-wordpress-secara-manual.html">
+                bagaimana cara menerjemahkan situs wordpress secara manual 
+                </a>
+                <div class="image-parent">
+                    <a href="bagaimana-cara-menerjemahkan-situs-wordpress-secara-manual.html">
+                    <img src="https://tse1.mm.bing.net/th?q=bagaimana%20cara%20menerjemahkan%20situs%20wordpress%20secara%20manual&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="bagaimana cara menerjemahkan situs wordpress secara manual">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="instal-mysql-di-ec2-amazon-linux.html">
+                instal mysql di ec2 amazon linux 
+                </a>
+                <div class="image-parent">
+                    <a href="instal-mysql-di-ec2-amazon-linux.html">
+                    <img src="https://tse1.mm.bing.net/th?q=instal%20mysql%20di%20ec2%20amazon%20linux&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="instal mysql di ec2 amazon linux">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="how-to-show-formula-bar-in-excel.html">
+                how to show formula bar in excel 
+                </a>
+                <div class="image-parent">
+                    <a href="how-to-show-formula-bar-in-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20show%20formula%20bar%20in%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="how to show formula bar in excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jawaban-tema-3-kelas-3-halaman-53.html">
+                jawaban tema 3 kelas 3 halaman 53 
+                </a>
+                <div class="image-parent">
+                    <a href="jawaban-tema-3-kelas-3-halaman-53.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jawaban%20tema%203%20kelas%203%20halaman%2053&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jawaban tema 3 kelas 3 halaman 53">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menambahkan-string-excel.html">
+                cara menambahkan string excel 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menambahkan-string-excel.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menambahkan%20string%20excel&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menambahkan string excel">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="face-menggunakan-variabel-form-di-html.html">
+                face menggunakan variabel form di html 
+                </a>
+                <div class="image-parent">
+                    <a href="face-menggunakan-variabel-form-di-html.html">
+                    <img src="https://tse1.mm.bing.net/th?q=face%20menggunakan%20variabel%20form%20di%20html&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="face menggunakan variabel form di html">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Membuat Menu Home Dengan Php
+    </title>
+    <style type="text/css">
+        html{box-sizing:border-box;-ms-overflow-style:scrollbar}body{margin:0 auto;font-family:'Roboto',sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}.top_main{margin-top: 100px;}footer{text-align:center}table{display:table}*,*::before,*::after{box-sizing:inherit}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.hide{display:none;visibility:hidden}.popbox{position:fixed;top:0;left:0;bottom:0;width:100%;z-index:1000000}.pop-content{display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;box-shadow:0 3px 20px 0 rgba(0,0,0,.5)}.popcontent{padding:20px;background:#fff;border-radius:5px;overflow:hidden}.pop-overlay{position:absolute;top:0;left:0;bottom:0;width:100%;z-index:1;background:rgb(255 255 255 / 93%)}.popbox-close-button{position:absolute;width:28px;height:28px;line-height:28px;text-align:center;top:-14px;right:-14px;color:#c82333;background-color:#fff;box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);border:none;border-radius:50%;cursor:pointer;font-size:28px;font-weight:700;padding:0}.popcontent img{width:100%;height:100%;display:block}.flowbox{position:relative;overflow:hidden}@media  screen and (max-width:840px){.pop-content{width:90%;height:auto;top:20%}.popcontent img{height:auto}}.image-parent{max-width: 40px;}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "mbah ogeng",
+      "url": "https://www.google.com/search?q=mbah ogeng"
+    },
+    "headline": "Membuat Menu Home Dengan Php",
+    "datePublished": "2023-08-28T20:47:52Z",
+    "image": "https://tse1.mm.bing.net/th?q=membuat%20menu%20home%20dengan%20php",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pelajaran Bahasa Indonesia Tips Dari Suhunya",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tse1.mm.bing.net/th?q=membuat%20menu%20home%20dengan%20php&amp;w=250&amp;h=250&amp;c=7",
+        "width": 250,
+        "height": 250
+      }
+    }
+  }
+</script><link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=membuat%20menu%20home%20dengan%20php" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=membuat%20menu%20home%20dengan%20php" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code --></head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+      <a class="navbar-brand" href="./">
+        Pelajaran Bahasa Indonesia Tips Dari Suhunya
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Membuat Menu Home Dengan Php
+          </h1>
+          <p class="lead">
+                          Terbaik Pelajaran bahasa indonesia tips dan trik website . Cari apa saja topik Pelajaran bahasa indonesia ide di website ini.
+                      </p>
+        </center>
+      </header>
+      <!-- <div class="d-block p-4">
+	<center>
+		TOP_BANNER_ADS
+	</center>
+</div> -->      <div class="row">
+        <div class="col-md-8 p-md-2 border">
+          <article><figure><noscript><img src="https://tse1.mm.bing.net/th?q=membuat%20menu%20home%20dengan%20php" alt="Terbaru 23+ Cara Membuat Transaksi Penjualan Dengan Php Dan Mysql" width="640" height="360" /></noscript><img class="v-cover ads-img" src="https://tse1.mm.bing.net/th?q=membuat%20menu%20home%20dengan%20php" alt="Terbaru 23+ Cara Membuat Transaksi Penjualan Dengan Php Dan Mysql" width="100%" style="margin-right: 8px;margin-bottom: 8px;" /><figcaption>Terbaru 23+ Cara Membuat Transaksi Penjualan Dengan Php Dan Mysql from gamealz.blogspot.com</figcaption></figure><p>Menggunakan PHP untuk membuat menu Home dalam sebuah website bisa memberikan banyak keuntungan. Terutama dalam menciptakan sebuah website yang user friendly dan mudah diakses. Dengan PHP, Anda dapat membuat website yang terstruktur dengan baik sehingga mudah untuk di navigasi dan diakses. Dalam artikel ini, kita akan membahas cara membuat menu Home dengan PHP dalam website Anda.</p><h2>Pertama, Buat File PHP</h2><p>Langkah pertama yang harus Anda lakukan adalah membuat file PHP. File PHP ini akan digunakan untuk mengatur menu Home yang akan dibuat. File ini dapat berupa file yang berbeda atau bisa juga dimasukkan ke dalam file yang sudah ada. Dalam hal ini, Anda akan membuat file baru dengan nama home.php. File ini akan berisi kode yang akan digunakan untuk mengatur menu Home website.</p><h2>Kedua, Buat Menu Home</h2><p>Setelah file home.php dibuat, Anda dapat mulai membuat menu Home. Menu Home ini akan menjadi halaman utama dari website Anda. Dalam hal ini, Anda dapat menggunakan kode HTML yang diperlukan untuk mengatur menu Home. Anda dapat membuat menu Home dengan menggunakan tag <div> dan <ul>. Tag <div> akan membantu Anda untuk membuat struktur menu yang akan dibuat. Sedangkan tag <ul> akan membantu Anda untuk membuat daftar item yang akan dimasukkan ke dalam menu Home.</p><h2>Ketiga, Tambahkan Kode PHP</h2><p>Setelah Anda selesai membuat menu Home dengan HTML, Anda dapat melanjutkan dengan menambahkan kode PHP. Kode PHP ini akan membantu Anda untuk mengatur item-item yang akan ditampilkan dalam menu Home. Kode PHP juga dapat membantu Anda untuk menampilkan item-item yang sesuai dengan kriteria yang Anda tentukan. Kode ini juga berguna untuk membuat menu Home yang dinamis, sehingga Anda dapat menambahkan atau menghapus item sesuai dengan kebutuhan.</p><h2>Keempat, Tambahkan Link</h2><p>Setelah kode HTML dan PHP ditambahkan, Anda dapat mulai menambahkan link pada menu Home. Link ini akan membantu Anda untuk menghubungkan menu Home dengan halaman lain di website Anda. Dalam hal ini, Anda dapat menggunakan tag <a> untuk menghubungkan menu Home dengan halaman lain. Anda juga dapat menambahkan link secara dinamis dengan menggunakan kode PHP. Dengan begitu, Anda dapat menambahkan link yang sesuai dengan item-item yang akan ditampilkan dalam menu Home.</p><h2>Kelima, Strukturkan Menu Home</h2><p>Setelah semua item dan link ditambahkan, Anda dapat mulai melakukan penyusunan menu Home. Dengan menggunakan tag HTML, Anda dapat membuat struktur menu yang rapi dan mudah diakses. Anda dapat menggunakan tag <div> untuk membuat kotak yang akan menampung item-item, dan tag <ul> untuk membuat daftar item. Anda juga dapat menggunakan kode CSS untuk mengatur warna, ukuran, dan jenis font yang akan digunakan.</p><h2>Keenam, Tambahkan Kode JavaScript</h2><p>Jika Anda ingin membuat menu Home yang dinamis, Anda dapat menambahkan kode JavaScript. Kode JavaScript ini akan membantu Anda untuk mengatur item-item yang akan ditampilkan dalam menu Home. Dengan kode JavaScript, Anda dapat menampilkan item-item yang sesuai dengan kriteria yang telah ditentukan, seperti kata kunci, kategori, dan lain-lain. Anda juga dapat membuat menu Home yang dapat disesuaikan dengan kondisi tertentu, seperti waktu, lokasi, dan lain-lain.</p><h2>Ketujuh, Publikasikan Menu Home</h2><p>Setelah Anda selesai membuat menu Home, Anda dapat mulai mem-publish menu Home tersebut. Anda dapat menggunakan kode PHP untuk mem-publish menu Home di website Anda. Dengan begitu, menu Home akan muncul pada halaman utama website Anda. Anda juga dapat menggunakan kode JavaScript untuk mem-publish menu Home sesuai dengan kondisi tertentu. Dengan begitu, menu Home akan terlihat lebih dinamis dan mudah diakses.</p><h2>Kedelapan, Tes Menu Home</h2><p>Setelah menu Home dipublikasikan, Anda dapat mulai melakukan pengujian. Dalam hal ini, Anda dapat menguji menu Home untuk memastikan bahwa menu Home berfungsi dengan baik. Anda juga dapat menguji menu Home untuk memastikan bahwa item-item yang ditampilkan sesuai dengan yang diharapkan. Pengujian ini penting untuk memastikan bahwa menu Home yang dibuat dapat berfungsi dengan baik dan mudah diakses oleh pengunjung website Anda.</p><h2>Kesembilan, Perbaiki Menu Home</h2><p>Jika Anda menemukan masalah pada menu Home yang telah dibuat, Anda dapat mulai memperbaiki masalah tersebut. Dengan menggunakan kode HTML, Anda dapat memperbaiki struktur dan tampilan menu Home. Anda juga dapat menggunakan kode PHP dan JavaScript untuk memperbaiki item-item yang akan ditampilkan dalam menu Home. Dengan begitu, Anda dapat memastikan bahwa menu Home berfungsi dengan baik dan mudah diakses oleh pengunjung website Anda.</p><h2>Kesepuluh, Update Menu Home</h2><p>Setelah Anda selesai membuat dan memperbaiki menu Home, Anda dapat mulai mengupdate menu Home. Dengan menggunakan kode HTML, Anda dapat memperbarui struktur dan tampilan menu Home. Anda juga dapat menggunakan kode PHP dan JavaScript untuk memperbarui item-item yang akan ditampilkan dalam menu Home. Dengan begitu, Anda dapat memastikan bahwa menu Home tetap berfungsi dengan baik dan mudah diakses oleh pengunjung website Anda.</p><p>Dengan begitu, Anda telah mempelajari cara membuat menu Home dengan PHP. Dengan menggunakan kode HTML, PHP, dan JavaScript, Anda dapat membuat menu Home yang user friendly dan mudah diakses. Dengan begitu, Anda dapat membuat website yang terstruktur dengan baik sehingga mudah untuk di navigasi dan diakses. Semoga artikel ini bermanfaat bagi Anda.</p></article><!--more--><section></section> 
+          <div class="d-block p-4">
+	<center>
+		 <script src="https://projectphenomena.com/ads-syair/atas.js"></script> 
+	</center>
+
+</div>         </div>
+        <div class="col-md-4 p-2">
+            <h3>More  articles : </h3>
+            <ul class="list-group">
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-1-toko-prapatan-kanatang-sumba-timur-nusa-tenggara-timur-2022.html">
+                top 1 toko prapatan kanatang sumba timur nusa tenggara timur 2022 
+                </a>
+                <div class="image-parent">
+                    <a href="top-1-toko-prapatan-kanatang-sumba-timur-nusa-tenggara-timur-2022.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%201%20toko%20prapatan%20kanatang%20sumba%20timur%20nusa%20tenggara%20timur%202022&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 1 toko prapatan kanatang sumba timur nusa tenggara timur 2022">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apa-yang-dimaksud-dengan-session-pada-php.html">
+                apa yang dimaksud dengan session pada php 
+                </a>
+                <div class="image-parent">
+                    <a href="apa-yang-dimaksud-dengan-session-pada-php.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apa%20yang%20dimaksud%20dengan%20session%20pada%20php&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apa yang dimaksud dengan session pada php">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="jelaskan-bagaimana-pelaksanaan-supervisi-pendidikan-terhadap-pengajaran-dalam-situasi-pengajaran.html">
+                jelaskan bagaimana pelaksanaan supervisi pendidikan terhadap pengajaran dalam situasi pengajaran 
+                </a>
+                <div class="image-parent">
+                    <a href="jelaskan-bagaimana-pelaksanaan-supervisi-pendidikan-terhadap-pengajaran-dalam-situasi-pengajaran.html">
+                    <img src="https://tse1.mm.bing.net/th?q=jelaskan%20bagaimana%20pelaksanaan%20supervisi%20pendidikan%20terhadap%20pengajaran%20dalam%20situasi%20pengajaran&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="jelaskan bagaimana pelaksanaan supervisi pendidikan terhadap pengajaran dalam situasi pengajaran">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="top-20-toko-24-ende-ende-nusa-tenggara-timur-2023.html">
+                top 20 toko 24 ende ende nusa tenggara timur 2023 
+                </a>
+                <div class="image-parent">
+                    <a href="top-20-toko-24-ende-ende-nusa-tenggara-timur-2023.html">
+                    <img src="https://tse1.mm.bing.net/th?q=top%2020%20toko%2024%20ende%20ende%20nusa%20tenggara%20timur%202023&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="top 20 toko 24 ende ende nusa tenggara timur 2023">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="di-manakah-titik-yang-memiliki-medan-magnet-paling-kuat-pada-kawat-melingkar-berarus-listrik.html">
+                di manakah titik yang memiliki medan magnet paling kuat pada kawat melingkar berarus listrik 
+                </a>
+                <div class="image-parent">
+                    <a href="di-manakah-titik-yang-memiliki-medan-magnet-paling-kuat-pada-kawat-melingkar-berarus-listrik.html">
+                    <img src="https://tse1.mm.bing.net/th?q=di%20manakah%20titik%20yang%20memiliki%20medan%20magnet%20paling%20kuat%20pada%20kawat%20melingkar%20berarus%20listrik&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="di manakah titik yang memiliki medan magnet paling kuat pada kawat melingkar berarus listrik">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="apakah-javascript-adalah-bahasa-scripting.html">
+                apakah javascript adalah bahasa scripting 
+                </a>
+                <div class="image-parent">
+                    <a href="apakah-javascript-adalah-bahasa-scripting.html">
+                    <img src="https://tse1.mm.bing.net/th?q=apakah%20javascript%20adalah%20bahasa%20scripting&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="apakah javascript adalah bahasa scripting">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-menghitung-jumlah-array-javascript.html">
+                cara menggunakan menghitung jumlah array javascript 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-menghitung-jumlah-array-javascript.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20menghitung%20jumlah%20array%20javascript&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan menghitung jumlah array javascript">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="python-mengganti-nilai-tag-xml.html">
+                python mengganti nilai tag xml 
+                </a>
+                <div class="image-parent">
+                    <a href="python-mengganti-nilai-tag-xml.html">
+                    <img src="https://tse1.mm.bing.net/th?q=python%20mengganti%20nilai%20tag%20xml&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="python mengganti nilai tag xml">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="cara-menggunakan-tools-mysql-apa-saja.html">
+                cara menggunakan tools mysql apa saja 
+                </a>
+                <div class="image-parent">
+                    <a href="cara-menggunakan-tools-mysql-apa-saja.html">
+                    <img src="https://tse1.mm.bing.net/th?q=cara%20menggunakan%20tools%20mysql%20apa%20saja&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="cara menggunakan tools mysql apa saja">
+                    </a>
+                </div>                    
+              </li>                
+                                        
+              <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+                <a href="instal-mysql-di-oracle-linux.html">
+                instal mysql di oracle linux 
+                </a>
+                <div class="image-parent">
+                    <a href="instal-mysql-di-oracle-linux.html">
+                    <img src="https://tse1.mm.bing.net/th?q=instal%20mysql%20di%20oracle%20linux&amp;w=50&amp;h=50&amp;c=7" class="img-fluid" alt="instal mysql di oracle linux">
+                    </a>
+                </div>                    
+              </li>                
+                        </ul>
+          <!-- <div class="d-block p-4">
+	<center>
+		SIDEBAR_ADS
+	</center>
+</div> -->        </div>
+      </div>
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2023 Pelajaran Bahasa Indonesia Tips Dari Suhunya. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <center> 
+<script src="https://projectphenomena.com/ads-syair/bawah.js"></script> 
+</center>    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = '#EDIT-WITH-YOUR-ADS';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+  </body>
+</html>
